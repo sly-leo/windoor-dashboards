@@ -6,30 +6,182 @@
 <meta name="robots" content="noindex, nofollow">
 <title>WinDoor Lisboa — Dashboards</title>
 <style>
-:root{--ground:#F4F6F9;--surface:#FFFFFF;--text:#0F172A;--text-2:#475569;--text-3:#94A3B8;--accent:#2563EB;--border:#E2E8F0}
+:root{
+  --ground:#F4F6F9;--surface:#FFFFFF;--text:#0F172A;--text-2:#475569;--text-3:#94A3B8;
+  --accent:#2563EB;--green:#16A34A;--red:#DC2626;--amber:#D97706;--border:#E2E8F0;
+}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--ground);color:var(--text);font-size:13px;min-height:100vh;display:flex;flex-direction:column}
-.hdr{background:var(--surface);border-bottom:1px solid var(--border);padding:14px 28px;display:flex;align-items:center;gap:8px}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--ground);color:var(--text);font-size:13px;min-height:100vh}
+.hdr{background:var(--surface);border-bottom:1px solid var(--border);padding:14px 28px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.hdr-brand{font-size:14px;font-weight:700;display:flex;align-items:center;gap:8px}
 .hdr-dot{width:8px;height:8px;border-radius:50%;background:var(--accent)}
-.hdr-brand{font-size:14px;font-weight:700}
-.wrap{flex:1;display:flex;align-items:center;justify-content:center;padding:40px}
-.card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:36px 40px;max-width:520px;text-align:center;box-shadow:0 1px 3px rgba(15,23,42,.06)}
-.h1{font-size:18px;font-weight:800;margin-bottom:10px}
-.p{font-size:13px;color:var(--text-2);line-height:1.6}
-.pill{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:600;padding:4px 10px;border-radius:99px;background:#DBEAFE;color:#1D4ED8;margin-top:18px}
-.dot{width:7px;height:7px;border-radius:50%;background:#2563EB}
+.hdr-meta{font-size:11px;color:var(--text-3)}
+.tabs{background:var(--surface);border-bottom:1px solid var(--border);padding:0 28px;display:flex;overflow-x:auto}
+.tab{padding:13px 20px;font-size:13px;font-weight:500;color:var(--text-3);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;user-select:none;transition:color .15s;white-space:nowrap}
+.tab.active{color:var(--accent);border-bottom-color:var(--accent);font-weight:600}
+.tab:hover:not(.active){color:var(--text-2)}
+.view{display:none;padding:24px 28px}
+.view.active{display:block}
+.h1{font-size:16px;font-weight:800;margin-bottom:2px}
+.sub{font-size:12px;color:var(--text-2);margin-bottom:16px}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:20px}
+@media(max-width:820px){.kpis{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.kpis{grid-template-columns:1fr}}
+.kpi{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:18px 20px}
+.kpi-lbl{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--text-3);margin-bottom:8px}
+.kpi-val{font-size:26px;font-weight:800;line-height:1;margin-bottom:4px}
+.kpi-sub{font-size:11px;color:var(--text-3);line-height:1.4;margin-bottom:8px}
+.kpi-pill{display:inline-flex;align-items:center;font-size:11px;font-weight:600;padding:2px 8px;border-radius:99px}
+.up{background:#DCFCE7;color:#15803D}.dn{background:#FEE2E2;color:#B91C1C}
+.nt{background:#DBEAFE;color:#1D4ED8}.wa{background:#FEF3C7;color:#92400E}
+.row{display:grid;gap:16px;margin-bottom:20px}
+.c2{grid-template-columns:1fr 1fr}.c54{grid-template-columns:5fr 4fr}.c45{grid-template-columns:4fr 5fr}
+@media(max-width:820px){.row{grid-template-columns:1fr!important}}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:20px;margin-bottom:20px;overflow-x:auto}
+.ch{font-size:13px;font-weight:700;margin-bottom:3px}
+.cs{font-size:11px;color:var(--text-3);margin-bottom:16px}
+.bars{display:flex;flex-direction:column;gap:9px}
+.brow{display:flex;align-items:center;gap:10px}
+.blbl{font-size:11px;color:var(--text-2);flex-shrink:0;text-align:right;line-height:1.3}
+.blbl-w148{width:148px}.blbl-w110{width:110px}.blbl-w72{width:72px}
+.btrack{flex:1;background:#F1F5F9;border-radius:4px;height:22px;overflow:hidden}
+.bfill{height:100%;border-radius:4px;display:flex;align-items:center;padding-left:8px}
+.bfv{font-size:10px;font-weight:700;color:rgba(255,255,255,.92);white-space:nowrap}
+.bev{font-size:11px;color:var(--text-2);margin-left:8px;flex-shrink:0;white-space:nowrap}
+.funnel{display:flex;flex-direction:column;gap:8px}
+.frow{display:flex;align-items:center;gap:10px}
+.flbl{font-size:11px;color:var(--text-2);width:150px;flex-shrink:0;line-height:1.3}
+.fbar{height:30px;border-radius:4px;display:flex;align-items:center;padding:0 12px;min-width:36px}
+.ftxt{font-size:11px;font-weight:600;white-space:nowrap}
+.fmeta{font-size:11px;margin-left:10px;flex-shrink:0;white-space:nowrap}
+.dt{width:100%;border-collapse:collapse;font-size:12px}
+.dt th{font-size:10px;font-weight:700;color:var(--text-3);text-transform:uppercase;letter-spacing:.06em;padding:6px 10px;text-align:left;border-bottom:1px solid var(--border);white-space:nowrap}
+.dt td{padding:10px;border-bottom:1px solid var(--border);vertical-align:middle}
+.dt td.num,.dt th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.dt tr:last-child td{border-bottom:none}
+.dt tbody tr:hover td{background:#F8FAFC}
+.mname{font-weight:600}
+.csub{font-size:10px;color:var(--text-3);margin-top:2px;line-height:1.35}
+.b{display:inline-flex;align-items:center;gap:3px;font-size:10px;font-weight:600;padding:2px 8px;border-radius:99px;white-space:nowrap}
+.b-r{background:#FEE2E2;color:#B91C1C}.b-a{background:#FEF3C7;color:#92400E}
+.b-g{background:#DCFCE7;color:#15803D}.b-b{background:#DBEAFE;color:#1D4ED8}
+.b-x{background:#F1F5F9;color:#475569}
+.seg{width:18px;height:18px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:9px;font-weight:800;color:#fff;flex-shrink:0;vertical-align:middle}
+.av{border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-weight:700;color:#fff;flex-shrink:0}
+.dv{height:1px;background:var(--border);margin:14px 0}
+.note{padding:9px 12px;border-radius:6px;font-size:11px;border-left:3px solid;margin-bottom:18px}
+.note-r{background:#FFF5F5;border-left-color:var(--red);color:#B91C1C}
+.note-b{background:#EFF6FF;border-left-color:var(--accent);color:#1D4ED8}
+.note-a{background:#FFFBEB;border-left-color:var(--amber);color:#92400E}
+.stat2{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.stat-box{text-align:center;padding:10px;border-radius:6px}
+.stat-val{font-size:20px;font-weight:800;line-height:1;margin-bottom:2px}
+.stat-lbl{font-size:10px;color:var(--text-3)}
+.spark{display:block}
+.illus{display:inline-flex;align-items:center;gap:4px;font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;background:#FEF3C7;color:#92400E;border:1px dashed #D97706;vertical-align:middle}
+.prov{display:inline-block;font-size:9px;font-weight:700;padding:1px 6px;border-radius:4px;background:#F1F5F9;color:#64748B;border:1px solid #CBD5E1;margin-left:6px}
+.foot{font-size:10px;color:var(--text-3);margin-top:8px;line-height:1.5}
+svg text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
 </style>
 </head>
 <body>
-<div class="hdr"><div class="hdr-dot"></div><div class="hdr-brand">WinDoor Lisboa — Dashboards</div></div>
-<div class="wrap">
+<div class="hdr">
+  <div class="hdr-brand"><div class="hdr-dot"></div>WinDoor Lisboa — Dashboards</div>
+  <div class="hdr-meta">Source: B2C pipeline (Monday) · pulled 10 Jul 2026 · 3,028 records</div>
+</div>
+<div class="tabs"><div class="tab active" onclick="sw('change')">Change Management</div></div>
+<div class="view active" id="view-change">
+  <div class="h1">Is the CRM transformation being adopted?</div>
+  <div class="sub">Five data-quality &amp; adoption metrics — baseline (08 Jul 2026) → current → target. Aggregate figures only.</div>
+
+  <div class="note note-b"><strong>Diagnostic view.</strong> Baselines are the real 08 Jul 2026 board snapshot; the go-live is 01 Aug. Segment assignment is <strong>projected</strong> until the tier field is rolled out. Trends accumulate one point per daily run.</div>
+
+  <div class="kpis">
+    <div class="kpi">
+      <div class="kpi-lbl">Real loss reason captured</div>
+      <div class="kpi-val" style="color:var(--red)">4%</div>
+      <div class="kpi-sub">72 of 1677 · baseline 4%</div>
+      <span class="kpi-pill dn">⊗ Meta: 100%</span>
+    </div>
+    <div class="kpi">
+      <div class="kpi-lbl">Rectified value filled</div>
+      <div class="kpi-val" style="color:var(--amber)">95%</div>
+      <div class="kpi-sub">36 of 38 · baseline 79%</div>
+      <span class="kpi-pill wa">⚠ Meta: 100%</span>
+    </div>
+    <div class="kpi">
+      <div class="kpi-lbl">Follow-up within 7 days (sent)</div>
+      <div class="kpi-val" style="color:var(--red)">62%</div>
+      <div class="kpi-sub">43 of 69 · baseline 83%</div>
+      <span class="kpi-pill dn">⊗ Meta: 90%</span>
+    </div>
+    <div class="kpi">
+      <div class="kpi-lbl">Records stalled &gt; 30 days (open)</div>
+      <div class="kpi-val" style="color:var(--green)">4</div>
+      <div class="kpi-sub">4 of 177 open · baseline 8</div>
+      <span class="kpi-pill up">✓ Meta: < 10</span>
+    </div></div>
+
   <div class="card">
-    <div class="h1">Dashboard initializing</div>
-    <div class="p">This is the permanent home for the WinDoor Lisboa dashboards
-    (Change Management, and — as their data matures — Executive and Operational).
-    It refreshes daily from the live pipeline. The first data refresh is pending.</div>
-    <div class="pill"><span class="dot"></span>Aggregate figures only · no customer data</div>
+    <div class="ch">Baseline vs current vs target</div>
+    <div class="cs">Live pull from the B2C funnel · Orçamento enviado 69 · Aguardando medidas 69 · Orçamento retificado 38 · Adjudicado 836 · Não adjudicado 1677</div>
+    <table class="dt">
+      <thead><tr>
+        <th>Metric</th><th class="num">Baseline</th><th class="num">Current</th>
+        <th class="num">Target</th><th>Trend</th><th>Status</th>
+      </tr></thead>
+      <tbody>
+        <tr>
+          <td><div class="mname">Real loss reason captured</div>
+              <div class="csub">Source: Motivo Não on lost quotes (color_mkq8ngrb)</div><div class="csub">&quot;Escolha&quot;/blank is a documented NULL placeholder.</div></td>
+          <td class="num">4%</td>
+          <td class="num" style="font-weight:700">4%</td>
+          <td class="num" style="color:var(--text-3)">100%</td>
+          <td><svg class="spark" width="120" height="28" viewBox="0 0 120 28"><polyline points="0.0,25.0 120.0,25.0" fill="none" stroke="var(--red)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/></svg></td>
+          <td><span class="b b-r">⊗ Off target</span></td>
+        </tr>
+        <tr>
+          <td><div class="mname">Rectified value filled</div>
+              <div class="csub">Source: Valor retificado on rectified quotes (numeric_mkvqbryf)</div></td>
+          <td class="num">79%</td>
+          <td class="num" style="font-weight:700">95%</td>
+          <td class="num" style="color:var(--text-3)">100%</td>
+          <td><svg class="spark" width="120" height="28" viewBox="0 0 120 28"><polyline points="0.0,25.0 120.0,25.0" fill="none" stroke="var(--amber)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/></svg></td>
+          <td><span class="b b-a">⚠ Approaching</span></td>
+        </tr>
+        <tr>
+          <td><div class="mname">A/B/C segment assigned</div>
+              <div class="csub">Source: Segment/tier field</div><div class="csub">Segment column lives on B2C &quot;Novo&quot; (18420441925), not live B2C — projected until rolled out.</div></td>
+          <td class="num">0%</td>
+          <td class="num" style="font-weight:700">—</td>
+          <td class="num" style="color:var(--text-3)">100%</td>
+          <td><svg class="spark" width="120" height="28" viewBox="0 0 120 28"><polyline points="0.0,25.0 120.0,25.0" fill="none" stroke="var(--text)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/></svg></td>
+          <td><span class="b b-x">· Not built yet</span></td>
+        </tr>
+        <tr>
+          <td><div class="mname">Follow-up within 7 days (sent)</div>
+              <div class="csub">Source: Última modificação on quotes in &quot;Orçamento enviado&quot; (data2__1)</div><div class="csub">Activity proxied by Última modificação (no adjudication-date column exists).</div></td>
+          <td class="num">83%</td>
+          <td class="num" style="font-weight:700">62%</td>
+          <td class="num" style="color:var(--text-3)">90%</td>
+          <td><svg class="spark" width="120" height="28" viewBox="0 0 120 28"><polyline points="0.0,25.0 120.0,25.0" fill="none" stroke="var(--red)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/></svg></td>
+          <td><span class="b b-r">⊗ Off target</span></td>
+        </tr>
+        <tr>
+          <td><div class="mname">Records stalled &gt; 30 days (open)</div>
+              <div class="csub">Source: Última modificação on open worked stages (data2__1)</div><div class="csub">Excludes the raw request backlog; activity proxied by Última modificação.</div></td>
+          <td class="num">8</td>
+          <td class="num" style="font-weight:700">4</td>
+          <td class="num" style="color:var(--text-3)">&lt; 10</td>
+          <td><svg class="spark" width="120" height="28" viewBox="0 0 120 28"><polyline points="0.0,25.0 120.0,25.0" fill="none" stroke="var(--green)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/></svg></td>
+          <td><span class="b b-g">✓ Within target</span></td>
+        </tr></tbody>
+    </table>
+    <div class="foot">Provenance: computed read-only from Monday board 10018007898.
+    "Escolha"/blank loss reasons count as unfilled. Activity is proxied by Última modificação
+    (no adjudication-date column exists). No customer PII is included — aggregate counts only.</div>
   </div>
 </div>
+<script>function sw(t){const ids=["change"];ids.forEach((id,i)=>{document.querySelectorAll('.tab')[i].classList.toggle('active',id===t);document.getElementById('view-'+id).classList.toggle('active',id===t);});}</script>
 </body>
 </html>
