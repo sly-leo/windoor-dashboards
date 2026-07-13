@@ -87,10 +87,180 @@ svg text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
 <body>
 <div class="hdr">
   <div class="hdr-brand"><div class="hdr-dot"></div>WinDoor Lisboa — Dashboards</div>
-  <div class="hdr-meta">Source: B2C pipeline (Monday) · pulled 13 Jul 2026 · 3,057 records</div>
+  <div class="hdr-meta">Source: B2C pipeline (Monday) · pulled 13 Jul 2026 · 3,065 records</div>
 </div>
-<div class="tabs"><div class="tab active" onclick="sw('change')">Change Management</div></div>
-<div class="view active" id="view-change">
+<div class="tabs"><div class="tab active" onclick="sw('operational')">Operacional</div><div class="tab" onclick="sw('change')">Change Management</div></div>
+<div class="view active" id="view-operational">
+  <div class="note note-a"><strong>🚧 RASCUNHO — a rever (PT review pending).</strong> Texto em português por rever por um falante nativo (Dulce/Bruno) antes de ser considerado final.</div>
+
+  <div class="h1">O que precisa de atenção hoje?</div>
+  <div class="sub">Vista operacional diária da Dulce — antiguidade, retificado urgente por comercial, e quebras de SLA. Leitura ao vivo do funil B2C · apenas valores agregados.</div>
+
+  <div class="note note-b"><strong>Vista operacional.</strong> Antiguidade e atividade aproximadas pela <em>Última modificação</em> (não existe coluna de adjudicação). A limpeza pontual do board (08 Jul) repôs alguns carimbos de data, pelo que a antiguidade pode parecer mais recente do que o esforço de follow-up real. O € do retificado está subestimado enquanto alguns orçamentos não têm valor. O motor de alertas ainda não está construído.</div>
+
+  <div class="kpis">
+    <div class="kpi">
+      <div class="kpi-lbl">Enviados em aberto</div>
+      <div class="kpi-val" style="color:var(--text)">74</div>
+      <div class="kpi-sub">Mediana 6d · 16% parados &gt; 7d</div>
+      <span class="kpi-pill nt">Em acompanhamento</span>
+    </div>
+    <div class="kpi">
+      <div class="kpi-lbl">Retificado parado (&gt; 7d)</div>
+      <div class="kpi-val" style="color:var(--red)">11</div>
+      <div class="kpi-sub">€51.118 parados nesta etapa</div>
+      <span class="kpi-pill dn">⊗ Ação imediata</span>
+    </div>
+    <div class="kpi">
+      <div class="kpi-lbl">Retificado — valor em aberto</div>
+      <div class="kpi-val" style="color:var(--accent)">€228K</div>
+      <div class="kpi-sub">38 leads — sem trigger automático nesta etapa</div>
+      <span class="kpi-pill wa">Maior risco de perda</span>
+    </div>
+    <div class="kpi">
+      <div class="kpi-lbl">Valores em falta (retificado)</div>
+      <div class="kpi-val" style="color:var(--amber)">1</div>
+      <div class="kpi-sub">Orç. retificado sem valor registado</div>
+      <span class="kpi-pill wa">⚠ Corrigir primeiro</span>
+    </div></div>
+
+  <div class="row c45">
+    <div class="card">
+      <div class="ch">Leads em aberto — por antiguidade</div>
+      <div class="cs">Etapas em aberto trabalhadas · 184 com data · desde a última atividade</div>
+      <div class="bars" style="gap:12px">
+        <div class="brow">
+          <div class="blbl blbl-w110">0–7 dias</div>
+          <div class="btrack"><div class="bfill" style="width:61%;background:#86EFAC">
+            <span class="bfv" style="color:#14532D">113</span></div></div>
+          <div class="bev" style="color:var(--green)">✓ recentes</div>
+        </div>
+        <div class="brow">
+          <div class="blbl blbl-w110">7–14 dias</div>
+          <div class="btrack"><div class="bfill" style="width:34%;background:#93C5FD">
+            <span class="bfv" style="color:#1E3A8A">62</span></div></div>
+          <div class="bev" style="color:var(--text-2)">atenção</div>
+        </div>
+        <div class="brow">
+          <div class="blbl blbl-w110">14–30 dias</div>
+          <div class="btrack"><div class="bfill" style="width:3%;background:#FCD34D">
+            <span class="bfv" style="color:#78350F">5</span></div></div>
+          <div class="bev" style="color:var(--amber)">⚠ follow-up urgente</div>
+        </div>
+        <div class="brow">
+          <div class="blbl blbl-w110">30d+</div>
+          <div class="btrack"><div class="bfill" style="width:2%;background:var(--red)">
+            <span class="bfv" style="color:#FFFFFF">4</span></div></div>
+          <div class="bev" style="color:var(--red)">⊗ estagnados</div>
+        </div></div>
+      <div class="stat2">
+        <div class="stat-box" style="background:#FFF5F5">
+          <div class="stat-val" style="color:var(--red)">5%</div>
+          <div class="stat-lbl">há mais de 14 dias</div>
+        </div>
+        <div class="stat-box" style="background:#FFFBEB">
+          <div class="stat-val" style="color:var(--amber)">5d</div>
+          <div class="stat-lbl">mediana do retificado</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="ch">Retificado em aberto — por comercial</div>
+      <div class="cs">€227.621 identificados · 38 orçamentos · 1 ainda sem valor</div>
+      <table class="dt">
+        <thead><tr>
+          <th>Comercial</th><th class="num">Leads</th><th class="num">Valor</th><th class="num">Média</th><th>Estado</th>
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td><div style="display:flex;align-items:center;gap:8px">
+              <div class="av" style="width:26px;height:26px;font-size:10px;background:#0891B2">OS</div>
+              Olga Semenchenko</div></td>
+            <td class="num">12</td>
+            <td class="num" style="font-weight:600">€89.455</td>
+            <td class="num"><span style="color:var(--green);font-weight:700">4d</span></td>
+            <td><span class="b b-g">✓ na cadência</span></td>
+          </tr>
+          <tr>
+            <td><div style="display:flex;align-items:center;gap:8px">
+              <div class="av" style="width:26px;height:26px;font-size:10px;background:#16A34A">CB</div>
+              Catarina Barreiros</div></td>
+            <td class="num">4</td>
+            <td class="num" style="font-weight:600">€51.059</td>
+            <td class="num"><span style="color:var(--green);font-weight:700">3d</span></td>
+            <td><span class="b b-g">✓ na cadência</span></td>
+          </tr>
+          <tr>
+            <td><div style="display:flex;align-items:center;gap:8px">
+              <div class="av" style="width:26px;height:26px;font-size:10px;background:#EA580C">JC</div>
+              Joana Carvalho</div></td>
+            <td class="num">10</td>
+            <td class="num" style="font-weight:600">€43.680</td>
+            <td class="num"><span style="color:var(--amber);font-weight:700">10d</span></td>
+            <td><span class="b b-a">⚠ a acompanhar</span></td>
+          </tr>
+          <tr>
+            <td><div style="display:flex;align-items:center;gap:8px">
+              <div class="av" style="width:26px;height:26px;font-size:10px;background:#7C3AED">PC</div>
+              Patrícia Costa</div></td>
+            <td class="num">9</td>
+            <td class="num" style="font-weight:600">€34.074</td>
+            <td class="num"><span style="color:var(--green);font-weight:700">3d</span></td>
+            <td><span class="b b-g">✓ na cadência</span></td>
+          </tr>
+          <tr>
+            <td><div style="display:flex;align-items:center;gap:8px">
+              <div class="av" style="width:26px;height:26px;font-size:10px;background:#F59E0B">FR</div>
+              Filipa Ripoll</div></td>
+            <td class="num">2</td>
+            <td class="num" style="font-weight:600">€7.381</td>
+            <td class="num"><span style="color:var(--red);font-weight:700">14d</span></td>
+            <td><span class="b b-r">⊗ cadência excedida</span></td>
+          </tr>
+          <tr>
+            <td><div style="display:flex;align-items:center;gap:8px">
+              <div class="av" style="width:26px;height:26px;font-size:10px;background:#DB2777">SB</div>
+              Silvana Betinelli</div></td>
+            <td class="num">1</td>
+            <td class="num" style="font-weight:600">€1.972</td>
+            <td class="num"><span style="color:var(--amber);font-weight:700">12d</span></td>
+            <td><span class="b b-a">⚠ a acompanhar</span></td>
+          </tr></tbody>
+      </table>
+      <div class="note note-b" style="margin-top:14px">Leads com vários responsáveis são atribuídos ao primeiro da lista. Sem o trigger automático de follow-up, este pool volta a envelhecer. Os 1 orçamentos sem valor devem ser corrigidos primeiro — sem valor não entram na segmentação A/B/C. <strong>Nomes reais</strong>: esta é uma página pública (não indexada) — mover para acesso restrito se o desempenho por comercial se tornar sensível.</div>
+    </div></div>
+
+  
+    <div class="card">
+      <div class="ch">SLA e alertas — estado</div>
+      <div class="cs">Contagens agregadas · a fila de trabalho por lead (com cliente) permanece dentro do Monday, não nesta ligação pública</div>
+      <table class="dt">
+        <thead><tr>
+          <th>Indicador</th><th class="num">Atual</th><th>Tendência</th><th>Estado</th>
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td><div class="mname">Medidas OK &gt; 48h (SLA)</div>
+                <div class="csub">Não re-enviados dentro do SLA de 48h · 2 em Medidas OK</div></td>
+            <td class="num" style="font-weight:700">1</td>
+            <td><svg class="spark" width="120" height="28" viewBox="0 0 120 28"><polyline points="0.0,25.0 120.0,25.0" fill="none" stroke="var(--amber)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/></svg></td>
+            <td><span class="b b-a">⚠ Ação</span></td>
+          </tr>
+          <tr>
+            <td><div class="mname">Leads sinalizados (motor de alertas)</div>
+                <div class="csub">Motor de alertas ainda não construído; requer o campo de segmento (0% preenchido).</div></td>
+            <td class="num" style="font-weight:700">—</td>
+            <td><span style="font-size:10px;color:var(--text-3)">—</span></td>
+            <td><span class="b b-x">· Por construir</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  <div class="foot">Proveniência: calculado em modo de leitura a partir do board Monday 10018007898.
+  Antiguidade aproximada pela Última modificação. Sem PII de clientes — apenas contagens agregadas.
+  Verificar valores € contra o registo de qualidade de dados (DAT - CRM Data Quality Register) antes de citar.</div>
+</div><div class="view" id="view-change">
   <div class="h1">Is the CRM transformation being adopted?</div>
   <div class="sub">Five data-quality &amp; adoption metrics — baseline (02 Jun 2026) → current → target. Aggregate figures only.</div>
 
@@ -99,32 +269,32 @@ svg text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
   <div class="kpis">
     <div class="kpi">
       <div class="kpi-lbl">Real loss reason captured</div>
-      <div class="kpi-val" style="color:var(--red)">4%</div>
-      <div class="kpi-sub">72 of 1677 · baseline 4%</div>
+      <div class="kpi-val" style="color:var(--red)">7%</div>
+      <div class="kpi-sub">121 of 1693 · baseline 4%</div>
       <span class="kpi-pill dn">⊗ Meta: 100%</span>
     </div>
     <div class="kpi">
       <div class="kpi-lbl">Rectified value filled</div>
-      <div class="kpi-val" style="color:var(--amber)">95%</div>
-      <div class="kpi-sub">35 of 37 · baseline 57%</div>
+      <div class="kpi-val" style="color:var(--amber)">97%</div>
+      <div class="kpi-sub">37 of 38 · baseline 57%</div>
       <span class="kpi-pill wa">⚠ Meta: 100%</span>
     </div>
     <div class="kpi">
       <div class="kpi-lbl">Sent quotes touched in the last 7 days</div>
-      <div class="kpi-val" style="color:var(--red)">62%</div>
-      <div class="kpi-sub">44 of 71 · baseline 10%</div>
-      <span class="kpi-pill dn">⊗ Meta: 90%</span>
+      <div class="kpi-val" style="color:var(--amber)">84%</div>
+      <div class="kpi-sub">62 of 74 · baseline 10%</div>
+      <span class="kpi-pill wa">⚠ Meta: 90%</span>
     </div>
     <div class="kpi">
       <div class="kpi-lbl">Records stalled &gt; 30 days (open)</div>
-      <div class="kpi-val" style="color:var(--green)">6</div>
-      <div class="kpi-sub">6 of 181 open · baseline 305</div>
+      <div class="kpi-val" style="color:var(--green)">4</div>
+      <div class="kpi-sub">4 of 184 open · baseline 305</div>
       <span class="kpi-pill up">✓ Meta: < 10</span>
     </div></div>
 
   <div class="card">
     <div class="ch">Baseline vs current vs target</div>
-    <div class="cs">Live pull from the B2C funnel · Orçamento enviado 71 · Aguardando medidas 71 · Orçamento retificado 37 · Adjudicado 838 · Não adjudicado 1677</div>
+    <div class="cs">Live pull from the B2C funnel · Orçamento enviado 74 · Aguardando medidas 70 · Orçamento retificado 38 · Adjudicado 844 · Não adjudicado 1693</div>
     <table class="dt">
       <thead><tr>
         <th>Metric</th><th class="num">Baseline</th><th class="num">Current</th>
@@ -135,18 +305,18 @@ svg text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
           <td><div class="mname">Real loss reason captured</div>
               <div class="csub">Source: Motivo Não on lost quotes (color_mkq8ngrb)</div><div class="csub">&quot;Escolha&quot;/blank is a documented NULL placeholder.</div></td>
           <td class="num">4%</td>
-          <td class="num" style="font-weight:700">4%</td>
+          <td class="num" style="font-weight:700">7%</td>
           <td class="num" style="color:var(--text-3)">100%</td>
-          <td><svg class="spark" width="120" height="28" viewBox="0 0 120 28"><polyline points="0.0,25.0 40.0,25.0 80.0,25.0 120.0,25.0" fill="none" stroke="var(--red)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/></svg></td>
+          <td><svg class="spark" width="120" height="28" viewBox="0 0 120 28"><polyline points="0.0,25.0 30.0,25.0 60.0,25.0 90.0,3.0 120.0,3.0" fill="none" stroke="var(--red)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/></svg></td>
           <td><span class="b b-r">⊗ Off target</span></td>
         </tr>
         <tr>
           <td><div class="mname">Rectified value filled</div>
               <div class="csub">Source: Valor retificado on rectified quotes (numeric_mkvqbryf)</div></td>
           <td class="num">57%</td>
-          <td class="num" style="font-weight:700">95%</td>
+          <td class="num" style="font-weight:700">97%</td>
           <td class="num" style="color:var(--text-3)">100%</td>
-          <td><svg class="spark" width="120" height="28" viewBox="0 0 120 28"><polyline points="0.0,3.0 40.0,25.0 80.0,25.0 120.0,25.0" fill="none" stroke="var(--amber)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/></svg></td>
+          <td><svg class="spark" width="120" height="28" viewBox="0 0 120 28"><polyline points="0.0,24.2 30.0,25.0 60.0,25.0 90.0,3.0 120.0,3.0" fill="none" stroke="var(--amber)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/></svg></td>
           <td><span class="b b-a">⚠ Approaching</span></td>
         </tr>
         <tr>
@@ -155,25 +325,25 @@ svg text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
           <td class="num">0%</td>
           <td class="num" style="font-weight:700">—</td>
           <td class="num" style="color:var(--text-3)">100%</td>
-          <td><svg class="spark" width="120" height="28" viewBox="0 0 120 28"><polyline points="0.0,25.0 40.0,25.0 80.0,25.0 120.0,25.0" fill="none" stroke="var(--text)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/></svg></td>
+          <td><svg class="spark" width="120" height="28" viewBox="0 0 120 28"><polyline points="0.0,25.0 30.0,25.0 60.0,25.0 90.0,25.0 120.0,25.0" fill="none" stroke="var(--text)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/></svg></td>
           <td><span class="b b-x">· Not built yet</span></td>
         </tr>
         <tr>
           <td><div class="mname">Sent quotes touched in the last 7 days</div>
               <div class="csub">Source: Última modificação on quotes in &quot;Orçamento enviado&quot; (data2__1)</div><div class="csub">Activity proxied by Última modificação (no adjudication-date column exists).</div></td>
           <td class="num">10%</td>
-          <td class="num" style="font-weight:700">62%</td>
+          <td class="num" style="font-weight:700">84%</td>
           <td class="num" style="color:var(--text-3)">90%</td>
-          <td><svg class="spark" width="120" height="28" viewBox="0 0 120 28"><polyline points="0.0,3.0 40.0,25.0 80.0,25.0 120.0,25.0" fill="none" stroke="var(--red)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/></svg></td>
-          <td><span class="b b-r">⊗ Off target</span></td>
+          <td><svg class="spark" width="120" height="28" viewBox="0 0 120 28"><polyline points="0.0,24.7 30.0,25.0 60.0,25.0 90.0,3.0 120.0,3.0" fill="none" stroke="var(--amber)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/></svg></td>
+          <td><span class="b b-a">⚠ Approaching</span></td>
         </tr>
         <tr>
           <td><div class="mname">Records stalled &gt; 30 days (open)</div>
               <div class="csub">Source: Última modificação on open worked stages (data2__1)</div><div class="csub">Excludes the raw request backlog; activity proxied by Última modificação.</div></td>
           <td class="num">305</td>
-          <td class="num" style="font-weight:700">6</td>
+          <td class="num" style="font-weight:700">4</td>
           <td class="num" style="color:var(--text-3)">&lt; 10</td>
-          <td><svg class="spark" width="120" height="28" viewBox="0 0 120 28"><polyline points="0.0,25.0 40.0,25.0 80.0,14.0 120.0,3.0" fill="none" stroke="var(--green)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/></svg></td>
+          <td><svg class="spark" width="120" height="28" viewBox="0 0 120 28"><polyline points="0.0,25.0 30.0,25.0 60.0,3.0 90.0,25.0 120.0,25.0" fill="none" stroke="var(--green)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/></svg></td>
           <td><span class="b b-g">✓ Within target</span></td>
         </tr></tbody>
     </table>
@@ -182,6 +352,6 @@ svg text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
     (no adjudication-date column exists). No customer PII is included — aggregate counts only.</div>
   </div>
 </div>
-<script>function sw(t){const ids=["change"];ids.forEach((id,i)=>{document.querySelectorAll('.tab')[i].classList.toggle('active',id===t);document.getElementById('view-'+id).classList.toggle('active',id===t);});}</script>
+<script>function sw(t){const ids=["operational", "change"];ids.forEach((id,i)=>{document.querySelectorAll('.tab')[i].classList.toggle('active',id===t);document.getElementById('view-'+id).classList.toggle('active',id===t);});}</script>
 </body>
 </html>
