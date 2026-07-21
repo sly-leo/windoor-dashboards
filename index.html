@@ -87,10 +87,12 @@ svg text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
 <body>
 <div class="hdr">
   <div class="hdr-brand"><div class="hdr-dot"></div>WinDoor Lisboa — Dashboards</div>
-  <div class="hdr-meta">Source: B2C pipeline (Monday) · updated 20 Jul 2026</div>
+  <div class="hdr-meta">Source: B2C pipeline (Monday) · updated 21 Jul 2026</div>
 </div>
 <div class="tabs"><div class="tab active" onclick="sw('operational')">Operacional</div><div class="tab" onclick="sw('change')">Change Management</div></div>
 <div class="view active" id="view-operational">
+  <div class="note note-a"><strong>🚧 RASCUNHO — a rever (PT review pending).</strong></div>
+
   <div class="h1">O que precisa de atenção hoje?</div>
   <div class="sub">Vista operacional diária da Dulce — antiguidade, retificado urgente por comercial, e quebras de SLA. Leitura ao vivo do funil B2C · apenas valores agregados.</div>
 
@@ -99,20 +101,20 @@ svg text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
   <div class="kpis">
     <div class="kpi">
       <div class="kpi-lbl">Enviados em aberto</div>
-      <div class="kpi-val" style="color:var(--text)">76</div>
-      <div class="kpi-sub">Mediana 7d · 40% parados &gt; 7d</div>
+      <div class="kpi-val" style="color:var(--text)">93</div>
+      <div class="kpi-sub">Mediana 8d · 53% parados &gt; 7d</div>
       <span class="kpi-pill nt">Em acompanhamento</span>
     </div>
     <div class="kpi">
       <div class="kpi-lbl">Retificado parado (&gt; 7d)</div>
-      <div class="kpi-val" style="color:var(--red)">14</div>
-      <div class="kpi-sub">€97.679 parados nesta etapa</div>
+      <div class="kpi-val" style="color:var(--red)">12</div>
+      <div class="kpi-sub">€102.471 parados nesta etapa</div>
       <span class="kpi-pill dn">⊗ Ação imediata</span>
     </div>
     <div class="kpi">
       <div class="kpi-lbl">Retificado — valor em aberto</div>
-      <div class="kpi-val" style="color:var(--accent)">€172K</div>
-      <div class="kpi-sub">32 leads — sem trigger automático nesta etapa</div>
+      <div class="kpi-val" style="color:var(--accent)">€136K</div>
+      <div class="kpi-sub">26 leads — sem trigger automático nesta etapa</div>
       <span class="kpi-pill wa">Maior risco de perda</span>
     </div>
     <div class="kpi">
@@ -125,24 +127,24 @@ svg text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
   <div class="row c45">
     <div class="card">
       <div class="ch">Leads em aberto — por antiguidade</div>
-      <div class="cs">Etapas em aberto trabalhadas · 177 com data · desde a última atividade</div>
+      <div class="cs">Etapas em aberto trabalhadas · 191 com data · desde a última atividade</div>
       <div class="bars" style="gap:12px">
         <div class="brow">
           <div class="blbl blbl-w110">0–7 dias</div>
-          <div class="btrack"><div class="bfill" style="width:48%;background:#86EFAC">
-            <span class="bfv" style="color:#14532D">85</span></div></div>
+          <div class="btrack"><div class="bfill" style="width:49%;background:#86EFAC">
+            <span class="bfv" style="color:#14532D">93</span></div></div>
           <div class="bev" style="color:var(--green)">✓ recentes</div>
         </div>
         <div class="brow">
           <div class="blbl blbl-w110">7–14 dias</div>
-          <div class="btrack"><div class="bfill" style="width:37%;background:#93C5FD">
-            <span class="bfv" style="color:#1E3A8A">66</span></div></div>
+          <div class="btrack"><div class="bfill" style="width:36%;background:#93C5FD">
+            <span class="bfv" style="color:#1E3A8A">68</span></div></div>
           <div class="bev" style="color:var(--text-2)">atenção</div>
         </div>
         <div class="brow">
           <div class="blbl blbl-w110">14–30 dias</div>
-          <div class="btrack"><div class="bfill" style="width:12%;background:#FCD34D">
-            <span class="bfv" style="color:#78350F">22</span></div></div>
+          <div class="btrack"><div class="bfill" style="width:14%;background:#FCD34D">
+            <span class="bfv" style="color:#78350F">26</span></div></div>
           <div class="bev" style="color:var(--amber)">⚠ follow-up urgente</div>
         </div>
         <div class="brow">
@@ -153,7 +155,7 @@ svg text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
         </div></div>
       <div class="stat2">
         <div class="stat-box" style="background:#FFF5F5">
-          <div class="stat-val" style="color:var(--red)">15%</div>
+          <div class="stat-val" style="color:var(--red)">16%</div>
           <div class="stat-lbl">há mais de 14 dias</div>
         </div>
         <div class="stat-box" style="background:#FFFBEB">
@@ -164,7 +166,7 @@ svg text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
     </div>
     <div class="card">
       <div class="ch">Retificado em aberto — por comercial</div>
-      <div class="cs">€172.189 identificados · 32 orçamentos · 0 ainda sem valor</div>
+      <div class="cs">€135.946 identificados · 26 orçamentos · 0 ainda sem valor</div>
       <table class="dt">
         <thead><tr>
           <th>Comercial</th><th class="num">Leads</th><th class="num">Valor</th><th class="num">Média</th><th>Estado</th>
@@ -172,29 +174,29 @@ svg text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
         <tbody>
           <tr>
             <td><div style="display:flex;align-items:center;gap:8px">
-              <div class="av" style="width:26px;height:26px;font-size:10px;background:#0891B2">JC</div>
-              Joana C.</div></td>
-            <td class="num">13</td>
-            <td class="num" style="font-weight:600">€59.890</td>
-            <td class="num"><span style="color:var(--green);font-weight:700">4d</span></td>
+              <div class="av" style="width:26px;height:26px;font-size:10px;background:#0891B2">CB</div>
+              Catarina B.</div></td>
+            <td class="num">4</td>
+            <td class="num" style="font-weight:600">€47.568</td>
+            <td class="num"><span style="color:var(--green);font-weight:700">5d</span></td>
             <td><span class="b b-g">✓ na cadência</span></td>
           </tr>
           <tr>
             <td><div style="display:flex;align-items:center;gap:8px">
-              <div class="av" style="width:26px;height:26px;font-size:10px;background:#16A34A">CB</div>
-              Catarina B.</div></td>
-            <td class="num">6</td>
-            <td class="num" style="font-weight:600">€58.757</td>
-            <td class="num"><span style="color:var(--green);font-weight:700">4d</span></td>
+              <div class="av" style="width:26px;height:26px;font-size:10px;background:#16A34A">JC</div>
+              Joana C.</div></td>
+            <td class="num">11</td>
+            <td class="num" style="font-weight:600">€45.415</td>
+            <td class="num"><span style="color:var(--green);font-weight:700">5d</span></td>
             <td><span class="b b-g">✓ na cadência</span></td>
           </tr>
           <tr>
             <td><div style="display:flex;align-items:center;gap:8px">
               <div class="av" style="width:26px;height:26px;font-size:10px;background:#EA580C">PC</div>
               Patrícia C.</div></td>
-            <td class="num">9</td>
-            <td class="num" style="font-weight:600">€47.075</td>
-            <td class="num"><span style="color:var(--amber);font-weight:700">11d</span></td>
+            <td class="num">6</td>
+            <td class="num" style="font-weight:600">€31.992</td>
+            <td class="num"><span style="color:var(--amber);font-weight:700">12d</span></td>
             <td><span class="b b-a">⚠ a acompanhar</span></td>
           </tr>
           <tr>
@@ -202,21 +204,30 @@ svg text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
               <div class="av" style="width:26px;height:26px;font-size:10px;background:#7C3AED">FR</div>
               Filipa R.</div></td>
             <td class="num">3</td>
-            <td class="num" style="font-weight:600">€5.669</td>
-            <td class="num"><span style="color:var(--green);font-weight:700">3d</span></td>
+            <td class="num" style="font-weight:600">€5.591</td>
+            <td class="num"><span style="color:var(--green);font-weight:700">4d</span></td>
             <td><span class="b b-g">✓ na cadência</span></td>
           </tr>
           <tr>
             <td><div style="display:flex;align-items:center;gap:8px">
-              <div class="av" style="width:26px;height:26px;font-size:10px;background:#F59E0B">SB</div>
+              <div class="av" style="width:26px;height:26px;font-size:10px;background:#F59E0B">OS</div>
+              Olga S.</div></td>
+            <td class="num">1</td>
+            <td class="num" style="font-weight:600">€4.582</td>
+            <td class="num"><span style="color:var(--green);font-weight:700">4d</span></td>
+            <td><span class="b b-g">✓ na cadência</span></td>
+          </tr>
+          <tr>
+            <td><div style="display:flex;align-items:center;gap:8px">
+              <div class="av" style="width:26px;height:26px;font-size:10px;background:#DB2777">SB</div>
               Silvana B.</div></td>
             <td class="num">1</td>
             <td class="num" style="font-weight:600">€798</td>
-            <td class="num"><span style="color:var(--red);font-weight:700">53d</span></td>
+            <td class="num"><span style="color:var(--red);font-weight:700">54d</span></td>
             <td><span class="b b-r">⊗ cadência excedida</span></td>
           </tr></tbody>
       </table>
-      <div class="note note-b" style="margin-top:14px">Agrupado por <strong>Orçamentista</strong> — quem preparou o orçamento (um valor único por lead), e não pelo campo Responsável, que pode incluir co-responsáveis de supervisão. Sem o trigger automático de follow-up, este pool volta a envelhecer. Os 0 orçamentos sem valor devem ser corrigidos primeiro — sem valor não entram na segmentação A/B/C. <strong>Nomes reais</strong>: esta é uma página pública (não indexada) — mover para acesso restrito se o desempenho por comercial se tornar sensível.</div>
+      <div class="note note-b" style="margin-top:14px">Leads com vários responsáveis são atribuídos ao primeiro da lista. Sem o trigger automático de follow-up, este pool volta a envelhecer. Os 0 orçamentos sem valor devem ser corrigidos primeiro — sem valor não entram na segmentação A/B/C. <strong>Nomes reais</strong>: esta é uma página pública (não indexada) — mover para acesso restrito se o desempenho por comercial se tornar sensível.</div>
     </div></div>
 
   
@@ -225,15 +236,22 @@ svg text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
       <div class="cs">Contagens agregadas · a fila de trabalho por lead (com cliente) permanece dentro do Monday, não nesta ligação pública</div>
       <table class="dt">
         <thead><tr>
-          <th>Indicador</th><th class="num">Atual</th><th>Tendência</th><th>Estado</th>
+          <th>Indicador</th><th class="num">Atual</th><th>Tendência (8 sem.)</th><th>Estado</th>
         </tr></thead>
         <tbody>
           <tr>
+            <td><div class="mname">Retificado parado (&gt; 7 dias)</div>
+                <div class="csub">Dias desde a última atividade · alvo &lt; 5</div></td>
+            <td class="num" style="font-weight:700">12</td>
+            <td><svg class="spark" width="196" height="76" viewBox="0 0 196 76"><line x1="4" y1="62" x2="188" y2="62" stroke="var(--border)" stroke-width="1"/><line x1="4" y1="46.3" x2="188" y2="46.3" stroke="var(--text-3)" stroke-width="1" stroke-dasharray="3,2"/><text x="188" y="44.3" text-anchor="end" font-size="8" fill="var(--text-3)">&lt;5</text><polyline points="4.0,27.6 27.0,27.6 50.0,15.0 73.0,30.7 96.0,24.4 119.0,18.2 142.0,18.2 165.0,18.2 188.0,24.4" fill="none" stroke="var(--red)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="4.0" cy="27.6" r="1.8" fill="var(--red)"/><circle cx="27.0" cy="27.6" r="1.8" fill="var(--red)"/><circle cx="50.0" cy="15.0" r="1.8" fill="var(--red)"/><circle cx="73.0" cy="30.7" r="1.8" fill="var(--red)"/><circle cx="96.0" cy="24.4" r="1.8" fill="var(--red)"/><circle cx="119.0" cy="18.2" r="1.8" fill="var(--red)"/><circle cx="142.0" cy="18.2" r="1.8" fill="var(--red)"/><circle cx="165.0" cy="18.2" r="1.8" fill="var(--red)"/><circle cx="188.0" cy="24.4" r="1.8" fill="var(--red)"/><text x="4" y="73" font-size="8" fill="var(--text-3)">13/7</text><text x="188" y="73" text-anchor="end" font-size="8" fill="var(--text-3)">21/7</text></svg></td>
+            <td><span class="b b-r">⊗ Ação imediata</span></td>
+          </tr>
+          <tr>
             <td><div class="mname">Medidas OK &gt; 48h (SLA)</div>
-                <div class="csub">Não re-enviados dentro do SLA de 48h · 3 em Medidas OK</div></td>
-            <td class="num" style="font-weight:700">3</td>
-            <td><svg class="spark" width="120" height="28" viewBox="0 0 120 28"><polyline points="0.0,17.7 17.1,17.7 34.3,17.7 51.4,25.0 68.6,25.0 85.7,25.0 102.9,25.0 120.0,3.0" fill="none" stroke="var(--amber)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/></svg></td>
-            <td><span class="b b-a">⚠ Ação</span></td>
+                <div class="csub">Não re-enviados dentro do SLA de 48h · 6 em Medidas OK</div></td>
+            <td class="num" style="font-weight:700">0</td>
+            <td><svg class="spark" width="196" height="76" viewBox="0 0 196 76"><line x1="4" y1="62" x2="188" y2="62" stroke="var(--border)" stroke-width="1"/><line x1="4" y1="38.5" x2="188" y2="38.5" stroke="var(--text-3)" stroke-width="1" stroke-dasharray="3,2"/><text x="188" y="36.5" text-anchor="end" font-size="8" fill="var(--text-3)">&lt;2</text><polyline points="4.0,38.5 27.0,38.5 50.0,38.5 73.0,62.0 96.0,62.0 119.0,62.0 142.0,62.0 165.0,15.0 188.0,62.0" fill="none" stroke="var(--green)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="4.0" cy="38.5" r="1.8" fill="var(--green)"/><circle cx="27.0" cy="38.5" r="1.8" fill="var(--green)"/><circle cx="50.0" cy="38.5" r="1.8" fill="var(--green)"/><circle cx="73.0" cy="62.0" r="1.8" fill="var(--green)"/><circle cx="96.0" cy="62.0" r="1.8" fill="var(--green)"/><circle cx="119.0" cy="62.0" r="1.8" fill="var(--green)"/><circle cx="142.0" cy="62.0" r="1.8" fill="var(--green)"/><circle cx="165.0" cy="15.0" r="1.8" fill="var(--green)"/><circle cx="188.0" cy="62.0" r="1.8" fill="var(--green)"/><text x="4" y="73" font-size="8" fill="var(--text-3)">13/7</text><text x="188" y="73" text-anchor="end" font-size="8" fill="var(--text-3)">21/7</text></svg></td>
+            <td><span class="b b-g">✓ Dentro do alvo</span></td>
           </tr>
           <tr>
             <td><div class="mname">Leads sinalizados (motor de alertas)</div>
@@ -259,35 +277,35 @@ svg text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
     <div class="kpi">
       <div class="kpi-lbl">Real loss reason captured</div>
       <div class="kpi-val" style="color:var(--red)">7%</div>
-      <div class="kpi-sub">122 of 1741 · baseline 4%</div>
+      <div class="kpi-sub">122 of 1751 · baseline 4%</div>
       <span class="kpi-pill dn">⊗ Meta: 100%</span>
     </div>
     <div class="kpi">
       <div class="kpi-lbl">Rectified value filled</div>
       <div class="kpi-val" style="color:var(--green)">100%</div>
-      <div class="kpi-sub">32 of 32 · baseline 57%</div>
+      <div class="kpi-sub">26 of 26 · baseline 57%</div>
       <span class="kpi-pill up">✓ Meta: 100%</span>
     </div>
     <div class="kpi">
       <div class="kpi-lbl">Sent quotes touched in the last 7 days</div>
-      <div class="kpi-val" style="color:var(--red)">60%</div>
-      <div class="kpi-sub">46 of 76 · baseline 10%</div>
+      <div class="kpi-val" style="color:var(--red)">47%</div>
+      <div class="kpi-sub">44 of 93 · baseline 10%</div>
       <span class="kpi-pill dn">⊗ Meta: 90%</span>
     </div>
     <div class="kpi">
       <div class="kpi-lbl">Records stalled &gt; 30 days (open)</div>
       <div class="kpi-val" style="color:var(--green)">4</div>
-      <div class="kpi-sub">4 of 177 open · baseline 305</div>
+      <div class="kpi-sub">4 of 191 open · baseline 305</div>
       <span class="kpi-pill up">✓ Meta: < 10</span>
     </div></div>
 
   <div class="card">
     <div class="ch">Baseline vs current vs target</div>
-    <div class="cs">Live pull from the B2C funnel · Orçamento enviado 76 · Aguardando medidas 66 · Orçamento retificado 32 · Adjudicado 866 · Não adjudicado 1741</div>
+    <div class="cs">Live pull from the B2C funnel · Orçamento enviado 93 · Aguardando medidas 66 · Orçamento retificado 26 · Adjudicado 876 · Não adjudicado 1751</div>
     <table class="dt">
       <thead><tr>
         <th>Metric</th><th class="num">Baseline</th><th class="num">Current</th>
-        <th class="num">Target</th><th>Trend</th><th>Status</th>
+        <th class="num">Target</th><th>Trend (8 wk)</th><th>Status</th>
       </tr></thead>
       <tbody>
         <tr>
@@ -296,7 +314,7 @@ svg text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
           <td class="num">4%</td>
           <td class="num" style="font-weight:700">7%</td>
           <td class="num" style="color:var(--text-3)">100%</td>
-          <td><svg class="spark" width="120" height="28" viewBox="0 0 120 28"><polyline points="0.0,25.0 12.0,25.0 24.0,25.0 36.0,3.0 48.0,3.0 60.0,3.0 72.0,3.0 84.0,3.8 96.0,3.8 108.0,3.8 120.0,3.8" fill="none" stroke="var(--red)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/></svg></td>
+          <td><svg class="spark" width="196" height="76" viewBox="0 0 196 76"><line x1="4" y1="62" x2="188" y2="62" stroke="var(--border)" stroke-width="1"/><line x1="4" y1="8.0" x2="188" y2="8.0" stroke="var(--text-3)" stroke-width="1" stroke-dasharray="3,2"/><text x="188" y="6.0" text-anchor="end" font-size="8" fill="var(--text-3)">100%</text><polyline points="4.0,59.8 139.2,59.8 146.7,59.7 150.4,59.7 154.2,59.7 158.0,58.2 161.7,58.2 165.5,58.2 169.2,58.2 173.0,58.2 176.7,58.2 180.5,58.2 184.2,58.2 188.0,58.2" fill="none" stroke="var(--red)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="4.0" cy="59.8" r="3" fill="var(--surface)" stroke="var(--amber)" stroke-width="1.5"/><circle cx="139.2" cy="59.8" r="3" fill="var(--surface)" stroke="var(--amber)" stroke-width="1.5"/><circle cx="146.7" cy="59.7" r="1.8" fill="var(--red)"/><circle cx="150.4" cy="59.7" r="1.8" fill="var(--red)"/><circle cx="154.2" cy="59.7" r="1.8" fill="var(--red)"/><circle cx="158.0" cy="58.2" r="1.8" fill="var(--red)"/><circle cx="161.7" cy="58.2" r="1.8" fill="var(--red)"/><circle cx="165.5" cy="58.2" r="1.8" fill="var(--red)"/><circle cx="169.2" cy="58.2" r="1.8" fill="var(--red)"/><circle cx="173.0" cy="58.2" r="1.8" fill="var(--red)"/><circle cx="176.7" cy="58.2" r="1.8" fill="var(--red)"/><circle cx="180.5" cy="58.2" r="1.8" fill="var(--red)"/><circle cx="184.2" cy="58.2" r="1.8" fill="var(--red)"/><circle cx="188.0" cy="58.2" r="1.8" fill="var(--red)"/><text x="4" y="73" font-size="8" fill="var(--text-3)">2/6</text><text x="188" y="73" text-anchor="end" font-size="8" fill="var(--text-3)">21/7</text></svg></td>
           <td><span class="b b-r">⊗ Off target</span></td>
         </tr>
         <tr>
@@ -305,7 +323,7 @@ svg text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
           <td class="num">57%</td>
           <td class="num" style="font-weight:700">100%</td>
           <td class="num" style="color:var(--text-3)">100%</td>
-          <td><svg class="spark" width="120" height="28" viewBox="0 0 120 28"><polyline points="0.0,24.6 12.0,25.0 24.0,25.0 36.0,13.6 48.0,3.0 60.0,3.0 72.0,17.7 84.0,3.0 96.0,3.0 108.0,3.0 120.0,3.0" fill="none" stroke="var(--green)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/></svg></td>
+          <td><svg class="spark" width="196" height="76" viewBox="0 0 196 76"><line x1="4" y1="62" x2="188" y2="62" stroke="var(--border)" stroke-width="1"/><line x1="4" y1="8.0" x2="188" y2="8.0" stroke="var(--text-3)" stroke-width="1" stroke-dasharray="3,2"/><text x="188" y="6.0" text-anchor="end" font-size="8" fill="var(--text-3)">100%</text><polyline points="4.0,31.2 139.2,19.3 146.7,10.9 150.4,10.9 154.2,10.9 158.0,9.4 161.7,8.0 165.5,8.0 169.2,9.9 173.0,8.0 176.7,8.0 180.5,8.0 184.2,8.0 188.0,8.0" fill="none" stroke="var(--green)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="4.0" cy="31.2" r="3" fill="var(--surface)" stroke="var(--amber)" stroke-width="1.5"/><circle cx="139.2" cy="19.3" r="3" fill="var(--surface)" stroke="var(--amber)" stroke-width="1.5"/><circle cx="146.7" cy="10.9" r="1.8" fill="var(--green)"/><circle cx="150.4" cy="10.9" r="1.8" fill="var(--green)"/><circle cx="154.2" cy="10.9" r="1.8" fill="var(--green)"/><circle cx="158.0" cy="9.4" r="1.8" fill="var(--green)"/><circle cx="161.7" cy="8.0" r="1.8" fill="var(--green)"/><circle cx="165.5" cy="8.0" r="1.8" fill="var(--green)"/><circle cx="169.2" cy="9.9" r="1.8" fill="var(--green)"/><circle cx="173.0" cy="8.0" r="1.8" fill="var(--green)"/><circle cx="176.7" cy="8.0" r="1.8" fill="var(--green)"/><circle cx="180.5" cy="8.0" r="1.8" fill="var(--green)"/><circle cx="184.2" cy="8.0" r="1.8" fill="var(--green)"/><circle cx="188.0" cy="8.0" r="1.8" fill="var(--green)"/><text x="4" y="73" font-size="8" fill="var(--text-3)">2/6</text><text x="188" y="73" text-anchor="end" font-size="8" fill="var(--text-3)">21/7</text></svg></td>
           <td><span class="b b-g">✓ On target</span></td>
         </tr>
         <tr>
@@ -314,16 +332,16 @@ svg text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
           <td class="num">0%</td>
           <td class="num" style="font-weight:700">—</td>
           <td class="num" style="color:var(--text-3)">100%</td>
-          <td><svg class="spark" width="120" height="28" viewBox="0 0 120 28"><polyline points="0.0,25.0 12.0,25.0 24.0,25.0 36.0,25.0 48.0,25.0 60.0,25.0 72.0,25.0 84.0,25.0 96.0,25.0 108.0,25.0 120.0,25.0" fill="none" stroke="var(--text)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/></svg></td>
+          <td><span style="font-size:10px;color:var(--text-3)">projected</span></td>
           <td><span class="b b-x">· Not built yet</span></td>
         </tr>
         <tr>
           <td><div class="mname">Sent quotes touched in the last 7 days</div>
               <div class="csub">Source: Última modificação on quotes in &quot;Orçamento enviado&quot;</div><div class="csub">Activity proxied by Última modificação (no adjudication-date column exists).</div></td>
           <td class="num">10%</td>
-          <td class="num" style="font-weight:700">60%</td>
+          <td class="num" style="font-weight:700">47%</td>
           <td class="num" style="color:var(--text-3)">90%</td>
-          <td><svg class="spark" width="120" height="28" viewBox="0 0 120 28"><polyline points="0.0,23.3 12.0,23.6 24.0,23.6 36.0,3.0 48.0,23.1 60.0,23.8 72.0,20.7 84.0,21.2 96.0,25.0 108.0,25.0 120.0,25.0" fill="none" stroke="var(--red)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/></svg></td>
+          <td><svg class="spark" width="196" height="76" viewBox="0 0 196 76"><line x1="4" y1="62" x2="188" y2="62" stroke="var(--border)" stroke-width="1"/><line x1="4" y1="13.4" x2="188" y2="13.4" stroke="var(--text-3)" stroke-width="1" stroke-dasharray="3,2"/><text x="188" y="11.4" text-anchor="end" font-size="8" fill="var(--text-3)">90%</text><polyline points="4.0,56.8 139.2,17.2 146.7,28.4 150.4,28.5 154.2,28.5 158.0,16.7 161.7,28.2 165.5,28.6 169.2,26.8 173.0,27.2 176.7,29.3 180.5,29.3 184.2,29.3 188.0,36.5" fill="none" stroke="var(--red)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="4.0" cy="56.8" r="3" fill="var(--surface)" stroke="var(--amber)" stroke-width="1.5"/><circle cx="139.2" cy="17.2" r="3" fill="var(--surface)" stroke="var(--amber)" stroke-width="1.5"/><circle cx="146.7" cy="28.4" r="1.8" fill="var(--red)"/><circle cx="150.4" cy="28.5" r="1.8" fill="var(--red)"/><circle cx="154.2" cy="28.5" r="1.8" fill="var(--red)"/><circle cx="158.0" cy="16.7" r="1.8" fill="var(--red)"/><circle cx="161.7" cy="28.2" r="1.8" fill="var(--red)"/><circle cx="165.5" cy="28.6" r="1.8" fill="var(--red)"/><circle cx="169.2" cy="26.8" r="1.8" fill="var(--red)"/><circle cx="173.0" cy="27.2" r="1.8" fill="var(--red)"/><circle cx="176.7" cy="29.3" r="1.8" fill="var(--red)"/><circle cx="180.5" cy="29.3" r="1.8" fill="var(--red)"/><circle cx="184.2" cy="29.3" r="1.8" fill="var(--red)"/><circle cx="188.0" cy="36.5" r="1.8" fill="var(--red)"/><text x="4" y="73" font-size="8" fill="var(--text-3)">2/6</text><text x="188" y="73" text-anchor="end" font-size="8" fill="var(--text-3)">21/7</text></svg></td>
           <td><span class="b b-r">⊗ Off target</span></td>
         </tr>
         <tr>
@@ -332,13 +350,18 @@ svg text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
           <td class="num">305</td>
           <td class="num" style="font-weight:700">4</td>
           <td class="num" style="color:var(--text-3)">&lt; 10</td>
-          <td><svg class="spark" width="120" height="28" viewBox="0 0 120 28"><polyline points="0.0,14.0 12.0,14.0 24.0,3.0 36.0,14.0 48.0,25.0 60.0,25.0 72.0,25.0 84.0,25.0 96.0,25.0 108.0,14.0 120.0,14.0" fill="none" stroke="var(--green)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/></svg></td>
+          <td><svg class="spark" width="196" height="76" viewBox="0 0 196 76"><line x1="4" y1="62" x2="188" y2="62" stroke="var(--border)" stroke-width="1"/><line x1="4" y1="60.5" x2="188" y2="60.5" stroke="var(--text-3)" stroke-width="1" stroke-dasharray="3,2"/><text x="188" y="58.5" text-anchor="end" font-size="8" fill="var(--text-3)">&lt;10</text><polyline points="4.0,15.0 139.2,60.8 146.7,61.4 150.4,61.4 154.2,61.2 158.0,61.4 161.7,61.5 165.5,61.5 169.2,61.5 173.0,61.5 176.7,61.5 180.5,61.4 184.2,61.4 188.0,61.4" fill="none" stroke="var(--green)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="4.0" cy="15.0" r="3" fill="var(--surface)" stroke="var(--amber)" stroke-width="1.5"/><circle cx="139.2" cy="60.8" r="3" fill="var(--surface)" stroke="var(--amber)" stroke-width="1.5"/><circle cx="146.7" cy="61.4" r="1.8" fill="var(--green)"/><circle cx="150.4" cy="61.4" r="1.8" fill="var(--green)"/><circle cx="154.2" cy="61.2" r="1.8" fill="var(--green)"/><circle cx="158.0" cy="61.4" r="1.8" fill="var(--green)"/><circle cx="161.7" cy="61.5" r="1.8" fill="var(--green)"/><circle cx="165.5" cy="61.5" r="1.8" fill="var(--green)"/><circle cx="169.2" cy="61.5" r="1.8" fill="var(--green)"/><circle cx="173.0" cy="61.5" r="1.8" fill="var(--green)"/><circle cx="176.7" cy="61.5" r="1.8" fill="var(--green)"/><circle cx="180.5" cy="61.4" r="1.8" fill="var(--green)"/><circle cx="184.2" cy="61.4" r="1.8" fill="var(--green)"/><circle cx="188.0" cy="61.4" r="1.8" fill="var(--green)"/><text x="4" y="73" font-size="8" fill="var(--text-3)">2/6</text><text x="188" y="73" text-anchor="end" font-size="8" fill="var(--text-3)">21/7</text></svg></td>
           <td><span class="b b-g">✓ Within target</span></td>
         </tr></tbody>
     </table>
     <div class="foot">Provenance: computed read-only from Monday board 10018007898.
     "Escolha"/blank loss reasons count as unfilled. Activity is proxied by Última modificação
-    (no adjudication-date column exists). No customer PII is included — aggregate counts only.</div>
+    (no adjudication-date column exists). No customer PII is included — aggregate counts only.
+    <br>Trend: daily points over 8 weeks. The two <span style="color:var(--amber)">◦ hollow markers</span>
+    (02 Jun, 08 Jul) are seeded snapshots — for "touched in 7 days" and "stalled" these straddle the
+    DQ-S6 timestamp reset and are partly artefactual, so read the step-change with care; the "stalled"
+    02 Jun baseline (305 of 529 open) is also a wider population than today's count.
+    The "value filled" 02 Jun baseline (57%) is <strong>unverified</strong> — no source snapshot exists.</div>
   </div>
 </div>
 <script>function sw(t){const ids=["operational", "change"];ids.forEach((id,i)=>{document.querySelectorAll('.tab')[i].classList.toggle('active',id===t);document.getElementById('view-'+id).classList.toggle('active',id===t);});}</script>
