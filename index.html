@@ -87,203 +87,385 @@ svg text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
 <body>
 <div class="hdr">
   <div class="hdr-brand"><div class="hdr-dot"></div>WinDoor Lisboa — Dashboards</div>
-  <div class="hdr-meta">Source: B2C pipeline (Monday) · updated 16 Aug 2026</div>
+  <div class="hdr-meta">Source: B2C pipeline (Monday) — split across two boards · updated 16 Aug 2026</div>
 </div>
-<div class="tabs"><div class="tab active" onclick="sw('operational')">Operacional</div><div class="tab" onclick="sw('change')">Change Management</div></div>
-<div class="view active" id="view-operational">
-  <div class="note note-a"><strong>🚧 RASCUNHO — a rever (PT review pending).</strong></div>
+<div class="tabs"><div class="tab active" onclick="sw('executive')">Executive</div><div class="tab" onclick="sw('operational')">Operational</div><div class="tab" onclick="sw('change')">Change Management</div></div>
+<div class="view active" id="view-executive">
+  <div class="h1">Is the funnel healthy, and where is the leak?</div>
+  <div class="sub">What is in the funnel, what it is worth, and what is waiting to enter it. Aggregate figures only.</div>
 
-  <div class="h1">O que precisa de atenção hoje?</div>
-  <div class="sub">Vista operacional diária da Dulce — antiguidade, retificado urgente por comercial, e quebras de SLA. Leitura ao vivo do funil B2C · apenas valores agregados.</div>
+  <div class="note note-a"><strong>The funnel is split across two boards.</strong> The team works on the new board. New leads still land on the old one. So the pipeline here is read from the new board, the untriaged backlog from the old. Neither board alone is the full funnel.</div>
 
-  <div class="note note-b"><strong>Vista operacional.</strong> Antiguidade e atividade aproximadas pela <em>Última modificação</em> (não existe coluna de adjudicação). A limpeza pontual do board (08 Jul) repôs alguns carimbos de data, pelo que a antiguidade pode parecer mais recente do que o esforço de follow-up real. O € do retificado está subestimado enquanto alguns orçamentos não têm valor. O motor de alertas ainda não está construído.</div>
+  <div class="note note-b"><strong>This page shows levels, not direction.</strong> The pipeline moved boards on 14 Aug, so there is almost no history yet. Trend and conversion are listed at the bottom, with the date each becomes readable.</div>
 
   <div class="kpis">
     <div class="kpi">
-      <div class="kpi-lbl">Enviados em aberto</div>
-      <div class="kpi-val" style="color:var(--text)">104</div>
-      <div class="kpi-sub">Mediana 11d · 75% parados &gt; 7d</div>
-      <span class="kpi-pill nt">Em acompanhamento</span>
+      <div class="kpi-lbl">Open pipeline value</div>
+      <div class="kpi-val" style="color:var(--text)">€629K</div>
+      <div class="kpi-sub">204 quotes · 194 carry a value</div>
+      <span class="kpi-pill nt">Live from Novo</span>
     </div>
     <div class="kpi">
-      <div class="kpi-lbl">Retificado parado (&gt; 7d)</div>
-      <div class="kpi-val" style="color:var(--red)">28</div>
-      <div class="kpi-sub">€96.950 parados nesta etapa</div>
-      <span class="kpi-pill dn">⊗ Ação imediata</span>
+      <div class="kpi-lbl">Open quotes</div>
+      <div class="kpi-val" style="color:var(--text)">204</div>
+      <div class="kpi-sub">Sent → measured → rectified</div>
+      <span class="kpi-pill nt">Worked pipeline</span>
     </div>
     <div class="kpi">
-      <div class="kpi-lbl">Retificado — valor em aberto</div>
-      <div class="kpi-val" style="color:var(--accent)">€135K</div>
-      <div class="kpi-sub">44 leads — sem trigger automático nesta etapa</div>
-      <span class="kpi-pill wa">Maior risco de perda</span>
+      <div class="kpi-lbl">A-tier value</div>
+      <div class="kpi-val" style="color:var(--accent)">€190K</div>
+      <div class="kpi-sub">20 leads at A — the pool worth chasing first</div>
+      <span class="kpi-pill wa">Priority</span>
     </div>
     <div class="kpi">
-      <div class="kpi-lbl">Valores em falta (retificado)</div>
+      <div class="kpi-lbl">Raw-request backlog</div>
+      <div class="kpi-val" style="color:var(--red)">492</div>
+      <div class="kpi-sub">73% older than 30 days · legacy board</div>
+      <span class="kpi-pill dn">⊗ Untriaged</span>
+    </div></div>
+
+  <div class="row c2">
+    <div class="card">
+      <div class="ch">Open pipeline by stage</div>
+      <div class="cs">€629,105 across 204 open quotes · B2C &quot;Novo&quot;</div>
+      <div class="bars" style="gap:12px">
+        <div class="brow">
+          <div class="blbl blbl-w110">Orçamento enviado</div>
+          <div class="btrack"><div class="bfill" style="width:100%;background:#93C5FD">
+            <span class="bfv" style="color:#1E3A8A">€249K</span></div></div>
+          <div class="bev" style="color:var(--text-3)">100 leads · 3 without a value</div>
+        </div>
+        <div class="brow">
+          <div class="blbl blbl-w110">Aguardando medidas</div>
+          <div class="btrack"><div class="bfill" style="width:89%;background:#93C5FD">
+            <span class="bfv" style="color:#1E3A8A">€223K</span></div></div>
+          <div class="bev" style="color:var(--text-3)">58 leads · 6 without a value</div>
+        </div>
+        <div class="brow">
+          <div class="blbl blbl-w110">Medidas OK</div>
+          <div class="btrack"><div class="bfill" style="width:6%;background:#93C5FD">
+            <span class="bfv" style="color:#1E3A8A">€15K</span></div></div>
+          <div class="bev" style="color:var(--text-3)">2 leads · 1 without a value</div>
+        </div>
+        <div class="brow">
+          <div class="blbl blbl-w110">Orçamento retificado</div>
+          <div class="btrack"><div class="bfill" style="width:58%;background:#93C5FD">
+            <span class="bfv" style="color:#1E3A8A">€143K</span></div></div>
+          <div class="bev" style="color:var(--text-3)">44 leads</div>
+        </div></div>
+      <div class="foot">Value is <strong>Valor retificado where it exists, otherwise Valor
+      inicial</strong> — a mixed measure. Rectified value is filled on 24% of quotes and initial
+      value on 91%, so without the fallback there is no pipeline total at all. Quotes carrying
+      neither contribute leads but no €, which understates the total.</div>
+    </div>
+    <div class="card">
+      <div class="ch">Open pipeline by tier</div>
+      <div class="cs">A ≥ €4,500 · B €1,500–€4,500 · C &lt; €1,500 — thresholds set 13 Jul</div>
+      <div class="bars" style="gap:12px">
+        <div class="brow">
+          <div class="blbl blbl-w110">A — high priority</div>
+          <div class="btrack"><div class="bfill" style="width:10%;background:var(--red)">
+            <span class="bfv" style="color:#FFFFFF">20</span></div></div>
+          <div class="bev" style="color:var(--text-3)">€190K</div>
+        </div>
+        <div class="brow">
+          <div class="blbl blbl-w110">B — standard</div>
+          <div class="btrack"><div class="bfill" style="width:55%;background:#93C5FD">
+            <span class="bfv" style="color:#1E3A8A">113</span></div></div>
+          <div class="bev" style="color:var(--text-3)">€386K</div>
+        </div>
+        <div class="brow">
+          <div class="blbl blbl-w110">C — volume</div>
+          <div class="btrack"><div class="bfill" style="width:33%;background:#CBD5E1">
+            <span class="bfv" style="color:#334155">68</span></div></div>
+          <div class="bev" style="color:var(--text-3)">€53K</div>
+        </div>
+        <div class="brow">
+          <div class="blbl blbl-w110">Unassigned</div>
+          <div class="btrack"><div class="bfill" style="width:4%;background:#E2E8F0">
+            <span class="bfv" style="color:#475569">3</span></div></div>
+          <div class="bev" style="color:var(--text-3)">€0K</div>
+        </div></div>
+      <div class="stat2">
+        <div class="stat-box" style="background:#FFF5F5">
+          <div class="stat-val" style="color:var(--red)">10%</div>
+          <div class="stat-lbl">of open leads are A-tier</div>
+        </div>
+        <div class="stat-box" style="background:#EFF6FF">
+          <div class="stat-val" style="color:var(--accent)">€190K</div>
+          <div class="stat-lbl">A-tier value</div>
+        </div>
+      </div>
+    </div></div>
+
+  
+    <div class="card">
+      <div class="ch">Raw-request backlog — requests that never became a quote</div>
+      <div class="cs">492 at <em>Pedido de orçamento</em> · 492 with an added date · legacy board 10018007898</div>
+      <div class="bars" style="gap:12px">
+        <div class="brow">
+          <div class="blbl blbl-w110">0–30 days</div>
+          <div class="btrack"><div class="bfill" style="width:27%;background:#86EFAC">
+            <span class="bfv" style="color:#14532D">131</span></div></div>
+          <div class="bev" style="color:var(--text-3)">27%</div>
+        </div>
+        <div class="brow">
+          <div class="blbl blbl-w110">30–90 days</div>
+          <div class="btrack"><div class="bfill" style="width:20%;background:#FCD34D">
+            <span class="bfv" style="color:#78350F">96</span></div></div>
+          <div class="bev" style="color:var(--text-3)">20%</div>
+        </div>
+        <div class="brow">
+          <div class="blbl blbl-w110">90–180 days</div>
+          <div class="btrack"><div class="bfill" style="width:31%;background:#FB923C">
+            <span class="bfv" style="color:#7C2D12">153</span></div></div>
+          <div class="bev" style="color:var(--text-3)">31%</div>
+        </div>
+        <div class="brow">
+          <div class="blbl blbl-w110">180d+</div>
+          <div class="btrack"><div class="bfill" style="width:23%;background:var(--red)">
+            <span class="bfv" style="color:#FFFFFF">112</span></div></div>
+          <div class="bev" style="color:var(--text-3)">23%</div>
+        </div></div>
+      <div class="note note-a" style="margin-top:14px"><strong>This pool sits on the board the team has stopped working.</strong> New leads from the website form, the Meta campaign and the chatbot still arrive here, not on Novo, so the backlog grows while nobody is watching it. It needs a named owner for daily triage until lead intake is repointed — that fix is upstream of this dashboard.</div>
+    </div>
+
+  
+    <div class="card">
+      <div class="ch">Not on this page yet — and why</div>
+      <div class="cs">Three of the five executive KPIs measure movement over time. The pipeline moved boards on 14 Aug, so that history restarts.</div>
+      <table class="dt">
+        <thead><tr><th>KPI</th><th>When it becomes real</th><th>Status</th></tr></thead>
+        <tbody>
+        <tr>
+          <td><div class="mname">Conversion: quote → measurement → close</div>
+              <div class="csub">Novo holds 13 closed deals (5 won, 8 lost) since the 14 Aug cutover. A rate over that population would swing double digits on a single deal.</div></td>
+          <td>When Novo&#x27;s closed population is large enough to be stable — a few weeks of normal trading.</td>
+          <td><span class="b b-x">· Not yet</span></td>
+        </tr>
+        <tr>
+          <td><div class="mname">Monthly trend: quotes in / won / lost</div>
+              <div class="csub">The worked pipeline moved boards on 14 Aug and lead intake did not, so no single board holds a full month. Novo&#x27;s own history starts 17 Aug 2026.</div></td>
+          <td>Direction becomes readable once several weeks of daily snapshots have accumulated on Novo — roughly early September.</td>
+          <td><span class="b b-x">· Not yet</span></td>
+        </tr>
+        <tr>
+          <td><div class="mname">Loss-reason breakdown</div>
+              <div class="csub">96% of lost deals carry &quot;Escolha&quot;, a placeholder rather than a reason. A breakdown of it would be a chart of one bar.</div></td>
+          <td>When real reasons are being recorded — tracked as the headline metric on the Change Management tab.</td>
+          <td><span class="b b-x">· Not yet</span></td>
+        </tr></tbody>
+      </table>
+      <div class="foot">Closed on Novo since the cutover: <strong>5 won,
+      8 lost</strong>. Shown as context only — deliberately not turned into a
+      conversion rate or a win rate at this size.</div>
+    </div>
+
+  <div class="foot">Provenance: computed read-only from Monday boards 18420441925
+  (B2C &quot;Novo&quot;, 218 items — pipeline, value and tier) and
+  10018007898 (B2C (legacy), 3582 items —
+  raw-request backlog only). The two populations do not overlap: the backlog is taken solely from
+  <em>Pedido de orçamento</em>, a stage the worked pipeline has left, so nothing is counted twice.
+  No customer PII — aggregate counts only. Check € figures against the data quality register
+  (DAT - CRM Data Quality Register) before quoting.</div>
+</div><div class="view" id="view-operational">
+  <div class="h1">What needs attention today?</div>
+  <div class="sub">Aging, urgent rectified value by salesperson, and SLA breaches. Live read of the worked pipeline · aggregate figures only.</div>
+
+  <div class="note note-a"><strong>The funnel is split across two boards.</strong> The team works on the new board. New leads still land on the old one. So the pipeline here is read from the new board, the untriaged backlog from the old. Neither board alone is the full funnel.</div>
+
+  <div class="note note-b"><strong>How to read this.</strong> Aging counts days since <em>Último contacto</em> — a real contact. Until 17 Aug 2026 it counted any row edit, so older trend points are not comparable. Rectified € is understated: some quotes carry no value. The alert engine is not built yet.</div>
+
+  <div class="kpis">
+    <div class="kpi">
+      <div class="kpi-lbl">Sent quotes open</div>
+      <div class="kpi-val" style="color:var(--text)">100</div>
+      <div class="kpi-sub">Median 11d · 71% stalled &gt; 7d</div>
+      <span class="kpi-pill nt">Being followed up</span>
+    </div>
+    <div class="kpi">
+      <div class="kpi-lbl">Rectified stalled (&gt; 7d)</div>
+      <div class="kpi-val" style="color:var(--red)">18</div>
+      <div class="kpi-sub">€58,200 stalled at this stage</div>
+      <span class="kpi-pill dn">⊗ Act now</span>
+    </div>
+    <div class="kpi">
+      <div class="kpi-lbl">Rectified — open value</div>
+      <div class="kpi-val" style="color:var(--accent)">€143K</div>
+      <div class="kpi-sub">44 leads — no automatic trigger at this stage</div>
+      <span class="kpi-pill wa">Highest loss risk</span>
+    </div>
+    <div class="kpi">
+      <div class="kpi-lbl">Missing values (rectified)</div>
       <div class="kpi-val" style="color:var(--green)">0</div>
-      <div class="kpi-sub">Orç. retificado sem valor registado</div>
-      <span class="kpi-pill up">✓ Corrigir primeiro</span>
+      <div class="kpi-sub">Rectified quotes with no value recorded</div>
+      <span class="kpi-pill up">✓ Fix first</span>
     </div></div>
 
   <div class="row c45">
     <div class="card">
-      <div class="ch">Leads em aberto — por antiguidade</div>
-      <div class="cs">Etapas em aberto trabalhadas · 209 com data · desde a última atividade</div>
+      <div class="ch">Open leads — by age</div>
+      <div class="cs">Open worked stages · 200 with a date · since last contact</div>
       <div class="bars" style="gap:12px">
         <div class="brow">
-          <div class="blbl blbl-w110">0–7 dias</div>
-          <div class="btrack"><div class="bfill" style="width:39%;background:#86EFAC">
-            <span class="bfv" style="color:#14532D">82</span></div></div>
-          <div class="bev" style="color:var(--green)">✓ recentes</div>
+          <div class="blbl blbl-w110">0–7 days</div>
+          <div class="btrack"><div class="bfill" style="width:45%;background:#86EFAC">
+            <span class="bfv" style="color:#14532D">90</span></div></div>
+          <div class="bev" style="color:var(--green)">✓ recent</div>
         </div>
         <div class="brow">
-          <div class="blbl blbl-w110">7–14 dias</div>
-          <div class="btrack"><div class="bfill" style="width:52%;background:#93C5FD">
-            <span class="bfv" style="color:#1E3A8A">108</span></div></div>
-          <div class="bev" style="color:var(--text-2)">atenção</div>
+          <div class="blbl blbl-w110">7–14 days</div>
+          <div class="btrack"><div class="bfill" style="width:47%;background:#93C5FD">
+            <span class="bfv" style="color:#1E3A8A">94</span></div></div>
+          <div class="bev" style="color:var(--text-2)">watch</div>
         </div>
         <div class="brow">
-          <div class="blbl blbl-w110">14–30 dias</div>
-          <div class="btrack"><div class="bfill" style="width:7%;background:#FCD34D">
-            <span class="bfv" style="color:#78350F">15</span></div></div>
-          <div class="bev" style="color:var(--amber)">⚠ follow-up urgente</div>
+          <div class="blbl blbl-w110">14–30 days</div>
+          <div class="btrack"><div class="bfill" style="width:6%;background:#FCD34D">
+            <span class="bfv" style="color:#78350F">13</span></div></div>
+          <div class="bev" style="color:var(--amber)">⚠ follow up urgently</div>
         </div>
         <div class="brow">
           <div class="blbl blbl-w110">30d+</div>
           <div class="btrack"><div class="bfill" style="width:2%;background:var(--red)">
-            <span class="bfv" style="color:#FFFFFF">4</span></div></div>
-          <div class="bev" style="color:var(--red)">⊗ estagnados</div>
+            <span class="bfv" style="color:#FFFFFF">3</span></div></div>
+          <div class="bev" style="color:var(--red)">⊗ stalled</div>
         </div></div>
       <div class="stat2">
         <div class="stat-box" style="background:#FFF5F5">
-          <div class="stat-val" style="color:var(--red)">9%</div>
-          <div class="stat-lbl">há mais de 14 dias</div>
+          <div class="stat-val" style="color:var(--red)">8%</div>
+          <div class="stat-lbl">older than 14 days</div>
         </div>
         <div class="stat-box" style="background:#FFFBEB">
-          <div class="stat-val" style="color:var(--amber)">10d</div>
-          <div class="stat-lbl">mediana do retificado</div>
+          <div class="stat-val" style="color:var(--amber)">6d</div>
+          <div class="stat-lbl">rectified median</div>
         </div>
       </div>
     </div>
     <div class="card">
-      <div class="ch">Retificado em aberto — por comercial</div>
-      <div class="cs">€135.114 identificados · 44 orçamentos · 0 ainda sem valor</div>
+      <div class="ch">Rectified open — by salesperson</div>
+      <div class="cs">€143,151 identified · 44 quotes · 0 still without a value</div>
       <table class="dt">
         <thead><tr>
-          <th>Comercial</th><th class="num">Leads</th><th class="num">Valor</th><th class="num">Média</th><th>Estado</th>
+          <th>Salesperson</th><th class="num">Leads</th><th class="num">Value</th><th class="num">Median</th><th>State</th>
         </tr></thead>
         <tbody>
           <tr>
             <td><div style="display:flex;align-items:center;gap:8px">
               <div class="av" style="width:26px;height:26px;font-size:10px;background:#0891B2">JC</div>
               Joana C.</div></td>
-            <td class="num">22</td>
-            <td class="num" style="font-weight:600">€63.809</td>
-            <td class="num"><span style="color:var(--amber);font-weight:700">10d</span></td>
-            <td><span class="b b-a">⚠ a acompanhar</span></td>
+            <td class="num">23</td>
+            <td class="num" style="font-weight:600">€72,951</td>
+            <td class="num"><span style="color:var(--amber);font-weight:700">9d</span></td>
+            <td><span class="b b-a">⚠ watch</span></td>
           </tr>
           <tr>
             <td><div style="display:flex;align-items:center;gap:8px">
               <div class="av" style="width:26px;height:26px;font-size:10px;background:#16A34A">FR</div>
               Filipa R.</div></td>
-            <td class="num">12</td>
-            <td class="num" style="font-weight:600">€33.726</td>
-            <td class="num"><span style="color:var(--amber);font-weight:700">8d</span></td>
-            <td><span class="b b-a">⚠ a acompanhar</span></td>
+            <td class="num">13</td>
+            <td class="num" style="font-weight:600">€38,497</td>
+            <td class="num"><span style="color:var(--green);font-weight:700">3d</span></td>
+            <td><span class="b b-g">✓ on cadence</span></td>
           </tr>
           <tr>
             <td><div style="display:flex;align-items:center;gap:8px">
               <div class="av" style="width:26px;height:26px;font-size:10px;background:#EA580C">CB</div>
               Catarina B.</div></td>
-            <td class="num">6</td>
-            <td class="num" style="font-weight:600">€20.778</td>
-            <td class="num"><span style="color:var(--red);font-weight:700">18d</span></td>
-            <td><span class="b b-r">⊗ cadência excedida</span></td>
+            <td class="num">7</td>
+            <td class="num" style="font-weight:600">€28,870</td>
+            <td class="num"><span style="color:var(--amber);font-weight:700">13d</span></td>
+            <td><span class="b b-a">⚠ watch</span></td>
           </tr>
           <tr>
             <td><div style="display:flex;align-items:center;gap:8px">
               <div class="av" style="width:26px;height:26px;font-size:10px;background:#7C3AED">PC</div>
               Patrícia C.</div></td>
-            <td class="num">4</td>
-            <td class="num" style="font-weight:600">€16.801</td>
-            <td class="num"><span style="color:var(--amber);font-weight:700">13d</span></td>
-            <td><span class="b b-a">⚠ a acompanhar</span></td>
+            <td class="num">1</td>
+            <td class="num" style="font-weight:600">€2,833</td>
+            <td class="num"><span style="color:var(--green);font-weight:700">2d</span></td>
+            <td><span class="b b-g">✓ on cadence</span></td>
           </tr></tbody>
       </table>
-      <div class="note note-b" style="margin-top:14px">Atribuído por <strong>Orçamentista</strong> (autor do orçamento), não por Responsável — a Olga é adicionada automaticamente como responsável e não representa o comercial do lead. Sem o trigger automático de follow-up, este pool volta a envelhecer. Os 0 orçamentos sem valor devem ser corrigidos primeiro — sem valor não entram na segmentação A/B/C. <strong>Nomes reais</strong>: esta é uma página pública (não indexada) — mover para acesso restrito se o desempenho por comercial se tornar sensível.</div>
+      <div class="note note-b" style="margin-top:14px">Attributed by <strong>Orçamentista</strong> (quote author), not by Responsável — Olga is auto-added as responsible and does not represent the lead's salesperson. Without the automatic follow-up trigger, this pool ages again. The 0 quotes with no value should be fixed first — without a value they do not enter A/B/C segmentation. <strong>Real names</strong>: this is a public (unindexed) page — move to restricted access if per-rep performance becomes sensitive.</div>
     </div></div>
 
   
     <div class="card">
-      <div class="ch">SLA e alertas — estado</div>
-      <div class="cs">Contagens agregadas · a fila de trabalho por lead (com cliente) permanece dentro do Monday, não nesta ligação pública</div>
+      <div class="ch">SLA and alerts — status</div>
+      <div class="cs">Aggregate counts · the per-lead work queue (with customer) stays inside Monday, not on this public link</div>
       <table class="dt">
         <thead><tr>
-          <th>Indicador</th><th class="num">Atual</th><th>Tendência (8 sem.)</th><th>Estado</th>
+          <th>Indicator</th><th class="num">Current</th><th>Trend (8 wks)</th><th>Status</th>
         </tr></thead>
         <tbody>
           <tr>
-            <td><div class="mname">Retificado parado (&gt; 7 dias)</div>
-                <div class="csub">Dias desde a última atividade · alvo &lt; 5</div></td>
-            <td class="num" style="font-weight:700">28</td>
-            <td><svg class="spark" width="196" height="76" viewBox="0 0 196 76"><line x1="4" y1="62" x2="188" y2="62" stroke="var(--border)" stroke-width="1"/><line x1="4" y1="53.6" x2="188" y2="53.6" stroke="var(--text-3)" stroke-width="1" stroke-dasharray="3,2"/><text x="188" y="51.6" text-anchor="end" font-size="8" fill="var(--text-3)">&lt;5</text><polyline points="4.0,43.6 9.4,43.6 14.8,36.8 20.2,45.2 25.6,41.9 31.1,38.5 36.5,38.5 41.9,38.5 47.3,45.2 52.7,45.2 74.4,35.2 79.8,35.2 85.2,38.5 90.6,35.2 96.0,33.5 112.2,31.8 117.6,31.8 123.1,55.3 128.5,50.3 133.9,43.6 139.3,40.2 144.7,38.5 150.1,38.5 155.5,38.5 177.2,18.4 182.6,15.0 188.0,15.0" fill="none" stroke="var(--red)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="4.0" cy="43.6" r="1.8" fill="var(--red)"/><circle cx="9.4" cy="43.6" r="1.8" fill="var(--red)"/><circle cx="14.8" cy="36.8" r="1.8" fill="var(--red)"/><circle cx="20.2" cy="45.2" r="1.8" fill="var(--red)"/><circle cx="25.6" cy="41.9" r="1.8" fill="var(--red)"/><circle cx="31.1" cy="38.5" r="1.8" fill="var(--red)"/><circle cx="36.5" cy="38.5" r="1.8" fill="var(--red)"/><circle cx="41.9" cy="38.5" r="1.8" fill="var(--red)"/><circle cx="47.3" cy="45.2" r="1.8" fill="var(--red)"/><circle cx="52.7" cy="45.2" r="1.8" fill="var(--red)"/><circle cx="74.4" cy="35.2" r="1.8" fill="var(--red)"/><circle cx="79.8" cy="35.2" r="1.8" fill="var(--red)"/><circle cx="85.2" cy="38.5" r="1.8" fill="var(--red)"/><circle cx="90.6" cy="35.2" r="1.8" fill="var(--red)"/><circle cx="96.0" cy="33.5" r="1.8" fill="var(--red)"/><circle cx="112.2" cy="31.8" r="1.8" fill="var(--red)"/><circle cx="117.6" cy="31.8" r="1.8" fill="var(--red)"/><circle cx="123.1" cy="55.3" r="1.8" fill="var(--red)"/><circle cx="128.5" cy="50.3" r="1.8" fill="var(--red)"/><circle cx="133.9" cy="43.6" r="1.8" fill="var(--red)"/><circle cx="139.3" cy="40.2" r="1.8" fill="var(--red)"/><circle cx="144.7" cy="38.5" r="1.8" fill="var(--red)"/><circle cx="150.1" cy="38.5" r="1.8" fill="var(--red)"/><circle cx="155.5" cy="38.5" r="1.8" fill="var(--red)"/><circle cx="177.2" cy="18.4" r="1.8" fill="var(--red)"/><circle cx="182.6" cy="15.0" r="1.8" fill="var(--red)"/><circle cx="188.0" cy="15.0" r="1.8" fill="var(--red)"/><text x="4" y="73" font-size="8" fill="var(--text-3)">13/7</text><text x="188" y="73" text-anchor="end" font-size="8" fill="var(--text-3)">16/8</text></svg></td>
-            <td><span class="b b-r">⊗ Ação imediata</span></td>
+            <td><div class="mname">Rectified stalled (&gt; 7 days)</div>
+                <div class="csub">Days since last contact · target &lt; 5</div></td>
+            <td class="num" style="font-weight:700">18</td>
+            <td><svg class="spark" width="196" height="76" viewBox="0 0 196 76"><line x1="4" y1="62" x2="188" y2="62" stroke="var(--border)" stroke-width="1"/><line x1="4" y1="53.6" x2="188" y2="53.6" stroke="var(--text-3)" stroke-width="1" stroke-dasharray="3,2"/><text x="188" y="51.6" text-anchor="end" font-size="8" fill="var(--text-3)">&lt;5</text><polyline points="4.0,43.6 9.4,43.6 14.8,36.8 20.2,45.2 25.6,41.9 31.1,38.5 36.5,38.5 41.9,38.5 47.3,45.2 52.7,45.2 74.4,35.2 79.8,35.2 85.2,38.5 90.6,35.2 96.0,33.5 112.2,31.8 117.6,31.8 123.1,55.3 128.5,50.3 133.9,43.6 139.3,40.2 144.7,38.5 150.1,38.5 155.5,38.5 177.2,18.4 182.6,15.0 188.0,31.8" fill="none" stroke="var(--red)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="4.0" cy="43.6" r="1.8" fill="var(--red)"/><circle cx="9.4" cy="43.6" r="1.8" fill="var(--red)"/><circle cx="14.8" cy="36.8" r="1.8" fill="var(--red)"/><circle cx="20.2" cy="45.2" r="1.8" fill="var(--red)"/><circle cx="25.6" cy="41.9" r="1.8" fill="var(--red)"/><circle cx="31.1" cy="38.5" r="1.8" fill="var(--red)"/><circle cx="36.5" cy="38.5" r="1.8" fill="var(--red)"/><circle cx="41.9" cy="38.5" r="1.8" fill="var(--red)"/><circle cx="47.3" cy="45.2" r="1.8" fill="var(--red)"/><circle cx="52.7" cy="45.2" r="1.8" fill="var(--red)"/><circle cx="74.4" cy="35.2" r="1.8" fill="var(--red)"/><circle cx="79.8" cy="35.2" r="1.8" fill="var(--red)"/><circle cx="85.2" cy="38.5" r="1.8" fill="var(--red)"/><circle cx="90.6" cy="35.2" r="1.8" fill="var(--red)"/><circle cx="96.0" cy="33.5" r="1.8" fill="var(--red)"/><circle cx="112.2" cy="31.8" r="1.8" fill="var(--red)"/><circle cx="117.6" cy="31.8" r="1.8" fill="var(--red)"/><circle cx="123.1" cy="55.3" r="1.8" fill="var(--red)"/><circle cx="128.5" cy="50.3" r="1.8" fill="var(--red)"/><circle cx="133.9" cy="43.6" r="1.8" fill="var(--red)"/><circle cx="139.3" cy="40.2" r="1.8" fill="var(--red)"/><circle cx="144.7" cy="38.5" r="1.8" fill="var(--red)"/><circle cx="150.1" cy="38.5" r="1.8" fill="var(--red)"/><circle cx="155.5" cy="38.5" r="1.8" fill="var(--red)"/><circle cx="177.2" cy="18.4" r="1.8" fill="var(--red)"/><circle cx="182.6" cy="15.0" r="1.8" fill="var(--red)"/><circle cx="188.0" cy="31.8" r="1.8" fill="var(--red)"/><text x="4" y="73" font-size="8" fill="var(--text-3)">13/7</text><text x="188" y="73" text-anchor="end" font-size="8" fill="var(--text-3)">16/8</text></svg></td>
+            <td><span class="b b-r">⊗ Act now</span></td>
           </tr>
           <tr>
             <td><div class="mname">Medidas OK &gt; 48h (SLA)</div>
-                <div class="csub">Não re-enviados dentro do SLA de 48h · 8 em Medidas OK</div></td>
-            <td class="num" style="font-weight:700">0</td>
-            <td><svg class="spark" width="196" height="76" viewBox="0 0 196 76"><line x1="4" y1="62" x2="188" y2="62" stroke="var(--border)" stroke-width="1"/><line x1="4" y1="55.3" x2="188" y2="55.3" stroke="var(--text-3)" stroke-width="1" stroke-dasharray="3,2"/><text x="188" y="53.3" text-anchor="end" font-size="8" fill="var(--text-3)">&lt;2</text><polyline points="4.0,55.3 9.4,55.3 14.8,55.3 20.2,62.0 25.6,62.0 31.1,62.0 36.5,62.0 41.9,48.6 47.3,62.0 52.7,62.0 74.4,55.3 79.8,21.8 85.2,62.0 90.6,62.0 96.0,62.0 112.2,48.6 117.6,15.0 123.1,62.0 128.5,62.0 133.9,62.0 139.3,62.0 144.7,62.0 150.1,62.0 155.5,41.9 177.2,62.0 182.6,62.0 188.0,62.0" fill="none" stroke="var(--green)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="4.0" cy="55.3" r="1.8" fill="var(--green)"/><circle cx="9.4" cy="55.3" r="1.8" fill="var(--green)"/><circle cx="14.8" cy="55.3" r="1.8" fill="var(--green)"/><circle cx="20.2" cy="62.0" r="1.8" fill="var(--green)"/><circle cx="25.6" cy="62.0" r="1.8" fill="var(--green)"/><circle cx="31.1" cy="62.0" r="1.8" fill="var(--green)"/><circle cx="36.5" cy="62.0" r="1.8" fill="var(--green)"/><circle cx="41.9" cy="48.6" r="1.8" fill="var(--green)"/><circle cx="47.3" cy="62.0" r="1.8" fill="var(--green)"/><circle cx="52.7" cy="62.0" r="1.8" fill="var(--green)"/><circle cx="74.4" cy="55.3" r="1.8" fill="var(--green)"/><circle cx="79.8" cy="21.8" r="1.8" fill="var(--green)"/><circle cx="85.2" cy="62.0" r="1.8" fill="var(--green)"/><circle cx="90.6" cy="62.0" r="1.8" fill="var(--green)"/><circle cx="96.0" cy="62.0" r="1.8" fill="var(--green)"/><circle cx="112.2" cy="48.6" r="1.8" fill="var(--green)"/><circle cx="117.6" cy="15.0" r="1.8" fill="var(--green)"/><circle cx="123.1" cy="62.0" r="1.8" fill="var(--green)"/><circle cx="128.5" cy="62.0" r="1.8" fill="var(--green)"/><circle cx="133.9" cy="62.0" r="1.8" fill="var(--green)"/><circle cx="139.3" cy="62.0" r="1.8" fill="var(--green)"/><circle cx="144.7" cy="62.0" r="1.8" fill="var(--green)"/><circle cx="150.1" cy="62.0" r="1.8" fill="var(--green)"/><circle cx="155.5" cy="41.9" r="1.8" fill="var(--green)"/><circle cx="177.2" cy="62.0" r="1.8" fill="var(--green)"/><circle cx="182.6" cy="62.0" r="1.8" fill="var(--green)"/><circle cx="188.0" cy="62.0" r="1.8" fill="var(--green)"/><text x="4" y="73" font-size="8" fill="var(--text-3)">13/7</text><text x="188" y="73" text-anchor="end" font-size="8" fill="var(--text-3)">16/8</text></svg></td>
-            <td><span class="b b-g">✓ Dentro do alvo</span></td>
+                <div class="csub">Not re-sent within the 48h SLA · 2 at Medidas OK</div></td>
+            <td class="num" style="font-weight:700">2</td>
+            <td><svg class="spark" width="196" height="76" viewBox="0 0 196 76"><line x1="4" y1="62" x2="188" y2="62" stroke="var(--border)" stroke-width="1"/><line x1="4" y1="55.3" x2="188" y2="55.3" stroke="var(--text-3)" stroke-width="1" stroke-dasharray="3,2"/><text x="188" y="53.3" text-anchor="end" font-size="8" fill="var(--text-3)">&lt;2</text><polyline points="4.0,55.3 9.4,55.3 14.8,55.3 20.2,62.0 25.6,62.0 31.1,62.0 36.5,62.0 41.9,48.6 47.3,62.0 52.7,62.0 74.4,55.3 79.8,21.8 85.2,62.0 90.6,62.0 96.0,62.0 112.2,48.6 117.6,15.0 123.1,62.0 128.5,62.0 133.9,62.0 139.3,62.0 144.7,62.0 150.1,62.0 155.5,41.9 177.2,62.0 182.6,62.0 188.0,48.6" fill="none" stroke="var(--amber)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="4.0" cy="55.3" r="1.8" fill="var(--amber)"/><circle cx="9.4" cy="55.3" r="1.8" fill="var(--amber)"/><circle cx="14.8" cy="55.3" r="1.8" fill="var(--amber)"/><circle cx="20.2" cy="62.0" r="1.8" fill="var(--amber)"/><circle cx="25.6" cy="62.0" r="1.8" fill="var(--amber)"/><circle cx="31.1" cy="62.0" r="1.8" fill="var(--amber)"/><circle cx="36.5" cy="62.0" r="1.8" fill="var(--amber)"/><circle cx="41.9" cy="48.6" r="1.8" fill="var(--amber)"/><circle cx="47.3" cy="62.0" r="1.8" fill="var(--amber)"/><circle cx="52.7" cy="62.0" r="1.8" fill="var(--amber)"/><circle cx="74.4" cy="55.3" r="1.8" fill="var(--amber)"/><circle cx="79.8" cy="21.8" r="1.8" fill="var(--amber)"/><circle cx="85.2" cy="62.0" r="1.8" fill="var(--amber)"/><circle cx="90.6" cy="62.0" r="1.8" fill="var(--amber)"/><circle cx="96.0" cy="62.0" r="1.8" fill="var(--amber)"/><circle cx="112.2" cy="48.6" r="1.8" fill="var(--amber)"/><circle cx="117.6" cy="15.0" r="1.8" fill="var(--amber)"/><circle cx="123.1" cy="62.0" r="1.8" fill="var(--amber)"/><circle cx="128.5" cy="62.0" r="1.8" fill="var(--amber)"/><circle cx="133.9" cy="62.0" r="1.8" fill="var(--amber)"/><circle cx="139.3" cy="62.0" r="1.8" fill="var(--amber)"/><circle cx="144.7" cy="62.0" r="1.8" fill="var(--amber)"/><circle cx="150.1" cy="62.0" r="1.8" fill="var(--amber)"/><circle cx="155.5" cy="41.9" r="1.8" fill="var(--amber)"/><circle cx="177.2" cy="62.0" r="1.8" fill="var(--amber)"/><circle cx="182.6" cy="62.0" r="1.8" fill="var(--amber)"/><circle cx="188.0" cy="48.6" r="1.8" fill="var(--amber)"/><text x="4" y="73" font-size="8" fill="var(--text-3)">13/7</text><text x="188" y="73" text-anchor="end" font-size="8" fill="var(--text-3)">16/8</text></svg></td>
+            <td><span class="b b-a">⚠ Action</span></td>
           </tr>
           <tr>
-            <td><div class="mname">Leads sinalizados (motor de alertas)</div>
-                <div class="csub">Motor de alertas ainda não construído; requer o campo de segmento (0% preenchido).</div></td>
+            <td><div class="mname">Flagged leads (alert engine)</div>
+                <div class="csub">Alert engine not built yet. The segment field it depends on is now live on Novo, so this is no longer blocked on data.</div></td>
             <td class="num" style="font-weight:700">—</td>
             <td><span style="font-size:10px;color:var(--text-3)">—</span></td>
-            <td><span class="b b-x">· Por construir</span></td>
+            <td><span class="b b-x">· Not built</span></td>
           </tr>
         </tbody>
       </table>
     </div>
 
-  <div class="foot">Proveniência: calculado em modo de leitura a partir do board Monday 10018007898.
-  Antiguidade aproximada pela Última modificação. Sem PII de clientes — apenas contagens agregadas.
-  Verificar valores € contra o registo de qualidade de dados (DAT - CRM Data Quality Register) antes de citar.</div>
+  <div class="foot">Provenance: computed read-only from Monday board 18420441925
+  (B2C "Novo", 218 items) — the worked pipeline.
+  New leads still arriving on the legacy board are not in this view; they are reported as the raw-request
+  backlog on the Executive tab. Aging measured by Último contacto. No customer PII — aggregate counts only.
+  Check € figures against the data quality register (DAT - CRM Data Quality Register) before quoting.</div>
 </div><div class="view" id="view-change">
   <div class="h1">Is the CRM transformation being adopted?</div>
   <div class="sub">Five data-quality &amp; adoption metrics — baseline (02 Jun 2026) → current → target. Aggregate figures only.</div>
 
-  <div class="note note-b"><strong>Diagnostic view.</strong> Baselines are the real 02 Jun 2026 board snapshot (pre-intervention); the go-live is 01 Aug. Segment assignment is <strong>projected</strong> until the tier field is rolled out. Trends accumulate one point per daily run. <strong>Note:</strong> the sharp gains in &ldquo;touched in 7 days&rdquo; and &ldquo;stalled&rdquo; partly reflect a one-time board cleanup that reset activity timestamps, not follow-up effort alone.</div>
+  <div class="note note-a"><strong>The funnel is split across two boards.</strong> The team works on the new board. New leads still land on the old one. So the pipeline here is read from the new board, the untriaged backlog from the old. Neither board alone is the full funnel.</div>
+
+  <div class="note note-b"><strong>How to read this.</strong> Baselines are the real 02 Jun 2026 board, before any of this work started. Two breaks in the trend lines: on 17 Aug 2026 these metrics moved to the new board and started counting real contacts instead of any row edit; and a one-off board cleanup in July reset activity dates, so part of the earlier gain was not follow-up effort.</div>
 
   <div class="kpis">
     <div class="kpi">
       <div class="kpi-lbl">Real loss reason captured</div>
       <div class="kpi-val" style="color:var(--red)">7%</div>
-      <div class="kpi-sub">132 of 1921 · baseline 4%</div>
+      <div class="kpi-sub">140 of 1926 · baseline 4%</div>
       <span class="kpi-pill dn">⊗ Meta: 100%</span>
     </div>
     <div class="kpi">
-      <div class="kpi-lbl">Rectified value filled</div>
-      <div class="kpi-val" style="color:var(--green)">100%</div>
-      <div class="kpi-sub">44 of 44 · baseline 57%</div>
-      <span class="kpi-pill up">✓ Meta: 100%</span>
+      <div class="kpi-lbl">A/B/C segment assigned</div>
+      <div class="kpi-val" style="color:var(--amber)">98%</div>
+      <div class="kpi-sub">201 of 204 · baseline 0%</div>
+      <span class="kpi-pill wa">⚠ Meta: 100%</span>
     </div>
     <div class="kpi">
       <div class="kpi-lbl">Sent quotes touched in the last 7 days</div>
-      <div class="kpi-val" style="color:var(--red)">25%</div>
-      <div class="kpi-sub">26 of 104 · baseline 10%</div>
+      <div class="kpi-val" style="color:var(--red)">27%</div>
+      <div class="kpi-sub">27 of 100 · baseline 10%</div>
       <span class="kpi-pill dn">⊗ Meta: 90%</span>
     </div>
     <div class="kpi">
       <div class="kpi-lbl">Records stalled &gt; 30 days (open)</div>
-      <div class="kpi-val" style="color:var(--green)">3</div>
-      <div class="kpi-sub">3 of 209 open · baseline 305</div>
+      <div class="kpi-val" style="color:var(--green)">2</div>
+      <div class="kpi-sub">2 of 204 open · baseline 305</div>
       <span class="kpi-pill up">✓ Meta: < 10</span>
     </div></div>
 
   <div class="card">
     <div class="ch">Baseline vs current vs target</div>
-    <div class="cs">Live pull from the B2C funnel · Orçamento enviado 104 · Aguardando medidas 53 · Orçamento retificado 44 · Adjudicado 960 · Não adjudicado 1921</div>
+    <div class="cs">Worked pipeline on B2C &quot;Novo&quot; (218 items) · Orçamento enviado 100 · Aguardando medidas 58 · Orçamento retificado 44 · Adjudicado 5 · Não adjudicado 8</div>
     <table class="dt">
       <thead><tr>
         <th>Metric</th><th class="num">Baseline</th><th class="num">Current</th>
@@ -292,16 +474,16 @@ svg text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
       <tbody>
         <tr>
           <td><div class="mname">Real loss reason captured</div>
-              <div class="csub">Source: Motivo Não on lost quotes</div><div class="csub">&quot;Escolha&quot;/blank is a documented NULL placeholder.</div></td>
+              <div class="csub">Source: Motivo Não on lost quotes — both boards, shadow copies removed</div><div class="csub">&quot;Escolha&quot;/blank is a documented NULL placeholder. The historic lost population sits on the legacy board; new losses land on Novo.</div></td>
           <td class="num">4%</td>
           <td class="num" style="font-weight:700">7%</td>
           <td class="num" style="color:var(--text-3)">100%</td>
-          <td><svg class="spark" width="196" height="76" viewBox="0 0 196 76"><line x1="4" y1="62" x2="188" y2="62" stroke="var(--border)" stroke-width="1"/><line x1="4" y1="8.0" x2="188" y2="8.0" stroke="var(--text-3)" stroke-width="1" stroke-dasharray="3,2"/><text x="188" y="6.0" text-anchor="end" font-size="8" fill="var(--text-3)">100%</text><polyline points="4.0,59.8 13.4,59.7 18.2,59.7 22.9,59.7 27.6,58.2 32.3,58.2 37.0,58.2 41.7,58.2 46.5,58.2 51.2,58.2 55.9,58.2 60.6,58.2 65.3,58.2 70.1,58.2 88.9,58.3 93.6,58.3 98.4,58.3 103.1,58.3 107.8,58.3 121.9,58.3 126.7,58.2 131.4,58.3 136.1,58.2 140.8,58.3 145.5,58.3 150.3,58.3 155.0,58.3 159.7,58.3 178.6,58.3 183.3,58.3 188.0,58.3" fill="none" stroke="var(--red)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="4.0" cy="59.8" r="3" fill="var(--surface)" stroke="var(--amber)" stroke-width="1.5"/><circle cx="13.4" cy="59.7" r="1.8" fill="var(--red)"/><circle cx="18.2" cy="59.7" r="1.8" fill="var(--red)"/><circle cx="22.9" cy="59.7" r="1.8" fill="var(--red)"/><circle cx="27.6" cy="58.2" r="1.8" fill="var(--red)"/><circle cx="32.3" cy="58.2" r="1.8" fill="var(--red)"/><circle cx="37.0" cy="58.2" r="1.8" fill="var(--red)"/><circle cx="41.7" cy="58.2" r="1.8" fill="var(--red)"/><circle cx="46.5" cy="58.2" r="1.8" fill="var(--red)"/><circle cx="51.2" cy="58.2" r="1.8" fill="var(--red)"/><circle cx="55.9" cy="58.2" r="1.8" fill="var(--red)"/><circle cx="60.6" cy="58.2" r="1.8" fill="var(--red)"/><circle cx="65.3" cy="58.2" r="1.8" fill="var(--red)"/><circle cx="70.1" cy="58.2" r="1.8" fill="var(--red)"/><circle cx="88.9" cy="58.3" r="1.8" fill="var(--red)"/><circle cx="93.6" cy="58.3" r="1.8" fill="var(--red)"/><circle cx="98.4" cy="58.3" r="1.8" fill="var(--red)"/><circle cx="103.1" cy="58.3" r="1.8" fill="var(--red)"/><circle cx="107.8" cy="58.3" r="1.8" fill="var(--red)"/><circle cx="121.9" cy="58.3" r="1.8" fill="var(--red)"/><circle cx="126.7" cy="58.2" r="1.8" fill="var(--red)"/><circle cx="131.4" cy="58.3" r="1.8" fill="var(--red)"/><circle cx="136.1" cy="58.2" r="1.8" fill="var(--red)"/><circle cx="140.8" cy="58.3" r="1.8" fill="var(--red)"/><circle cx="145.5" cy="58.3" r="1.8" fill="var(--red)"/><circle cx="150.3" cy="58.3" r="1.8" fill="var(--red)"/><circle cx="155.0" cy="58.3" r="1.8" fill="var(--red)"/><circle cx="159.7" cy="58.3" r="1.8" fill="var(--red)"/><circle cx="178.6" cy="58.3" r="1.8" fill="var(--red)"/><circle cx="183.3" cy="58.3" r="1.8" fill="var(--red)"/><circle cx="188.0" cy="58.3" r="1.8" fill="var(--red)"/><text x="4" y="73" font-size="8" fill="var(--text-3)">8/7</text><text x="188" y="73" text-anchor="end" font-size="8" fill="var(--text-3)">16/8</text></svg></td>
+          <td><svg class="spark" width="196" height="76" viewBox="0 0 196 76"><line x1="4" y1="62" x2="188" y2="62" stroke="var(--border)" stroke-width="1"/><line x1="4" y1="8.0" x2="188" y2="8.0" stroke="var(--text-3)" stroke-width="1" stroke-dasharray="3,2"/><text x="188" y="6.0" text-anchor="end" font-size="8" fill="var(--text-3)">100%</text><polyline points="4.0,59.8 13.4,59.7 18.2,59.7 22.9,59.7 27.6,58.2 32.3,58.2 37.0,58.2 41.7,58.2 46.5,58.2 51.2,58.2 55.9,58.2 60.6,58.2 65.3,58.2 70.1,58.2 88.9,58.3 93.6,58.3 98.4,58.3 103.1,58.3 107.8,58.3 121.9,58.3 126.7,58.2 131.4,58.3 136.1,58.2 140.8,58.3 145.5,58.3 150.3,58.3 155.0,58.3 159.7,58.3 178.6,58.3 183.3,58.3 188.0,58.1" fill="none" stroke="var(--red)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="4.0" cy="59.8" r="3" fill="var(--surface)" stroke="var(--amber)" stroke-width="1.5"/><circle cx="13.4" cy="59.7" r="1.8" fill="var(--red)"/><circle cx="18.2" cy="59.7" r="1.8" fill="var(--red)"/><circle cx="22.9" cy="59.7" r="1.8" fill="var(--red)"/><circle cx="27.6" cy="58.2" r="1.8" fill="var(--red)"/><circle cx="32.3" cy="58.2" r="1.8" fill="var(--red)"/><circle cx="37.0" cy="58.2" r="1.8" fill="var(--red)"/><circle cx="41.7" cy="58.2" r="1.8" fill="var(--red)"/><circle cx="46.5" cy="58.2" r="1.8" fill="var(--red)"/><circle cx="51.2" cy="58.2" r="1.8" fill="var(--red)"/><circle cx="55.9" cy="58.2" r="1.8" fill="var(--red)"/><circle cx="60.6" cy="58.2" r="1.8" fill="var(--red)"/><circle cx="65.3" cy="58.2" r="1.8" fill="var(--red)"/><circle cx="70.1" cy="58.2" r="1.8" fill="var(--red)"/><circle cx="88.9" cy="58.3" r="1.8" fill="var(--red)"/><circle cx="93.6" cy="58.3" r="1.8" fill="var(--red)"/><circle cx="98.4" cy="58.3" r="1.8" fill="var(--red)"/><circle cx="103.1" cy="58.3" r="1.8" fill="var(--red)"/><circle cx="107.8" cy="58.3" r="1.8" fill="var(--red)"/><circle cx="121.9" cy="58.3" r="1.8" fill="var(--red)"/><circle cx="126.7" cy="58.2" r="1.8" fill="var(--red)"/><circle cx="131.4" cy="58.3" r="1.8" fill="var(--red)"/><circle cx="136.1" cy="58.2" r="1.8" fill="var(--red)"/><circle cx="140.8" cy="58.3" r="1.8" fill="var(--red)"/><circle cx="145.5" cy="58.3" r="1.8" fill="var(--red)"/><circle cx="150.3" cy="58.3" r="1.8" fill="var(--red)"/><circle cx="155.0" cy="58.3" r="1.8" fill="var(--red)"/><circle cx="159.7" cy="58.3" r="1.8" fill="var(--red)"/><circle cx="178.6" cy="58.3" r="1.8" fill="var(--red)"/><circle cx="183.3" cy="58.3" r="1.8" fill="var(--red)"/><circle cx="188.0" cy="58.1" r="1.8" fill="var(--red)"/><text x="4" y="73" font-size="8" fill="var(--text-3)">8/7</text><text x="188" y="73" text-anchor="end" font-size="8" fill="var(--text-3)">16/8</text></svg></td>
           <td><span class="b b-r">⊗ Off target</span></td>
         </tr>
         <tr>
           <td><div class="mname">Rectified value filled</div>
-              <div class="csub">Source: Valor retificado on rectified quotes</div></td>
+              <div class="csub">Source: Valor retificado on rectified quotes (Novo)</div></td>
           <td class="num">57%</td>
           <td class="num" style="font-weight:700">100%</td>
           <td class="num" style="color:var(--text-3)">100%</td>
@@ -310,43 +492,50 @@ svg text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
         </tr>
         <tr>
           <td><div class="mname">A/B/C segment assigned</div>
-              <div class="csub">Source: Segment/tier field</div><div class="csub">Segment column lives on B2C &quot;Novo&quot;, not live B2C — projected until rolled out.</div></td>
+              <div class="csub">Source: Segmento on open worked quotes (Novo)</div><div class="csub">Live since the 14 Aug cutover — the tier column exists only on Novo. An explicit &quot;N/A&quot; counts as unassigned. Trend starts 16 Aug, the first real reading; before that the field did not exist.</div></td>
           <td class="num">0%</td>
-          <td class="num" style="font-weight:700">—</td>
+          <td class="num" style="font-weight:700">98%</td>
           <td class="num" style="color:var(--text-3)">100%</td>
-          <td><span style="font-size:10px;color:var(--text-3)">projected</span></td>
-          <td><span class="b b-x">· Not built yet</span></td>
+          <td><svg class="spark" width="196" height="76" viewBox="0 0 196 76"><line x1="4" y1="62" x2="188" y2="62" stroke="var(--border)" stroke-width="1"/><line x1="4" y1="8.0" x2="188" y2="8.0" stroke="var(--text-3)" stroke-width="1" stroke-dasharray="3,2"/><text x="188" y="6.0" text-anchor="end" font-size="8" fill="var(--text-3)">100%</text><circle cx="96.0" cy="8.8" r="3" fill="var(--amber)"/><text x="96.0" y="73" text-anchor="middle" font-size="8" fill="var(--text-3)">16/8</text></svg></td>
+          <td><span class="b b-a">⚠ Approaching</span></td>
         </tr>
         <tr>
           <td><div class="mname">Sent quotes touched in the last 7 days</div>
-              <div class="csub">Source: Última modificação on quotes in &quot;Orçamento enviado&quot;</div><div class="csub">Activity proxied by Última modificação (no adjudication-date column exists).</div></td>
+              <div class="csub">Source: Último contacto on quotes in &quot;Orçamento enviado&quot; (Novo)</div><div class="csub">Definition changed 17 Aug 2026: was Última modificação (any row edit) on the legacy board, now Último contacto (a real contact event).</div></td>
           <td class="num">10%</td>
-          <td class="num" style="font-weight:700">25%</td>
+          <td class="num" style="font-weight:700">27%</td>
           <td class="num" style="color:var(--text-3)">90%</td>
-          <td><svg class="spark" width="196" height="76" viewBox="0 0 196 76"><line x1="4" y1="62" x2="188" y2="62" stroke="var(--border)" stroke-width="1"/><line x1="4" y1="13.4" x2="188" y2="13.4" stroke="var(--text-3)" stroke-width="1" stroke-dasharray="3,2"/><text x="188" y="11.4" text-anchor="end" font-size="8" fill="var(--text-3)">90%</text><polyline points="4.0,17.2 13.4,28.4 18.2,28.5 22.9,28.5 27.6,16.7 32.3,28.2 37.0,28.6 41.7,26.8 46.5,27.2 51.2,29.3 55.9,29.3 60.6,29.3 65.3,36.1 70.1,38.5 88.9,32.2 93.6,32.2 98.4,30.4 103.1,35.6 107.8,38.8 121.9,46.2 126.7,46.2 131.4,8.5 136.1,8.5 140.8,8.8 145.5,8.7 150.3,8.6 155.0,8.6 159.7,8.6 178.6,44.3 183.3,48.5 188.0,48.5" fill="none" stroke="var(--red)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="4.0" cy="17.2" r="3" fill="var(--surface)" stroke="var(--amber)" stroke-width="1.5"/><circle cx="13.4" cy="28.4" r="1.8" fill="var(--red)"/><circle cx="18.2" cy="28.5" r="1.8" fill="var(--red)"/><circle cx="22.9" cy="28.5" r="1.8" fill="var(--red)"/><circle cx="27.6" cy="16.7" r="1.8" fill="var(--red)"/><circle cx="32.3" cy="28.2" r="1.8" fill="var(--red)"/><circle cx="37.0" cy="28.6" r="1.8" fill="var(--red)"/><circle cx="41.7" cy="26.8" r="1.8" fill="var(--red)"/><circle cx="46.5" cy="27.2" r="1.8" fill="var(--red)"/><circle cx="51.2" cy="29.3" r="1.8" fill="var(--red)"/><circle cx="55.9" cy="29.3" r="1.8" fill="var(--red)"/><circle cx="60.6" cy="29.3" r="1.8" fill="var(--red)"/><circle cx="65.3" cy="36.1" r="1.8" fill="var(--red)"/><circle cx="70.1" cy="38.5" r="1.8" fill="var(--red)"/><circle cx="88.9" cy="32.2" r="1.8" fill="var(--red)"/><circle cx="93.6" cy="32.2" r="1.8" fill="var(--red)"/><circle cx="98.4" cy="30.4" r="1.8" fill="var(--red)"/><circle cx="103.1" cy="35.6" r="1.8" fill="var(--red)"/><circle cx="107.8" cy="38.8" r="1.8" fill="var(--red)"/><circle cx="121.9" cy="46.2" r="1.8" fill="var(--red)"/><circle cx="126.7" cy="46.2" r="1.8" fill="var(--red)"/><circle cx="131.4" cy="8.5" r="1.8" fill="var(--red)"/><circle cx="136.1" cy="8.5" r="1.8" fill="var(--red)"/><circle cx="140.8" cy="8.8" r="1.8" fill="var(--red)"/><circle cx="145.5" cy="8.7" r="1.8" fill="var(--red)"/><circle cx="150.3" cy="8.6" r="1.8" fill="var(--red)"/><circle cx="155.0" cy="8.6" r="1.8" fill="var(--red)"/><circle cx="159.7" cy="8.6" r="1.8" fill="var(--red)"/><circle cx="178.6" cy="44.3" r="1.8" fill="var(--red)"/><circle cx="183.3" cy="48.5" r="1.8" fill="var(--red)"/><circle cx="188.0" cy="48.5" r="1.8" fill="var(--red)"/><text x="4" y="73" font-size="8" fill="var(--text-3)">8/7</text><text x="188" y="73" text-anchor="end" font-size="8" fill="var(--text-3)">16/8</text></svg></td>
+          <td><svg class="spark" width="196" height="76" viewBox="0 0 196 76"><line x1="4" y1="62" x2="188" y2="62" stroke="var(--border)" stroke-width="1"/><line x1="4" y1="13.4" x2="188" y2="13.4" stroke="var(--text-3)" stroke-width="1" stroke-dasharray="3,2"/><text x="188" y="11.4" text-anchor="end" font-size="8" fill="var(--text-3)">90%</text><polyline points="4.0,17.2 13.4,28.4 18.2,28.5 22.9,28.5 27.6,16.7 32.3,28.2 37.0,28.6 41.7,26.8 46.5,27.2 51.2,29.3 55.9,29.3 60.6,29.3 65.3,36.1 70.1,38.5 88.9,32.2 93.6,32.2 98.4,30.4 103.1,35.6 107.8,38.8 121.9,46.2 126.7,46.2 131.4,8.5 136.1,8.5 140.8,8.8 145.5,8.7 150.3,8.6 155.0,8.6 159.7,8.6 178.6,44.3 183.3,48.5 188.0,47.4" fill="none" stroke="var(--red)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="4.0" cy="17.2" r="3" fill="var(--surface)" stroke="var(--amber)" stroke-width="1.5"/><circle cx="13.4" cy="28.4" r="1.8" fill="var(--red)"/><circle cx="18.2" cy="28.5" r="1.8" fill="var(--red)"/><circle cx="22.9" cy="28.5" r="1.8" fill="var(--red)"/><circle cx="27.6" cy="16.7" r="1.8" fill="var(--red)"/><circle cx="32.3" cy="28.2" r="1.8" fill="var(--red)"/><circle cx="37.0" cy="28.6" r="1.8" fill="var(--red)"/><circle cx="41.7" cy="26.8" r="1.8" fill="var(--red)"/><circle cx="46.5" cy="27.2" r="1.8" fill="var(--red)"/><circle cx="51.2" cy="29.3" r="1.8" fill="var(--red)"/><circle cx="55.9" cy="29.3" r="1.8" fill="var(--red)"/><circle cx="60.6" cy="29.3" r="1.8" fill="var(--red)"/><circle cx="65.3" cy="36.1" r="1.8" fill="var(--red)"/><circle cx="70.1" cy="38.5" r="1.8" fill="var(--red)"/><circle cx="88.9" cy="32.2" r="1.8" fill="var(--red)"/><circle cx="93.6" cy="32.2" r="1.8" fill="var(--red)"/><circle cx="98.4" cy="30.4" r="1.8" fill="var(--red)"/><circle cx="103.1" cy="35.6" r="1.8" fill="var(--red)"/><circle cx="107.8" cy="38.8" r="1.8" fill="var(--red)"/><circle cx="121.9" cy="46.2" r="1.8" fill="var(--red)"/><circle cx="126.7" cy="46.2" r="1.8" fill="var(--red)"/><circle cx="131.4" cy="8.5" r="1.8" fill="var(--red)"/><circle cx="136.1" cy="8.5" r="1.8" fill="var(--red)"/><circle cx="140.8" cy="8.8" r="1.8" fill="var(--red)"/><circle cx="145.5" cy="8.7" r="1.8" fill="var(--red)"/><circle cx="150.3" cy="8.6" r="1.8" fill="var(--red)"/><circle cx="155.0" cy="8.6" r="1.8" fill="var(--red)"/><circle cx="159.7" cy="8.6" r="1.8" fill="var(--red)"/><circle cx="178.6" cy="44.3" r="1.8" fill="var(--red)"/><circle cx="183.3" cy="48.5" r="1.8" fill="var(--red)"/><circle cx="188.0" cy="47.4" r="1.8" fill="var(--red)"/><text x="4" y="73" font-size="8" fill="var(--text-3)">8/7</text><text x="188" y="73" text-anchor="end" font-size="8" fill="var(--text-3)">16/8</text></svg></td>
           <td><span class="b b-r">⊗ Off target</span></td>
         </tr>
         <tr>
           <td><div class="mname">Records stalled &gt; 30 days (open)</div>
-              <div class="csub">Source: Última modificação on open worked stages</div><div class="csub">Excludes the raw request backlog; activity proxied by Última modificação.</div></td>
+              <div class="csub">Source: Último contacto on open worked stages (Novo)</div><div class="csub">Excludes the raw request backlog (still arriving on the legacy board). Definition changed 17 Aug 2026 — see above.</div></td>
           <td class="num">305</td>
-          <td class="num" style="font-weight:700">3</td>
+          <td class="num" style="font-weight:700">2</td>
           <td class="num" style="color:var(--text-3)">&lt; 10</td>
-          <td><svg class="spark" width="196" height="76" viewBox="0 0 196 76"><line x1="4" y1="62" x2="188" y2="62" stroke="var(--border)" stroke-width="1"/><line x1="4" y1="15.0" x2="188" y2="15.0" stroke="var(--text-3)" stroke-width="1" stroke-dasharray="3,2"/><text x="188" y="13.0" text-anchor="end" font-size="8" fill="var(--text-3)">&lt;10</text><polyline points="4.0,24.4 13.4,43.2 18.2,43.2 22.9,38.5 27.6,43.2 32.3,47.9 37.0,47.9 41.7,47.9 46.5,47.9 51.2,47.9 55.9,43.2 60.6,43.2 65.3,52.6 70.1,52.6 88.9,52.6 93.6,52.6 98.4,52.6 103.1,52.6 107.8,52.6 121.9,43.2 126.7,43.2 131.4,57.3 136.1,57.3 140.8,57.3 145.5,52.6 150.3,52.6 155.0,52.6 159.7,52.6 178.6,52.6 183.3,47.9 188.0,47.9" fill="none" stroke="var(--green)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="4.0" cy="24.4" r="3" fill="var(--surface)" stroke="var(--amber)" stroke-width="1.5"/><circle cx="13.4" cy="43.2" r="1.8" fill="var(--green)"/><circle cx="18.2" cy="43.2" r="1.8" fill="var(--green)"/><circle cx="22.9" cy="38.5" r="1.8" fill="var(--green)"/><circle cx="27.6" cy="43.2" r="1.8" fill="var(--green)"/><circle cx="32.3" cy="47.9" r="1.8" fill="var(--green)"/><circle cx="37.0" cy="47.9" r="1.8" fill="var(--green)"/><circle cx="41.7" cy="47.9" r="1.8" fill="var(--green)"/><circle cx="46.5" cy="47.9" r="1.8" fill="var(--green)"/><circle cx="51.2" cy="47.9" r="1.8" fill="var(--green)"/><circle cx="55.9" cy="43.2" r="1.8" fill="var(--green)"/><circle cx="60.6" cy="43.2" r="1.8" fill="var(--green)"/><circle cx="65.3" cy="52.6" r="1.8" fill="var(--green)"/><circle cx="70.1" cy="52.6" r="1.8" fill="var(--green)"/><circle cx="88.9" cy="52.6" r="1.8" fill="var(--green)"/><circle cx="93.6" cy="52.6" r="1.8" fill="var(--green)"/><circle cx="98.4" cy="52.6" r="1.8" fill="var(--green)"/><circle cx="103.1" cy="52.6" r="1.8" fill="var(--green)"/><circle cx="107.8" cy="52.6" r="1.8" fill="var(--green)"/><circle cx="121.9" cy="43.2" r="1.8" fill="var(--green)"/><circle cx="126.7" cy="43.2" r="1.8" fill="var(--green)"/><circle cx="131.4" cy="57.3" r="1.8" fill="var(--green)"/><circle cx="136.1" cy="57.3" r="1.8" fill="var(--green)"/><circle cx="140.8" cy="57.3" r="1.8" fill="var(--green)"/><circle cx="145.5" cy="52.6" r="1.8" fill="var(--green)"/><circle cx="150.3" cy="52.6" r="1.8" fill="var(--green)"/><circle cx="155.0" cy="52.6" r="1.8" fill="var(--green)"/><circle cx="159.7" cy="52.6" r="1.8" fill="var(--green)"/><circle cx="178.6" cy="52.6" r="1.8" fill="var(--green)"/><circle cx="183.3" cy="47.9" r="1.8" fill="var(--green)"/><circle cx="188.0" cy="47.9" r="1.8" fill="var(--green)"/><text x="4" y="73" font-size="8" fill="var(--text-3)">8/7</text><text x="188" y="73" text-anchor="end" font-size="8" fill="var(--text-3)">16/8</text></svg></td>
+          <td><svg class="spark" width="196" height="76" viewBox="0 0 196 76"><line x1="4" y1="62" x2="188" y2="62" stroke="var(--border)" stroke-width="1"/><line x1="4" y1="15.0" x2="188" y2="15.0" stroke="var(--text-3)" stroke-width="1" stroke-dasharray="3,2"/><text x="188" y="13.0" text-anchor="end" font-size="8" fill="var(--text-3)">&lt;10</text><polyline points="4.0,24.4 13.4,43.2 18.2,43.2 22.9,38.5 27.6,43.2 32.3,47.9 37.0,47.9 41.7,47.9 46.5,47.9 51.2,47.9 55.9,43.2 60.6,43.2 65.3,52.6 70.1,52.6 88.9,52.6 93.6,52.6 98.4,52.6 103.1,52.6 107.8,52.6 121.9,43.2 126.7,43.2 131.4,57.3 136.1,57.3 140.8,57.3 145.5,52.6 150.3,52.6 155.0,52.6 159.7,52.6 178.6,52.6 183.3,47.9 188.0,52.6" fill="none" stroke="var(--green)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="4.0" cy="24.4" r="3" fill="var(--surface)" stroke="var(--amber)" stroke-width="1.5"/><circle cx="13.4" cy="43.2" r="1.8" fill="var(--green)"/><circle cx="18.2" cy="43.2" r="1.8" fill="var(--green)"/><circle cx="22.9" cy="38.5" r="1.8" fill="var(--green)"/><circle cx="27.6" cy="43.2" r="1.8" fill="var(--green)"/><circle cx="32.3" cy="47.9" r="1.8" fill="var(--green)"/><circle cx="37.0" cy="47.9" r="1.8" fill="var(--green)"/><circle cx="41.7" cy="47.9" r="1.8" fill="var(--green)"/><circle cx="46.5" cy="47.9" r="1.8" fill="var(--green)"/><circle cx="51.2" cy="47.9" r="1.8" fill="var(--green)"/><circle cx="55.9" cy="43.2" r="1.8" fill="var(--green)"/><circle cx="60.6" cy="43.2" r="1.8" fill="var(--green)"/><circle cx="65.3" cy="52.6" r="1.8" fill="var(--green)"/><circle cx="70.1" cy="52.6" r="1.8" fill="var(--green)"/><circle cx="88.9" cy="52.6" r="1.8" fill="var(--green)"/><circle cx="93.6" cy="52.6" r="1.8" fill="var(--green)"/><circle cx="98.4" cy="52.6" r="1.8" fill="var(--green)"/><circle cx="103.1" cy="52.6" r="1.8" fill="var(--green)"/><circle cx="107.8" cy="52.6" r="1.8" fill="var(--green)"/><circle cx="121.9" cy="43.2" r="1.8" fill="var(--green)"/><circle cx="126.7" cy="43.2" r="1.8" fill="var(--green)"/><circle cx="131.4" cy="57.3" r="1.8" fill="var(--green)"/><circle cx="136.1" cy="57.3" r="1.8" fill="var(--green)"/><circle cx="140.8" cy="57.3" r="1.8" fill="var(--green)"/><circle cx="145.5" cy="52.6" r="1.8" fill="var(--green)"/><circle cx="150.3" cy="52.6" r="1.8" fill="var(--green)"/><circle cx="155.0" cy="52.6" r="1.8" fill="var(--green)"/><circle cx="159.7" cy="52.6" r="1.8" fill="var(--green)"/><circle cx="178.6" cy="52.6" r="1.8" fill="var(--green)"/><circle cx="183.3" cy="47.9" r="1.8" fill="var(--green)"/><circle cx="188.0" cy="52.6" r="1.8" fill="var(--green)"/><text x="4" y="73" font-size="8" fill="var(--text-3)">8/7</text><text x="188" y="73" text-anchor="end" font-size="8" fill="var(--text-3)">16/8</text></svg></td>
           <td><span class="b b-g">✓ Within target</span></td>
         </tr></tbody>
     </table>
-    <div class="foot">Provenance: computed read-only from Monday board 10018007898.
-    "Escolha"/blank loss reasons count as unfilled. Activity is proxied by Última modificação
-    (no adjudication-date column exists). No customer PII is included — aggregate counts only.
+    <div class="foot">Provenance: computed read-only from Monday boards
+    18420441925 (worked pipeline, 218 items) and
+    10018007898 (loss-reason history, 3582 items).
+    The loss-reason population merges both boards over 1926 lost deals, with the
+    legacy board's frozen shadow copies removed so nothing is counted twice.
+    "Escolha"/blank loss reasons count as unfilled; an explicit "N/A" segment counts as unassigned.
+    No customer PII is included — aggregate counts only.
     <br>Trend: daily points over 8 weeks. The two <span style="color:var(--amber)">◦ hollow markers</span>
     (02 Jun, 08 Jul) are seeded snapshots — for "touched in 7 days" and "stalled" these straddle the
-    DQ-S6 timestamp reset and are partly artefactual, so read the step-change with care. The "stalled"
+    DQ-S6 timestamp reset and are partly artefactual, so read the step-change with care. A second
+    discontinuity falls at <strong>17 Aug 2026</strong>, where the source moved to Novo and activity
+    changed from "row last modified" to "client last contacted" — the more honest measure, but not the
+    same one, so points either side are not strictly comparable. The "stalled"
     02 Jun baseline (305 of 529 open) is a far wider population than today's count, so it is shown as
     the baseline figure only — kept off the trend line so the day-to-day movement stays legible.
     The "value filled" 02 Jun baseline (57%) is <strong>unverified</strong> — no source snapshot exists.</div>
   </div>
 </div>
-<script>function sw(t){const ids=["operational", "change"];ids.forEach((id,i)=>{document.querySelectorAll('.tab')[i].classList.toggle('active',id===t);document.getElementById('view-'+id).classList.toggle('active',id===t);});}</script>
+<script>function sw(t){const ids=["executive", "operational", "change"];ids.forEach((id,i)=>{document.querySelectorAll('.tab')[i].classList.toggle('active',id===t);document.getElementById('view-'+id).classList.toggle('active',id===t);});}</script>
 </body>
 </html>
