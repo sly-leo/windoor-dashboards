@@ -10,6 +10,6 @@ metrics_current,42,metrics in the most recent snapshot
 metrics_all_time,43,distinct metrics ever recorded; see history_columns.csv
 blank_means,not measured,a blank cell is NOT a zero — check first_measured in history_columns.csv
 source_of_truth,dashboard_history.jsonl,these CSVs are generated; edits here are overwritten each morning
-flagged_cells,372,"known-bad or not-comparable (date, metric) pairs — see history_flags.csv BEFORE charting"
-flagged_days,45,days carrying at least one flag; the 'flags' column in history.csv marks them
+flagged_cells,367,"known-bad or not-comparable (date, metric) pairs — see history_flags.csv BEFORE charting"
+flagged_days,44,days carrying at least one flag; the 'flags' column in history.csv marks them
 values_are_verbatim,yes,"a flagged value is still the figure that was measured — nothing here is corrected or blanked, only labelled"
