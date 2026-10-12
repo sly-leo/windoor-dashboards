@@ -29,6 +29,18 @@ executive.raw_backlog.novo_uncounted,executive,2026-08-17,2026-10-12,51,59.3,202
 executive.raw_backlog.pct_over_30,executive,2026-08-17,2026-10-12,51,59.3,2026-08-17,No comparability guard declared for this metric — which is not the same as verified comparable.
 executive.tier_a_value.count,executive,2026-08-17,2026-10-12,51,59.3,2026-08-17,No comparability guard declared for this metric — which is not the same as verified comparable.
 executive.tier_a_value.leads,executive,2026-08-17,2026-10-12,51,59.3,2026-08-17,No comparability guard declared for this metric — which is not the same as verified comparable.
+leads.day.count,leads,2026-10-12,2026-10-12,1,1.2,2026-10-12,No comparability guard declared for this metric — which is not the same as verified comparable.
+leads.day.direct,leads,2026-10-12,2026-10-12,1,1.2,2026-10-12,No comparability guard declared for this metric — which is not the same as verified comparable.
+leads.day.manual,leads,2026-10-12,2026-10-12,1,1.2,2026-10-12,No comparability guard declared for this metric — which is not the same as verified comparable.
+leads.day.no_channel,leads,2026-10-12,2026-10-12,1,1.2,2026-10-12,No comparability guard declared for this metric — which is not the same as verified comparable.
+leads.day_by_channel.Campanha,leads,2026-10-12,2026-10-12,1,1.2,2026-10-12,No comparability guard declared for this metric — which is not the same as verified comparable.
+leads.day_by_channel.Chat Bot,leads,2026-10-12,2026-10-12,1,1.2,2026-10-12,No comparability guard declared for this metric — which is not the same as verified comparable.
+leads.day_by_channel.Google Site,leads,2026-10-12,2026-10-12,1,1.2,2026-10-12,No comparability guard declared for this metric — which is not the same as verified comparable.
+leads.day_by_channel.Meta Forms,leads,2026-10-12,2026-10-12,1,1.2,2026-10-12,No comparability guard declared for this metric — which is not the same as verified comparable.
+leads.day_by_channel.Meta Site,leads,2026-10-12,2026-10-12,1,1.2,2026-10-12,No comparability guard declared for this metric — which is not the same as verified comparable.
+leads.day_by_channel.Orgânico,leads,2026-10-12,2026-10-12,1,1.2,2026-10-12,No comparability guard declared for this metric — which is not the same as verified comparable.
+leads.guards.labelled_by_other,leads,2026-10-12,2026-10-12,1,1.2,2026-10-12,No comparability guard declared for this metric — which is not the same as verified comparable.
+leads.guards.legacy_new,leads,2026-10-12,2026-10-12,1,1.2,2026-10-12,No comparability guard declared for this metric — which is not the same as verified comparable.
 operational.alert_flagged.count,operational,2026-07-13,2026-10-12,81,94.2,2026-07-13,"Alert engine not built yet. The segment field it depends on is now live on Novo, so this is no longer blocked on data."
 operational.enviados_open.count,operational,2026-07-13,2026-10-12,81,94.2,2026-07-13,No comparability guard declared for this metric — which is not the same as verified comparable.
 operational.enviados_open.stale_pct,operational,2026-07-13,2026-10-12,81,94.2,2026-07-13,No comparability guard declared for this metric — which is not the same as verified comparable.
