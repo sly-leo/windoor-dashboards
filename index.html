@@ -103,7 +103,7 @@ svg text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
   <div class="hdr-brand"><div class="hdr-dot"></div>WinDoor Lisboa — Dashboards</div>
   <div class="hdr-meta">Source: B2C pipeline (Monday) · updated 26 Oct 2026</div>
 </div>
-<div class="tabs"><div class="tab active" onclick="sw('executive')">Executive</div><div class="tab" onclick="sw('operational')">Operational</div><div class="tab" onclick="sw('leads')">Leads</div><div class="tab" onclick="sw('change')">Change Management</div></div>
+<div class="tabs"><div class="tab active" onclick="sw('executive')">Executive</div><div class="tab" onclick="sw('operational')">Operational</div><div class="tab" onclick="sw('quotes')" style="display:none">Quotes</div><div class="tab" onclick="sw('leads')">Leads</div><div class="tab" onclick="sw('change')">Change Management</div></div>
 <div class="view active" id="view-executive">
   <div class="h1">Is the funnel healthy, and where is the leak?</div>
   <div class="sub">What is in the funnel, what it is worth, and what is waiting to enter it. Aggregate figures only.</div>
@@ -116,55 +116,55 @@ svg text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
     <div class="kpi">
       <div class="kpi-lbl">Open pipeline value</div>
       <div class="kpi-val" style="color:var(--text)">€1.0M</div>
-      <div class="kpi-sub">413 quotes · 210 carry a value</div>
+      <div class="kpi-sub">416 quotes · 212 carry a value</div>
       <span class="kpi-pill nt">Live from Novo</span>
     </div>
     <div class="kpi">
       <div class="kpi-lbl">Open quotes</div>
-      <div class="kpi-val" style="color:var(--text)">413</div>
+      <div class="kpi-val" style="color:var(--text)">416</div>
       <div class="kpi-sub">Sent → measured → rectified</div>
       <span class="kpi-pill nt">Worked pipeline</span>
     </div>
     <div class="kpi">
       <div class="kpi-lbl">A-tier value</div>
-      <div class="kpi-val" style="color:var(--accent)">€548K</div>
-      <div class="kpi-sub">43 leads at A — the pool worth chasing first</div>
+      <div class="kpi-val" style="color:var(--accent)">€554K</div>
+      <div class="kpi-sub">44 leads at A — the pool worth chasing first</div>
       <span class="kpi-pill wa">Priority</span>
     </div>
     <div class="kpi">
       <div class="kpi-lbl">Raw-request backlog</div>
       <div class="kpi-val" style="color:var(--red)">462</div>
-      <div class="kpi-sub">100% older than 30 days · legacy board · +199 on Novo not counted</div>
+      <div class="kpi-sub">100% older than 30 days · legacy board · +200 on Novo not counted</div>
       <span class="kpi-pill dn">⊗ Untriaged</span>
     </div></div>
 
   <div class="row c2">
     <div class="card">
       <div class="ch">Open pipeline by stage</div>
-      <div class="cs">€1,017,372 across 413 open quotes · B2C &quot;Novo&quot;</div>
+      <div class="cs">€1,025,565 across 416 open quotes · B2C &quot;Novo&quot;</div>
       <div class="bars" style="gap:12px">
         <div class="brow">
           <div class="blbl blbl-w110">Orçamento enviado</div>
-          <div class="btrack"><div class="bfill" style="width:100%;background:#93C5FD">
-            <span class="bfv" style="color:#1E3A8A">€406K</span></div></div>
-          <div class="bev" style="color:var(--text-3)">255 leads · 159 without a value</div>
+          <div class="btrack"><div class="bfill" style="width:98%;background:#93C5FD">
+            <span class="bfv" style="color:#1E3A8A">€400K</span></div></div>
+          <div class="bev" style="color:var(--text-3)">256 leads · 160 without a value</div>
         </div>
         <div class="brow">
           <div class="blbl blbl-w110">Aguardando medidas</div>
-          <div class="btrack"><div class="bfill" style="width:98%;background:#93C5FD">
-            <span class="bfv" style="color:#1E3A8A">€396K</span></div></div>
-          <div class="bev" style="color:var(--text-3)">83 leads · 20 without a value</div>
+          <div class="btrack"><div class="bfill" style="width:100%;background:#93C5FD">
+            <span class="bfv" style="color:#1E3A8A">€410K</span></div></div>
+          <div class="bev" style="color:var(--text-3)">85 leads · 20 without a value</div>
         </div>
         <div class="brow">
           <div class="blbl blbl-w110">Medidas OK</div>
           <div class="btrack"><div class="bfill" style="width:4%;background:#93C5FD">
-            <span class="bfv" style="color:#1E3A8A">€12K</span></div></div>
+            <span class="bfv" style="color:#1E3A8A">€10K</span></div></div>
           <div class="bev" style="color:var(--text-3)">13 leads · 8 without a value</div>
         </div>
         <div class="brow">
           <div class="blbl blbl-w110">Orçamento retificado</div>
           <div class="btrack"><div class="bfill" style="width:50%;background:#93C5FD">
-            <span class="bfv" style="color:#1E3A8A">€203K</span></div></div>
+            <span class="bfv" style="color:#1E3A8A">€206K</span></div></div>
           <div class="bev" style="color:var(--text-3)">62 leads · 16 without a value</div>
         </div></div>
       <div class="foot">Value uses <strong>Valor retificado where it exists, otherwise Valor
@@ -178,35 +178,35 @@ svg text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
       <div class="bars" style="gap:12px">
         <div class="brow">
           <div class="blbl blbl-w110">A — high priority</div>
-          <div class="btrack"><div class="bfill" style="width:10%;background:var(--red)">
-            <span class="bfv" style="color:#FFFFFF">43</span></div></div>
-          <div class="bev" style="color:var(--text-3)">€548K</div>
+          <div class="btrack"><div class="bfill" style="width:11%;background:var(--red)">
+            <span class="bfv" style="color:#FFFFFF">44</span></div></div>
+          <div class="bev" style="color:var(--text-3)">€554K</div>
         </div>
         <div class="brow">
           <div class="blbl blbl-w110">B — standard</div>
           <div class="btrack"><div class="bfill" style="width:30%;background:#93C5FD">
             <span class="bfv" style="color:#1E3A8A">124</span></div></div>
-          <div class="bev" style="color:var(--text-3)">€433K</div>
+          <div class="bev" style="color:var(--text-3)">€435K</div>
         </div>
         <div class="brow">
           <div class="blbl blbl-w110">C — volume</div>
-          <div class="btrack"><div class="bfill" style="width:11%;background:#CBD5E1">
-            <span class="bfv" style="color:#334155">47</span></div></div>
+          <div class="btrack"><div class="bfill" style="width:12%;background:#CBD5E1">
+            <span class="bfv" style="color:#334155">48</span></div></div>
           <div class="bev" style="color:var(--text-3)">€36K</div>
         </div>
         <div class="brow">
           <div class="blbl blbl-w110">Unassigned</div>
           <div class="btrack"><div class="bfill" style="width:48%;background:#E2E8F0">
-            <span class="bfv" style="color:#475569">199</span></div></div>
+            <span class="bfv" style="color:#475569">200</span></div></div>
           <div class="bev" style="color:var(--text-3)">€0K</div>
         </div></div>
       <div class="stat2">
         <div class="stat-box" style="background:#FFF5F5">
-          <div class="stat-val" style="color:var(--red)">10%</div>
+          <div class="stat-val" style="color:var(--red)">11%</div>
           <div class="stat-lbl">of open leads are A-tier</div>
         </div>
         <div class="stat-box" style="background:#EFF6FF">
-          <div class="stat-val" style="color:var(--accent)">€548K</div>
+          <div class="stat-val" style="color:var(--accent)">€554K</div>
           <div class="stat-lbl">A-tier value</div>
         </div>
       </div>
@@ -215,7 +215,7 @@ svg text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
   
     <div class="card">
       <div class="ch">Raw-request backlog — requests that never became a quote</div>
-      <div class="cs">462 at <em>Pedido de orçamento</em> on the legacy board 10018007898 · 462 with an added date · <strong>199 further requests now sit on B2C &quot;Novo&quot; and are not in this figure</strong></div>
+      <div class="cs">462 at <em>Pedido de orçamento</em> on the legacy board 10018007898 · 462 with an added date · <strong>200 further requests now sit on B2C &quot;Novo&quot; and are not in this figure</strong></div>
       <div class="bars" style="gap:12px">
         <div class="brow">
           <div class="blbl blbl-w110">0–30 days</div>
@@ -241,7 +241,7 @@ svg text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
             <span class="bfv" style="color:#FFFFFF">227</span></div></div>
           <div class="bev" style="color:var(--text-3)">49%</div>
         </div></div>
-      <div class="note note-a" style="margin-top:14px"><strong>This pool sits on the board the team has stopped working.</strong> These are requests from before intake moved to the new board on 19 Aug. The pile is still unworked and needs an owner. <strong>5 leads sent here since the move are still sitting unseen.</strong> <strong>Lead intake has started moving:</strong> 199 untriaged requests are now on B2C &quot;Novo&quot; as well. This count covers the legacy board only — the figure above is therefore a <strong>floor, not a total</strong>, and the two are kept apart rather than added so nothing is counted twice while the move is half-done.</div>
+      <div class="note note-a" style="margin-top:14px"><strong>This pool sits on the board the team has stopped working.</strong> These are requests from before intake moved to the new board on 19 Aug. The pile is still unworked and needs an owner. <strong>5 leads sent here since the move are still sitting unseen.</strong> <strong>Lead intake has started moving:</strong> 200 untriaged requests are now on B2C &quot;Novo&quot; as well. This count covers the legacy board only — the figure above is therefore a <strong>floor, not a total</strong>, and the two are kept apart rather than added so nothing is counted twice while the move is half-done.</div>
     </div>
 
   
@@ -270,11 +270,11 @@ svg text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
           <td><span class="b b-x">· Not yet</span></td>
         </tr></tbody>
       </table>
-      <div class="foot">Closed on Novo since the cutover: <strong>250 won,
-      526 lost</strong>.</div>
+      <div class="foot">Closed on Novo since the cutover: <strong>252 won,
+      527 lost</strong>.</div>
     </div>
 
-  <div class="foot">Read-only: Novo 1388 items (pipeline, value, tier), old board 3558 (untriaged requests only). The two do not overlap. Aggregates only, no customer data.</div>
+  <div class="foot">Read-only: Novo 1395 items (pipeline, value, tier), old board 3558 (untriaged requests only). The two do not overlap. Aggregates only, no customer data.</div>
 </div><div class="view" id="view-operational">
   <div class="h1">What needs attention today?</div>
   <div class="sub">Aging, urgent rectified value by salesperson, and SLA breaches. Live read of the worked pipeline · aggregate figures only.</div>
@@ -286,19 +286,19 @@ svg text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
   <div class="kpis">
     <div class="kpi">
       <div class="kpi-lbl">Sent quotes open</div>
-      <div class="kpi-val" style="color:var(--text)">255</div>
+      <div class="kpi-val" style="color:var(--text)">256</div>
       <div class="kpi-sub">Median 35d · 90% stalled &gt; 7d</div>
       <span class="kpi-pill nt">Being followed up</span>
     </div>
     <div class="kpi">
       <div class="kpi-lbl">Rectified stalled (&gt; 7d)</div>
-      <div class="kpi-val" style="color:var(--red)">43</div>
-      <div class="kpi-sub">€125,533 stalled at this stage</div>
+      <div class="kpi-val" style="color:var(--red)">44</div>
+      <div class="kpi-sub">€129,650 stalled at this stage</div>
       <span class="kpi-pill dn">⊗ Act now</span>
     </div>
     <div class="kpi">
       <div class="kpi-lbl">Rectified — open value</div>
-      <div class="kpi-val" style="color:var(--accent)">€194K</div>
+      <div class="kpi-val" style="color:var(--accent)">€198K</div>
       <div class="kpi-sub">62 leads — no automatic trigger at this stage</div>
       <span class="kpi-pill wa">Highest loss risk</span>
     </div>
@@ -312,18 +312,18 @@ svg text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
   <div class="row c45">
     <div class="card">
       <div class="ch">Open leads — by age</div>
-      <div class="cs">Open worked stages · 401 with a date · since last contact</div>
+      <div class="cs">Open worked stages · 404 with a date · since last contact</div>
       <div class="bars" style="gap:12px">
         <div class="brow">
           <div class="blbl blbl-w110">0–7 days</div>
-          <div class="btrack"><div class="bfill" style="width:12%;background:#86EFAC">
-            <span class="bfv" style="color:#14532D">50</span></div></div>
+          <div class="btrack"><div class="bfill" style="width:13%;background:#86EFAC">
+            <span class="bfv" style="color:#14532D">54</span></div></div>
           <div class="bev" style="color:var(--green)">✓ recent</div>
         </div>
         <div class="brow">
           <div class="blbl blbl-w110">7–14 days</div>
           <div class="btrack"><div class="bfill" style="width:16%;background:#93C5FD">
-            <span class="bfv" style="color:#1E3A8A">66</span></div></div>
+            <span class="bfv" style="color:#1E3A8A">65</span></div></div>
           <div class="bev" style="color:var(--text-2)">watch</div>
         </div>
         <div class="brow">
@@ -340,7 +340,7 @@ svg text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
         </div></div>
       <div class="stat2">
         <div class="stat-box" style="background:#FFF5F5">
-          <div class="stat-val" style="color:var(--red)">71%</div>
+          <div class="stat-val" style="color:var(--red)">70%</div>
           <div class="stat-lbl">older than 14 days</div>
         </div>
         <div class="stat-box" style="background:#FFFBEB">
@@ -351,7 +351,7 @@ svg text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
     </div>
     <div class="card">
       <div class="ch">Rectified open — by salesperson</div>
-      <div class="cs">€194,363 identified · 62 quotes · 20 still without a value</div>
+      <div class="cs">€197,569 identified · 62 quotes · 20 still without a value</div>
       <table class="dt">
         <thead><tr>
           <th>Salesperson</th><th class="num">Leads</th><th class="num">Value</th><th class="num">Median</th><th>State</th>
@@ -371,7 +371,7 @@ svg text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
               <div class="av" style="width:26px;height:26px;font-size:10px;background:#16A34A">JC</div>
               Joana C.</div></td>
             <td class="num">18</td>
-            <td class="num" style="font-weight:600">€69,431</td>
+            <td class="num" style="font-weight:600">€72,637</td>
             <td class="num"><span style="color:var(--green);font-weight:700">6d</span></td>
             <td><span class="b b-g">✓ on cadence</span></td>
           </tr>
@@ -418,15 +418,15 @@ svg text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
           <tr>
             <td><div class="mname">Rectified stalled (&gt; 7 days)</div>
                 <div class="csub">Days since last contact · target &lt; 5</div></td>
-            <td class="num" style="font-weight:700">43</td>
-            <td><svg class="spark" width="196" height="76" viewBox="0 0 196 76"><line x1="24" y1="62" x2="188" y2="62" stroke="var(--border)" stroke-width="1"/><text x="20" y="62" text-anchor="end" font-size="8" fill="var(--text-3)">0</text><text x="20" y="14" text-anchor="end" font-size="8" fill="var(--text-3)">65</text><line x1="24" y1="57.8" x2="188" y2="57.8" stroke="var(--text-3)" stroke-width="1" stroke-dasharray="3,2"/><text x="188" y="55.8" text-anchor="end" font-size="8" fill="var(--text-3)">&lt;5</text><polyline points="24.0,47.0 26.9,42.8 29.9,36.2 32.8,37.8 35.7,34.5 38.6,36.2 41.6,36.2 44.5,36.2 47.4,36.2 50.4,47.0 53.3,46.2 56.2,45.3 59.1,42.0 62.1,42.0 65.0,42.0 67.9,45.3 70.9,52.0 73.8,50.3 76.7,49.5 79.6,46.2 82.6,46.2 85.5,45.3 88.4,39.5 91.4,34.5 94.3,32.8 97.2,32.8 103.1,32.0 106.0,32.0 108.9,27.8 111.9,27.0 120.6,25.3 123.6,25.3 126.5,25.3 135.3,14.5 141.1,34.5 144.1,34.5 147.0,34.5 149.9,32.0 152.9,30.3 158.7,19.5 161.6,17.8 164.6,17.8 167.5,17.8 176.3,27.0 179.2,25.3 182.1,26.2 185.1,26.2 188.0,26.2" fill="none" stroke="var(--red)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="24.0" cy="47.0" r="1.8" fill="var(--red)"/><circle cx="26.9" cy="42.8" r="1.8" fill="var(--red)"/><circle cx="29.9" cy="36.2" r="1.8" fill="var(--red)"/><circle cx="32.8" cy="37.8" r="1.8" fill="var(--red)"/><circle cx="35.7" cy="34.5" r="1.8" fill="var(--red)"/><circle cx="38.6" cy="36.2" r="1.8" fill="var(--red)"/><circle cx="41.6" cy="36.2" r="1.8" fill="var(--red)"/><circle cx="44.5" cy="36.2" r="1.8" fill="var(--red)"/><circle cx="47.4" cy="36.2" r="1.8" fill="var(--red)"/><circle cx="50.4" cy="47.0" r="1.8" fill="var(--red)"/><circle cx="53.3" cy="46.2" r="1.8" fill="var(--red)"/><circle cx="56.2" cy="45.3" r="1.8" fill="var(--red)"/><circle cx="59.1" cy="42.0" r="1.8" fill="var(--red)"/><circle cx="62.1" cy="42.0" r="1.8" fill="var(--red)"/><circle cx="65.0" cy="42.0" r="1.8" fill="var(--red)"/><circle cx="67.9" cy="45.3" r="1.8" fill="var(--red)"/><circle cx="70.9" cy="52.0" r="1.8" fill="var(--red)"/><circle cx="73.8" cy="50.3" r="1.8" fill="var(--red)"/><circle cx="76.7" cy="49.5" r="1.8" fill="var(--red)"/><circle cx="79.6" cy="46.2" r="1.8" fill="var(--red)"/><circle cx="82.6" cy="46.2" r="1.8" fill="var(--red)"/><circle cx="85.5" cy="45.3" r="1.8" fill="var(--red)"/><circle cx="88.4" cy="39.5" r="1.8" fill="var(--red)"/><circle cx="91.4" cy="34.5" r="1.8" fill="var(--red)"/><circle cx="94.3" cy="32.8" r="1.8" fill="var(--red)"/><circle cx="97.2" cy="32.8" r="1.8" fill="var(--red)"/><circle cx="103.1" cy="32.0" r="1.8" fill="var(--red)"/><circle cx="106.0" cy="32.0" r="1.8" fill="var(--red)"/><circle cx="108.9" cy="27.8" r="1.8" fill="var(--red)"/><circle cx="111.9" cy="27.0" r="1.8" fill="var(--red)"/><circle cx="120.6" cy="25.3" r="1.8" fill="var(--red)"/><circle cx="123.6" cy="25.3" r="1.8" fill="var(--red)"/><circle cx="126.5" cy="25.3" r="1.8" fill="var(--red)"/><circle cx="135.3" cy="14.5" r="1.8" fill="var(--red)"/><circle cx="141.1" cy="34.5" r="1.8" fill="var(--red)"/><circle cx="144.1" cy="34.5" r="1.8" fill="var(--red)"/><circle cx="147.0" cy="34.5" r="1.8" fill="var(--red)"/><circle cx="149.9" cy="32.0" r="1.8" fill="var(--red)"/><circle cx="152.9" cy="30.3" r="1.8" fill="var(--red)"/><circle cx="158.7" cy="19.5" r="1.8" fill="var(--red)"/><circle cx="161.6" cy="17.8" r="1.8" fill="var(--red)"/><circle cx="164.6" cy="17.8" r="1.8" fill="var(--red)"/><circle cx="167.5" cy="17.8" r="1.8" fill="var(--red)"/><circle cx="176.3" cy="27.0" r="1.8" fill="var(--red)"/><circle cx="179.2" cy="25.3" r="1.8" fill="var(--red)"/><circle cx="182.1" cy="26.2" r="1.8" fill="var(--red)"/><circle cx="185.1" cy="26.2" r="1.8" fill="var(--red)"/><circle cx="188.0" cy="26.2" r="1.8" fill="var(--red)"/><text x="24" y="73" font-size="8" fill="var(--text-3)">31/8</text><text x="188" y="73" text-anchor="end" font-size="8" fill="var(--text-3)">26/10</text></svg></td>
+            <td class="num" style="font-weight:700">44</td>
+            <td><svg class="spark" width="196" height="76" viewBox="0 0 196 76"><line x1="24" y1="62" x2="188" y2="62" stroke="var(--border)" stroke-width="1"/><text x="20" y="62" text-anchor="end" font-size="8" fill="var(--text-3)">0</text><text x="20" y="14" text-anchor="end" font-size="8" fill="var(--text-3)">65</text><line x1="24" y1="57.8" x2="188" y2="57.8" stroke="var(--text-3)" stroke-width="1" stroke-dasharray="3,2"/><text x="188" y="55.8" text-anchor="end" font-size="8" fill="var(--text-3)">&lt;5</text><polyline points="24.0,47.0 26.9,42.8 29.9,36.2 32.8,37.8 35.7,34.5 38.6,36.2 41.6,36.2 44.5,36.2 47.4,36.2 50.4,47.0 53.3,46.2 56.2,45.3 59.1,42.0 62.1,42.0 65.0,42.0 67.9,45.3 70.9,52.0 73.8,50.3 76.7,49.5 79.6,46.2 82.6,46.2 85.5,45.3 88.4,39.5 91.4,34.5 94.3,32.8 97.2,32.8 103.1,32.0 106.0,32.0 108.9,27.8 111.9,27.0 120.6,25.3 123.6,25.3 126.5,25.3 135.3,14.5 141.1,34.5 144.1,34.5 147.0,34.5 149.9,32.0 152.9,30.3 158.7,19.5 161.6,17.8 164.6,17.8 167.5,17.8 176.3,27.0 179.2,25.3 182.1,26.2 185.1,26.2 188.0,25.3" fill="none" stroke="var(--red)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="24.0" cy="47.0" r="1.8" fill="var(--red)"/><circle cx="26.9" cy="42.8" r="1.8" fill="var(--red)"/><circle cx="29.9" cy="36.2" r="1.8" fill="var(--red)"/><circle cx="32.8" cy="37.8" r="1.8" fill="var(--red)"/><circle cx="35.7" cy="34.5" r="1.8" fill="var(--red)"/><circle cx="38.6" cy="36.2" r="1.8" fill="var(--red)"/><circle cx="41.6" cy="36.2" r="1.8" fill="var(--red)"/><circle cx="44.5" cy="36.2" r="1.8" fill="var(--red)"/><circle cx="47.4" cy="36.2" r="1.8" fill="var(--red)"/><circle cx="50.4" cy="47.0" r="1.8" fill="var(--red)"/><circle cx="53.3" cy="46.2" r="1.8" fill="var(--red)"/><circle cx="56.2" cy="45.3" r="1.8" fill="var(--red)"/><circle cx="59.1" cy="42.0" r="1.8" fill="var(--red)"/><circle cx="62.1" cy="42.0" r="1.8" fill="var(--red)"/><circle cx="65.0" cy="42.0" r="1.8" fill="var(--red)"/><circle cx="67.9" cy="45.3" r="1.8" fill="var(--red)"/><circle cx="70.9" cy="52.0" r="1.8" fill="var(--red)"/><circle cx="73.8" cy="50.3" r="1.8" fill="var(--red)"/><circle cx="76.7" cy="49.5" r="1.8" fill="var(--red)"/><circle cx="79.6" cy="46.2" r="1.8" fill="var(--red)"/><circle cx="82.6" cy="46.2" r="1.8" fill="var(--red)"/><circle cx="85.5" cy="45.3" r="1.8" fill="var(--red)"/><circle cx="88.4" cy="39.5" r="1.8" fill="var(--red)"/><circle cx="91.4" cy="34.5" r="1.8" fill="var(--red)"/><circle cx="94.3" cy="32.8" r="1.8" fill="var(--red)"/><circle cx="97.2" cy="32.8" r="1.8" fill="var(--red)"/><circle cx="103.1" cy="32.0" r="1.8" fill="var(--red)"/><circle cx="106.0" cy="32.0" r="1.8" fill="var(--red)"/><circle cx="108.9" cy="27.8" r="1.8" fill="var(--red)"/><circle cx="111.9" cy="27.0" r="1.8" fill="var(--red)"/><circle cx="120.6" cy="25.3" r="1.8" fill="var(--red)"/><circle cx="123.6" cy="25.3" r="1.8" fill="var(--red)"/><circle cx="126.5" cy="25.3" r="1.8" fill="var(--red)"/><circle cx="135.3" cy="14.5" r="1.8" fill="var(--red)"/><circle cx="141.1" cy="34.5" r="1.8" fill="var(--red)"/><circle cx="144.1" cy="34.5" r="1.8" fill="var(--red)"/><circle cx="147.0" cy="34.5" r="1.8" fill="var(--red)"/><circle cx="149.9" cy="32.0" r="1.8" fill="var(--red)"/><circle cx="152.9" cy="30.3" r="1.8" fill="var(--red)"/><circle cx="158.7" cy="19.5" r="1.8" fill="var(--red)"/><circle cx="161.6" cy="17.8" r="1.8" fill="var(--red)"/><circle cx="164.6" cy="17.8" r="1.8" fill="var(--red)"/><circle cx="167.5" cy="17.8" r="1.8" fill="var(--red)"/><circle cx="176.3" cy="27.0" r="1.8" fill="var(--red)"/><circle cx="179.2" cy="25.3" r="1.8" fill="var(--red)"/><circle cx="182.1" cy="26.2" r="1.8" fill="var(--red)"/><circle cx="185.1" cy="26.2" r="1.8" fill="var(--red)"/><circle cx="188.0" cy="25.3" r="1.8" fill="var(--red)"/><text x="24" y="73" font-size="8" fill="var(--text-3)">31/8</text><text x="188" y="73" text-anchor="end" font-size="8" fill="var(--text-3)">26/10</text></svg></td>
             <td><span class="b b-r">⊗ Act now</span></td>
           </tr>
           <tr>
             <td><div class="mname">Medidas OK &gt; 48h (SLA)</div>
                 <div class="csub">Not re-sent within the 48h SLA · <strong>approximate</strong> — measured from Data da medição on 12 of 13 at Medidas OK · 1 excluded (measurement not marked Finalizado, or future-dated)</div></td>
-            <td class="num" style="font-weight:700">12</td>
-            <td><svg class="spark" width="196" height="76" viewBox="0 0 196 76"><line x1="24" y1="62" x2="188" y2="62" stroke="var(--border)" stroke-width="1"/><text x="20" y="62" text-anchor="end" font-size="8" fill="var(--text-3)">0</text><text x="20" y="14" text-anchor="end" font-size="8" fill="var(--text-3)">17</text><line x1="24" y1="58.8" x2="188" y2="58.8" stroke="var(--text-3)" stroke-width="1" stroke-dasharray="3,2"/><text x="188" y="56.8" text-anchor="end" font-size="8" fill="var(--text-3)">&lt;2</text><polyline points="24.0,55.7 26.9,46.2 29.9,58.8 32.8,58.8 35.7,58.8 38.6,52.5 41.6,52.5 44.5,52.5 47.4,52.5 50.4,55.7 53.3,55.7 56.2,58.8 59.1,52.5 62.1,52.5 65.0,52.5 67.9,55.7 70.9,52.5 73.8,52.5 76.7,49.4 79.6,52.5 82.6,49.4 85.5,46.2 88.4,46.2 91.4,52.5 94.3,46.2 97.2,46.2 103.1,46.2 106.0,46.2 108.9,46.2 111.9,49.4 120.6,46.2 123.6,39.9 126.5,30.4 135.3,39.9 141.1,30.4 144.1,27.3 147.0,14.6 149.9,24.1 152.9,30.4 158.7,27.3 161.6,27.3 164.6,24.1 167.5,17.8 176.3,43.1 179.2,36.7 182.1,36.7 185.1,36.7 188.0,24.1" fill="none" stroke="var(--red)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="24.0" cy="55.7" r="1.8" fill="var(--red)"/><circle cx="26.9" cy="46.2" r="1.8" fill="var(--red)"/><circle cx="29.9" cy="58.8" r="1.8" fill="var(--red)"/><circle cx="32.8" cy="58.8" r="1.8" fill="var(--red)"/><circle cx="35.7" cy="58.8" r="1.8" fill="var(--red)"/><circle cx="38.6" cy="52.5" r="1.8" fill="var(--red)"/><circle cx="41.6" cy="52.5" r="1.8" fill="var(--red)"/><circle cx="44.5" cy="52.5" r="1.8" fill="var(--red)"/><circle cx="47.4" cy="52.5" r="1.8" fill="var(--red)"/><circle cx="50.4" cy="55.7" r="1.8" fill="var(--red)"/><circle cx="53.3" cy="55.7" r="1.8" fill="var(--red)"/><circle cx="56.2" cy="58.8" r="1.8" fill="var(--red)"/><circle cx="59.1" cy="52.5" r="1.8" fill="var(--red)"/><circle cx="62.1" cy="52.5" r="1.8" fill="var(--red)"/><circle cx="65.0" cy="52.5" r="1.8" fill="var(--red)"/><circle cx="67.9" cy="55.7" r="1.8" fill="var(--red)"/><circle cx="70.9" cy="52.5" r="1.8" fill="var(--red)"/><circle cx="73.8" cy="52.5" r="1.8" fill="var(--red)"/><circle cx="76.7" cy="49.4" r="1.8" fill="var(--red)"/><circle cx="79.6" cy="52.5" r="1.8" fill="var(--red)"/><circle cx="82.6" cy="49.4" r="1.8" fill="var(--red)"/><circle cx="85.5" cy="46.2" r="1.8" fill="var(--red)"/><circle cx="88.4" cy="46.2" r="1.8" fill="var(--red)"/><circle cx="91.4" cy="52.5" r="1.8" fill="var(--red)"/><circle cx="94.3" cy="46.2" r="1.8" fill="var(--red)"/><circle cx="97.2" cy="46.2" r="1.8" fill="var(--red)"/><circle cx="103.1" cy="46.2" r="1.8" fill="var(--red)"/><circle cx="106.0" cy="46.2" r="1.8" fill="var(--red)"/><circle cx="108.9" cy="46.2" r="1.8" fill="var(--red)"/><circle cx="111.9" cy="49.4" r="1.8" fill="var(--red)"/><circle cx="120.6" cy="46.2" r="1.8" fill="var(--red)"/><circle cx="123.6" cy="39.9" r="1.8" fill="var(--red)"/><circle cx="126.5" cy="30.4" r="1.8" fill="var(--red)"/><circle cx="135.3" cy="39.9" r="1.8" fill="var(--red)"/><circle cx="141.1" cy="30.4" r="1.8" fill="var(--red)"/><circle cx="144.1" cy="27.3" r="1.8" fill="var(--red)"/><circle cx="147.0" cy="14.6" r="1.8" fill="var(--red)"/><circle cx="149.9" cy="24.1" r="1.8" fill="var(--red)"/><circle cx="152.9" cy="30.4" r="1.8" fill="var(--red)"/><circle cx="158.7" cy="27.3" r="1.8" fill="var(--red)"/><circle cx="161.6" cy="27.3" r="1.8" fill="var(--red)"/><circle cx="164.6" cy="24.1" r="1.8" fill="var(--red)"/><circle cx="167.5" cy="17.8" r="1.8" fill="var(--red)"/><circle cx="176.3" cy="43.1" r="1.8" fill="var(--red)"/><circle cx="179.2" cy="36.7" r="1.8" fill="var(--red)"/><circle cx="182.1" cy="36.7" r="1.8" fill="var(--red)"/><circle cx="185.1" cy="36.7" r="1.8" fill="var(--red)"/><circle cx="188.0" cy="24.1" r="1.8" fill="var(--red)"/><text x="24" y="73" font-size="8" fill="var(--text-3)">31/8</text><text x="188" y="73" text-anchor="end" font-size="8" fill="var(--text-3)">26/10</text></svg></td>
+            <td class="num" style="font-weight:700">11</td>
+            <td><svg class="spark" width="196" height="76" viewBox="0 0 196 76"><line x1="24" y1="62" x2="188" y2="62" stroke="var(--border)" stroke-width="1"/><text x="20" y="62" text-anchor="end" font-size="8" fill="var(--text-3)">0</text><text x="20" y="14" text-anchor="end" font-size="8" fill="var(--text-3)">17</text><line x1="24" y1="58.8" x2="188" y2="58.8" stroke="var(--text-3)" stroke-width="1" stroke-dasharray="3,2"/><text x="188" y="56.8" text-anchor="end" font-size="8" fill="var(--text-3)">&lt;2</text><polyline points="24.0,55.7 26.9,46.2 29.9,58.8 32.8,58.8 35.7,58.8 38.6,52.5 41.6,52.5 44.5,52.5 47.4,52.5 50.4,55.7 53.3,55.7 56.2,58.8 59.1,52.5 62.1,52.5 65.0,52.5 67.9,55.7 70.9,52.5 73.8,52.5 76.7,49.4 79.6,52.5 82.6,49.4 85.5,46.2 88.4,46.2 91.4,52.5 94.3,46.2 97.2,46.2 103.1,46.2 106.0,46.2 108.9,46.2 111.9,49.4 120.6,46.2 123.6,39.9 126.5,30.4 135.3,39.9 141.1,30.4 144.1,27.3 147.0,14.6 149.9,24.1 152.9,30.4 158.7,27.3 161.6,27.3 164.6,24.1 167.5,17.8 176.3,43.1 179.2,36.7 182.1,36.7 185.1,36.7 188.0,27.3" fill="none" stroke="var(--red)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="24.0" cy="55.7" r="1.8" fill="var(--red)"/><circle cx="26.9" cy="46.2" r="1.8" fill="var(--red)"/><circle cx="29.9" cy="58.8" r="1.8" fill="var(--red)"/><circle cx="32.8" cy="58.8" r="1.8" fill="var(--red)"/><circle cx="35.7" cy="58.8" r="1.8" fill="var(--red)"/><circle cx="38.6" cy="52.5" r="1.8" fill="var(--red)"/><circle cx="41.6" cy="52.5" r="1.8" fill="var(--red)"/><circle cx="44.5" cy="52.5" r="1.8" fill="var(--red)"/><circle cx="47.4" cy="52.5" r="1.8" fill="var(--red)"/><circle cx="50.4" cy="55.7" r="1.8" fill="var(--red)"/><circle cx="53.3" cy="55.7" r="1.8" fill="var(--red)"/><circle cx="56.2" cy="58.8" r="1.8" fill="var(--red)"/><circle cx="59.1" cy="52.5" r="1.8" fill="var(--red)"/><circle cx="62.1" cy="52.5" r="1.8" fill="var(--red)"/><circle cx="65.0" cy="52.5" r="1.8" fill="var(--red)"/><circle cx="67.9" cy="55.7" r="1.8" fill="var(--red)"/><circle cx="70.9" cy="52.5" r="1.8" fill="var(--red)"/><circle cx="73.8" cy="52.5" r="1.8" fill="var(--red)"/><circle cx="76.7" cy="49.4" r="1.8" fill="var(--red)"/><circle cx="79.6" cy="52.5" r="1.8" fill="var(--red)"/><circle cx="82.6" cy="49.4" r="1.8" fill="var(--red)"/><circle cx="85.5" cy="46.2" r="1.8" fill="var(--red)"/><circle cx="88.4" cy="46.2" r="1.8" fill="var(--red)"/><circle cx="91.4" cy="52.5" r="1.8" fill="var(--red)"/><circle cx="94.3" cy="46.2" r="1.8" fill="var(--red)"/><circle cx="97.2" cy="46.2" r="1.8" fill="var(--red)"/><circle cx="103.1" cy="46.2" r="1.8" fill="var(--red)"/><circle cx="106.0" cy="46.2" r="1.8" fill="var(--red)"/><circle cx="108.9" cy="46.2" r="1.8" fill="var(--red)"/><circle cx="111.9" cy="49.4" r="1.8" fill="var(--red)"/><circle cx="120.6" cy="46.2" r="1.8" fill="var(--red)"/><circle cx="123.6" cy="39.9" r="1.8" fill="var(--red)"/><circle cx="126.5" cy="30.4" r="1.8" fill="var(--red)"/><circle cx="135.3" cy="39.9" r="1.8" fill="var(--red)"/><circle cx="141.1" cy="30.4" r="1.8" fill="var(--red)"/><circle cx="144.1" cy="27.3" r="1.8" fill="var(--red)"/><circle cx="147.0" cy="14.6" r="1.8" fill="var(--red)"/><circle cx="149.9" cy="24.1" r="1.8" fill="var(--red)"/><circle cx="152.9" cy="30.4" r="1.8" fill="var(--red)"/><circle cx="158.7" cy="27.3" r="1.8" fill="var(--red)"/><circle cx="161.6" cy="27.3" r="1.8" fill="var(--red)"/><circle cx="164.6" cy="24.1" r="1.8" fill="var(--red)"/><circle cx="167.5" cy="17.8" r="1.8" fill="var(--red)"/><circle cx="176.3" cy="43.1" r="1.8" fill="var(--red)"/><circle cx="179.2" cy="36.7" r="1.8" fill="var(--red)"/><circle cx="182.1" cy="36.7" r="1.8" fill="var(--red)"/><circle cx="185.1" cy="36.7" r="1.8" fill="var(--red)"/><circle cx="188.0" cy="27.3" r="1.8" fill="var(--red)"/><text x="24" y="73" font-size="8" fill="var(--text-3)">31/8</text><text x="188" y="73" text-anchor="end" font-size="8" fill="var(--text-3)">26/10</text></svg></td>
             <td><span class="b b-r">⊗ Action</span></td>
           </tr>
           <tr>
@@ -440,30 +440,510 @@ svg text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
       </table>
     </div>
 
-  <div class="foot">Read-only: Novo 1388 items — the worked pipeline. The untriaged backlog on the Executive tab is historic, from the old board. Aggregates only, no customer data.</div>
-</div><div class="view" id="view-leads">
+  <div class="foot">Read-only: Novo 1395 items — the worked pipeline. The untriaged backlog on the Executive tab is historic, from the old board. Aggregates only, no customer data.</div>
+</div><div class="view" id="view-quotes"><style>
+/* ---- Quotes tab ---- */
+
+/* the canary's label (PREVIEW) */
+.qpre{display:inline-block;background:#FBBF24;color:#451A03;font-size:11px;font-weight:800;letter-spacing:.09em;
+  text-transform:uppercase;padding:5px 11px;border-radius:6px;box-shadow:0 0 0 2px #FDE68A}
+
+/* F1 period bar */
+.qbar{position:sticky;top:0;z-index:4;background:var(--surface);box-shadow:0 2px 10px rgba(15,23,42,.07);
+  margin:-24px -28px 18px;padding:12px 28px;border-bottom:1px solid var(--border);
+  display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center}
+.qbar .lbl{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--text-3)}
+.sw{display:inline-flex;border:1px solid var(--border);border-radius:7px;overflow:hidden;background:var(--surface)}
+.sw button{all:unset;cursor:pointer;font-size:12px;padding:6px 11px;color:var(--text-2);border-right:1px solid var(--border)}
+.sw button:last-child{border-right:0}
+.sw button[aria-pressed="true"]{background:#DBEAFE;color:#1D4ED8;font-weight:600}
+.sw button:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.qbar .sw button{font-size:13px;padding:0 14px;height:32px;line-height:32px}
+.qbar .sw button[aria-pressed="true"]{background:var(--accent);color:#fff}
+.step{display:inline-flex;align-items:center;gap:4px}
+.step button{all:unset;cursor:pointer;width:34px;height:34px;display:inline-flex;align-items:center;justify-content:center;
+  border:1px solid #BFDBFE;border-radius:7px;background:var(--surface);color:#1D4ED8;font-size:13px}
+.step button:not(:disabled):hover{background:#EFF6FF}
+.step button:disabled{opacity:.35;cursor:default}
+.qbar select{font:inherit;font-size:13px;font-weight:600;height:34px;padding:0 28px 0 12px;border:1.5px solid var(--accent);
+  border-radius:7px;background:#EFF6FF;color:#1D4ED8;min-width:190px;cursor:pointer}
+.qbar button:focus-visible,.qbar select:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.qbar .sum{margin-left:auto;display:flex;align-items:center;flex-wrap:wrap;row-gap:6px}
+.qbar .stat{padding:0 16px;border-left:1px solid var(--border)}
+.qbar .stat:first-child{border-left:0;padding-left:0}
+.qbar .stat .l{display:block;font-size:10.5px;color:var(--text-3);line-height:1.25}
+.qbar .stat .v{display:block;font-size:19px;font-weight:800;color:var(--text);line-height:1.15}
+.qbar .ls{display:none}
+.qbar .sum .b{margin-left:4px}
+
+/* F2 funnel */
+.fn{display:flex;flex-direction:column}
+.fn-row,.fn-conv{display:grid;grid-template-columns:150px 1fr;gap:14px;align-items:center}
+.fn-conv{margin:6px 0}
+.fn-lbl{font-size:11px;color:var(--text-2);line-height:1.35}
+.fn-lbl b{display:block;font-size:13px;color:var(--text)}
+.fn-track{display:flex;gap:2px;height:22px;min-width:0}
+.fn-bar{height:22px;min-width:2px;cursor:default;flex:0 0 auto}
+.fn-bar:last-child{border-radius:0 4px 4px 0}
+.fn-bar:hover{filter:brightness(1.12)}
+.fn-bar:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.fn-pct .arr{font-size:13px;color:var(--text-3);margin-right:-2px}
+.fn-pct{display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 8px;padding:6px 0 6px 12px;border-left:2px solid var(--border)}
+.fn-pct .big{font-size:22px;font-weight:800;color:var(--text);line-height:1}
+.fn-pct .what{font-size:12px;color:var(--text-2)}
+.fn-pct .ref{font-size:11px;color:var(--text-3)}
+.fn-pct.sub{margin-top:-8px;padding-top:2px;align-items:center}
+.fn-pct .mid{font-size:15px;font-weight:700;color:var(--text-2);line-height:1}
+.lgd2{display:flex;gap:6px 16px;flex-wrap:wrap;font-size:10.5px;color:var(--text-2);margin:2px 0 14px}
+.lgd2 span{display:inline-flex;align-items:center;gap:6px}
+.sq{width:10px;height:10px;border-radius:2px;display:inline-block}
+
+/* compact tables */
+.qwrap{max-width:1120px}
+table.qt{width:100%;border-collapse:collapse;font-size:12.5px;font-variant-numeric:tabular-nums}
+.qt th{font-size:10.5px;font-weight:600;color:var(--text-3);padding:0 8px 7px;text-align:left;
+  border-bottom:1px solid var(--border);white-space:nowrap;vertical-align:bottom}
+.qt th.num,.qt td.num{text-align:right}
+.qt th.grp{text-align:center;padding-bottom:4px}
+.qt th.g0,.qt td.g0{padding-left:22px}
+.qt td{padding:6px 8px;border-bottom:1px solid #F1F5F9;vertical-align:middle;white-space:nowrap;background:var(--surface)}
+.qt tbody tr:hover td{background:#F8FAFC}
+.qt tr:last-child td{border-bottom:0}
+.qt tr.tot td{font-weight:600;border-top:1px solid var(--border);border-bottom:0}
+.qt tr.old td,.qt tr.young td{color:var(--text-3)}
+.qt tr.hl td{background:#EFF6FF}
+.qt tr.pick{cursor:pointer}
+.qt tr.pick:focus-visible td{outline:2px solid var(--accent);outline-offset:-2px}
+.qt .rep{display:flex;align-items:center;gap:7px;white-space:nowrap}
+.qt .av{width:20px;height:20px;font-size:8.5px}
+.qt .p{color:var(--text-3);font-size:11px;margin-left:4px}
+.qt .hint{display:block;font-weight:400;color:var(--text-3);font-size:10px}
+#q-team th.num{white-space:normal;line-height:1.25;max-width:84px}
+#q-team th.g0,#q-team td.g0{padding-left:14px}
+.qt .ls{display:none}
+.qt .r1{display:flex;align-items:center;gap:8px}
+.qt .pc{font-weight:600;min-width:34px;text-align:right;color:var(--text)}
+.qt .bar{position:relative;flex:0 0 84px;height:4px;background:#DBEAFE;border-radius:0 2px 2px 0}
+.qt .fil{position:absolute;left:0;top:0;height:4px;border-radius:0 2px 2px 0}
+.qt .tick{position:absolute;top:-3px;width:1.5px;height:10px;background:var(--text)}
+.qt .ct{font-size:11px;color:var(--text-3);min-width:44px}
+.qt td.thin .pc,.qt tr.old td .pc{color:var(--text-3)}
+.qt td.thin .fil,.qt tr.old td .fil{opacity:.35}
+.dot-old{display:inline-block;width:8px;height:8px;border-radius:50%;background:#CBD5E1;margin-right:5px}
+details.tbl>summary{display:inline-flex;align-items:center;gap:8px;margin-top:14px;cursor:pointer;list-style:none;
+  font-size:12px;font-weight:600;color:var(--text-2);background:#F8FAFC;border:1px solid var(--border);border-radius:7px;padding:7px 12px}
+details.tbl>summary::-webkit-details-marker{display:none}
+details.tbl>summary:hover{background:#F1F5F9;color:var(--text)}
+details.tbl>summary:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+details.tbl>summary .open,details.tbl[open]>summary .closed{display:none}
+details.tbl[open]>summary .open{display:inline}
+details.tbl>summary .chev{font-size:10px;color:var(--text-3);transition:transform .15s}
+details.tbl[open]>summary .chev{transform:rotate(180deg)}
+.tip{position:fixed;z-index:10;pointer-events:none;background:#0F172A;color:#fff;font-size:11px;line-height:1.45;
+  padding:7px 10px;border-radius:6px;opacity:0;transition:opacity .08s;max-width:260px}
+.tip b{font-size:13px}
+
+/* phone */
+@media(max-width:640px){
+  .qbar{padding:8px 28px;gap:8px}
+  .qbar .lbl{display:none}
+  .qbar .sw button{font-size:12px;padding:0 10px;height:30px;line-height:30px}
+  .qbar .step{flex:1 1 100%}
+  .qbar .step select{flex:1;min-width:0}
+  .qbar .step button{width:32px;height:32px}
+  .qbar .sum{margin-left:0;width:100%;flex-wrap:nowrap}
+  .qbar .stat{padding:0 8px}
+  .qbar .stat .l{font-size:9.5px}
+  .qbar .stat .v{font-size:15px}
+  .qbar .lf{display:none} .qbar .ls{display:inline}
+  .qbar .sum .b{display:none}
+  .fn-row,.fn-conv{grid-template-columns:84px 1fr;gap:10px}
+  .fn-pct .big{font-size:18px}
+  .fn-pct .what{font-size:11px}
+  .card.q{padding:14px}
+  #q-rtt .bar,#q-rtt .ct,#q-rtt .av,#q-rtt .hint,#q-rtt .eur{display:none}
+  #q-rtt th{white-space:normal}
+  #q-rtt .lf{display:none} #q-rtt .ls{display:inline}
+  #q-rtt th.g0,#q-rtt td.g0{padding-left:6px}
+  #q-rtt td,#q-rtt th{padding-left:4px;padding-right:4px}
+  .qt .av{display:none}
+  .qt td:first-child,.qt th:first-child{position:sticky;left:0;z-index:1;background:var(--surface)}
+  .qt tr.hl td:first-child{background:#EFF6FF}
+}
+</style>
+  <div class="qbar" role="group" aria-label="Period">
+    <span class="qpre">Preview</span><span class="lbl">Period</span>
+    <div class="sw" id="q-mode">
+      <button data-m="3" aria-pressed="true">3 months</button>
+      <button data-m="1" aria-pressed="false">1 month</button>
+      <button data-m="s" aria-pressed="false">Settled months</button>
+    </div>
+    <div class="step">
+      <button id="q-prev" aria-label="Earlier period">◀</button>
+      <select id="q-sel" aria-label="Choose period"></select>
+      <button id="q-next" aria-label="Later period">▶</button>
+    </div>
+    <div class="sum" id="q-sum"></div>
+  </div>
+
+  <div class="qwrap">
+  <div class="h1">How do quotes become sales?</div>
+  <div class="sub">For the team and each salesperson, in the period above. Aggregate figures only.</div>
+
+  <div class="card q">
+    <div class="ch" id="q-fn-h"></div>
+    <div class="cs">Each quote is followed from the day it was sent to today. Bar length is the share of quotes sent.</div>
+    <div class="lgd2"><span><i class="sq" style="background:#60A5FA"></i>Quotes sent</span>
+      <span><i class="sq" style="background:#2563EB"></i>Measured</span>
+      <span><i class="sq" style="background:#1E3A8A"></i>Won after a measurement</span>
+      <span><i class="sq" style="background:#5C6FB8"></i>Won, no measurement in the CRM</span></div>
+    <div class="fn" id="q-fn"></div>
+    <div class="foot" id="q-fn-f"></div>
+  </div>
+
+  <div class="card q">
+    <div class="ch" id="q-rt-h"></div>
+    <div class="cs">The same quotes, followed to today. Each bar is out of 100%; the black tick is the team.</div>
+    <table class="qt" id="q-rtt">
+      <thead><tr><th>Salesperson</th><th class="num">Quotes</th>
+        <th class="g0">Measured<span class="hint">of quotes sent</span></th>
+        <th class="g0"><span class="lf">Won after measurement</span><span class="ls">Won after meas.</span><span class="hint">of quotes measured</span></th>
+        <th class="g0"><span class="lf">Won overall</span><span class="ls">Won</span><span class="hint">of quotes sent</span></th>
+        <th class="num eur">€ won</th></tr></thead>
+      <tbody id="q-rt"></tbody>
+    </table>
+    <div class="foot" id="q-rt-f"></div>
+    <details class="tbl"><summary><span class="closed">Show counts and € by salesperson</span><span class="open">Hide counts and €</span><span class="chev">▾</span></summary>
+      <table class="qt" style="margin-top:10px">
+        <thead><tr><th>Salesperson</th><th class="num g0">Quotes</th><th class="num">€ quoted</th>
+          <th class="num g0">Measured</th><th class="num">€</th><th class="num g0">Won after measurement</th><th class="num">€</th>
+          <th class="num g0">Won overall</th><th class="num">€</th><th class="num g0">Lost</th><th class="num">Still open</th></tr></thead>
+        <tbody id="q-ct"></tbody>
+      </table>
+    </details>
+  </div>
+
+  <div class="card q">
+    <div class="ch" id="q-act-h"></div>
+    <div class="cs">Everything that happened in these months: quotes sent, rectified, won and lost. Most of it is on quotes sent earlier, so the columns don't add up. This is the view to compare with the sales board.</div>
+    <table class="qt">
+      <thead>
+        <tr><th rowspan="2" style="vertical-align:bottom">Salesperson</th>
+          <th class="grp g0" colspan="2">Orçamento inicial</th><th class="grp g0" colspan="2">Orçamento retificado</th>
+          <th class="grp g0" colspan="2">Adjudicado</th><th class="grp g0" colspan="2">Não adjudicado</th></tr>
+        <tr><th class="num g0">No.</th><th class="num">€</th><th class="num g0">No.</th><th class="num">€</th>
+          <th class="num g0">No.</th><th class="num">€</th><th class="num g0">No.</th><th class="num">€</th></tr>
+      </thead>
+      <tbody id="q-act"></tbody>
+    </table>
+    <div class="foot" id="q-act-f"></div>
+  </div>
+
+  <div class="card q">
+    <div class="ch">Team, month by month</div>
+    <div class="cs">Click a month to look at it on its own. Highlighted: the period above.</div>
+    <div class="sw" id="q-tv">
+      <button data-v="coh" aria-pressed="true">Conversion</button>
+      <button data-v="act" aria-pressed="false">Activity</button></div>
+    <div class="cs" id="q-tv-s" style="margin:8px 0 12px"></div>
+    <table class="qt" id="q-team"></table>
+  </div>
+
+  <details class="notes">
+    <summary>How these numbers are calculated</summary>
+    <div class="foot" style="margin-top:6px">
+      <p><strong>Quotes.</strong> One quote per quote number (WD-, or WS- for Sintra). A part such as /1 or -1 is a quote of its own; RC (refabrication charged to the client) counts as a sale; RE is left out; -10 and similar mark factory days and belong to the main quote. Both CRM boards are read, the old one until 14 Aug and the new one after; a quote on both counts once.</p>
+      <p><strong>Dates.</strong> Sent: the day the quote entered <em>Orçamento enviado</em>, or was created at that stage. Measured: it reached <em>Orçamento retificado</em>. Won and lost: the day the stage changed to <em>Adjudicado</em> or <em>Não adjudicado</em>. Lisbon time, from November 2025, when the CRM's change history starts. The current month is always incomplete.</p>
+      <p><strong>Values.</strong> Valor inicial for quotes sent, Valor retificado for measured ones; won and lost use Valor retificado, or Valor inicial when there was none. Quotes without a value count but add no €. A few values that are clearly wrong (a missing decimal point, or a value the data-quality register lists as wrong) are left out of €. Totals are the sum of the rows shown.</p>
+      <p><strong>Salesperson</strong> is the Orçamentista. Grey names are not in the current B2C team; their quotes are counted all the same.</p>
+      <p><strong>Settled months</strong> are the run of months from November 2025 in which no more than 5% of the quotes sent are still open. After that run, a month's rates can still change, by at most the share still open.</p>
+      <p><strong>Not in the CRM.</strong> Quotes sent by email enter the CRM only once won, so "Quotes sent" is understated and "Won overall" reads higher than reality. "Won after measurement" is barely affected. B2B is not included.</p>
+      <p><strong>What these numbers are not.</strong> The dates are when someone updated the CRM, not when the quote went out or the sale closed: a salesperson catching up on several quotes at once makes them all look sent that day. These are quote values, not the sales record: bonuses and commissions come from the sales board. And the history starts in November 2025, so there is no year-on-year comparison before November 2026.</p>
+      <p><strong>Checked against the sales board</strong> on 24 Oct 2026, sale by sale: Filipa, July: 22 of 22 match. Joana, June: 39 of 44; the other 5 have a different adjudication date or salesperson on the sales board.</p>
+      <p><strong>1–3 July 2026:</strong> about 290 older quotes were closed as lost in one clean-up, so July's lost figure is high.</p>
+    </div>
+  </details>
+  </div>
+  <div class="foot">Read-only: both B2C boards and their change history to 26 Oct 2026 10:32 · read 2026-10-26 · aggregates only, no customer data.</div>
+<script>
+// The page's tab script (render_common.page) comes after this fragment and defines sw(), which
+// the tab wraps; so everything waits for the document, by which time it exists.
+document.addEventListener("DOMContentLoaded", function(){
+const D = {"pulled": "2026-10-26", "months": ["2025-11", "2025-12", "2026-01", "2026-02", "2026-03", "2026-04", "2026-05", "2026-06", "2026-07", "2026-08", "2026-09", "2026-10"], "act": {"2025-11": {"Unassigned": {"n_i": 8, "v_i": 0, "m_i": 8, "x_i": 0, "n_r": 1, "v_r": 0, "m_r": 1, "x_r": 0, "n_a": 2, "v_a": 0, "m_a": 2, "x_a": 0, "n_l": 0, "v_l": 0, "m_l": 0, "x_l": 0}, "__team": {"n_i": 233, "v_i": 302661.72, "m_i": 93, "x_i": 0, "n_r": 134, "v_r": 218897.04, "m_r": 53, "x_r": 1, "n_a": 93, "v_a": 169213.09, "m_a": 32, "x_a": 1, "n_l": 139, "v_l": 8750.75, "m_l": 136, "x_l": 0}, "Sara R.": {"n_i": 18, "v_i": 0, "m_i": 18, "x_i": 0, "n_r": 34, "v_r": 0, "m_r": 34, "x_r": 0, "n_a": 15, "v_a": 0, "m_a": 15, "x_a": 0, "n_l": 30, "v_l": 0, "m_l": 30, "x_l": 0}, "Patrícia C.": {"n_i": 87, "v_i": 137146.76, "m_i": 23, "x_i": 0, "n_r": 40, "v_r": 76257.61, "m_r": 4, "x_r": 0, "n_a": 26, "v_a": 58927.09, "m_a": 4, "x_a": 0, "n_l": 66, "v_l": 5744.91, "m_l": 64, "x_l": 0}, "Joana C.": {"n_i": 68, "v_i": 95372.24, "m_i": 23, "x_i": 0, "n_r": 41, "v_r": 74258.8, "m_r": 13, "x_r": 1, "n_a": 28, "v_a": 61496.37, "m_a": 9, "x_a": 1, "n_l": 36, "v_l": 0, "m_l": 36, "x_l": 0}, "Silvana B.": {"n_i": 4, "v_i": 0, "m_i": 4, "x_i": 0, "n_r": 1, "v_r": 0, "m_r": 1, "x_r": 0, "n_a": 2, "v_a": 0, "m_a": 2, "x_a": 0, "n_l": 5, "v_l": 0, "m_l": 5, "x_l": 0}, "Izabella J.": {"n_i": 45, "v_i": 70142.72, "m_i": 14, "x_i": 0, "n_r": 17, "v_r": 68380.63, "m_r": 0, "x_r": 0, "n_a": 20, "v_a": 48789.63, "m_a": 0, "x_a": 0, "n_l": 2, "v_l": 3005.84, "m_l": 1, "x_l": 0}, "Natanael K.": {"n_i": 3, "v_i": 0, "m_i": 3, "x_i": 0, "n_r": 0, "v_r": 0, "m_r": 0, "x_r": 0, "n_a": 0, "v_a": 0, "m_a": 0, "x_a": 0, "n_l": 0, "v_l": 0, "m_l": 0, "x_l": 0}}, "2025-12": {"Patrícia C.": {"n_i": 49, "v_i": 112374.28, "m_i": 10, "x_i": 0, "n_r": 27, "v_r": 81564.58, "m_r": 3, "x_r": 0, "n_a": 27, "v_a": 63276.91, "m_a": 1, "x_a": 0, "n_l": 59, "v_l": 87632.95, "m_l": 13, "x_l": 0}, "__team": {"n_i": 178, "v_i": 324242.4, "m_i": 45, "x_i": 1, "n_r": 90, "v_r": 174966.18, "m_r": 31, "x_r": 0, "n_a": 79, "v_a": 181594.16, "m_a": 13, "x_a": 0, "n_l": 87, "v_l": 132503.16, "m_l": 24, "x_l": 0}, "Sara R.": {"n_i": 0, "v_i": 0, "m_i": 0, "x_i": 0, "n_r": 3, "v_r": 0, "m_r": 3, "x_r": 0, "n_a": 3, "v_a": 0, "m_a": 3, "x_a": 0, "n_l": 1, "v_l": 0, "m_l": 1, "x_l": 0}, "Joana C.": {"n_i": 59, "v_i": 102730.89, "m_i": 7, "x_i": 1, "n_r": 32, "v_r": 58329.32, "m_r": 11, "x_r": 0, "n_a": 25, "v_a": 57704.99, "m_a": 1, "x_a": 0, "n_l": 18, "v_l": 28761.53, "m_l": 6, "x_l": 0}, "Silvana B.": {"n_i": 0, "v_i": 0, "m_i": 0, "x_i": 0, "n_r": 2, "v_r": 0, "m_r": 2, "x_r": 0, "n_a": 2, "v_a": 0, "m_a": 2, "x_a": 0, "n_l": 0, "v_l": 0, "m_l": 0, "x_l": 0}, "Izabella J.": {"n_i": 59, "v_i": 109137.23, "m_i": 17, "x_i": 0, "n_r": 17, "v_r": 31577.58, "m_r": 4, "x_r": 0, "n_a": 16, "v_a": 60612.26, "m_a": 0, "x_a": 0, "n_l": 9, "v_l": 16108.68, "m_l": 4, "x_l": 0}, "Unassigned": {"n_i": 5, "v_i": 0, "m_i": 5, "x_i": 0, "n_r": 5, "v_r": 0, "m_r": 5, "x_r": 0, "n_a": 3, "v_a": 0, "m_a": 3, "x_a": 0, "n_l": 0, "v_l": 0, "m_l": 0, "x_l": 0}, "Natanael K.": {"n_i": 1, "v_i": 0, "m_i": 1, "x_i": 0, "n_r": 3, "v_r": 0, "m_r": 3, "x_r": 0, "n_a": 2, "v_a": 0, "m_a": 2, "x_a": 0, "n_l": 0, "v_l": 0, "m_l": 0, "x_l": 0}, "Ivan P.": {"n_i": 4, "v_i": 0, "m_i": 4, "x_i": 0, "n_r": 1, "v_r": 3494.7, "m_r": 0, "x_r": 0, "n_a": 1, "v_a": 0, "m_a": 1, "x_a": 0, "n_l": 0, "v_l": 0, "m_l": 0, "x_l": 0}, "Rui M.": {"n_i": 1, "v_i": 0, "m_i": 1, "x_i": 0, "n_r": 0, "v_r": 0, "m_r": 0, "x_r": 0, "n_a": 0, "v_a": 0, "m_a": 0, "x_a": 0, "n_l": 0, "v_l": 0, "m_l": 0, "x_l": 0}}, "2026-01": {"Patrícia C.": {"n_i": 76, "v_i": 142787.91, "m_i": 27, "x_i": 0, "n_r": 38, "v_r": 101971.49, "m_r": 8, "x_r": 0, "n_a": 30, "v_a": 91127.97, "m_a": 0, "x_a": 0, "n_l": 5, "v_l": 15444.63, "m_l": 1, "x_l": 0}, "__team": {"n_i": 296, "v_i": 433528.05, "m_i": 149, "x_i": 0, "n_r": 120, "v_r": 265756.61, "m_r": 32, "x_r": 0, "n_a": 107, "v_a": 250138.9, "m_a": 16, "x_a": 0, "n_l": 99, "v_l": 77127.62, "m_l": 69, "x_l": 0}, "Joana C.": {"n_i": 144, "v_i": 225741.42, "m_i": 74, "x_i": 0, "n_r": 40, "v_r": 84701.15, "m_r": 10, "x_r": 0, "n_a": 37, "v_a": 94231.56, "m_a": 2, "x_a": 0, "n_l": 7, "v_l": 5942.74, "m_l": 4, "x_l": 0}, "Izabella J.": {"n_i": 59, "v_i": 57594.63, "m_i": 33, "x_i": 0, "n_r": 33, "v_r": 70390.47, "m_r": 8, "x_r": 0, "n_a": 22, "v_a": 47629.46, "m_a": 2, "x_a": 0, "n_l": 70, "v_l": 55740.25, "m_l": 47, "x_l": 0}, "Sara R.": {"n_i": 2, "v_i": 0, "m_i": 2, "x_i": 0, "n_r": 1, "v_r": 0, "m_r": 1, "x_r": 0, "n_a": 5, "v_a": 0, "m_a": 5, "x_a": 0, "n_l": 11, "v_l": 0, "m_l": 11, "x_l": 0}, "Silvana B.": {"n_i": 1, "v_i": 0, "m_i": 1, "x_i": 0, "n_r": 0, "v_r": 0, "m_r": 0, "x_r": 0, "n_a": 2, "v_a": 0, "m_a": 2, "x_a": 0, "n_l": 6, "v_l": 0, "m_l": 6, "x_l": 0}, "Natanael K.": {"n_i": 3, "v_i": 0, "m_i": 3, "x_i": 0, "n_r": 1, "v_r": 0, "m_r": 1, "x_r": 0, "n_a": 2, "v_a": 3363.34, "m_a": 1, "x_a": 0, "n_l": 0, "v_l": 0, "m_l": 0, "x_l": 0}, "Ivan P.": {"n_i": 4, "v_i": 7404.09, "m_i": 2, "x_i": 0, "n_r": 3, "v_r": 6396.95, "m_r": 1, "x_r": 0, "n_a": 4, "v_a": 11490.02, "m_a": 0, "x_a": 0, "n_l": 0, "v_l": 0, "m_l": 0, "x_l": 0}, "Rui M.": {"n_i": 3, "v_i": 0, "m_i": 3, "x_i": 0, "n_r": 1, "v_r": 2296.55, "m_r": 0, "x_r": 0, "n_a": 2, "v_a": 2296.55, "m_a": 1, "x_a": 0, "n_l": 0, "v_l": 0, "m_l": 0, "x_l": 0}, "Unassigned": {"n_i": 3, "v_i": 0, "m_i": 3, "x_i": 0, "n_r": 3, "v_r": 0, "m_r": 3, "x_r": 0, "n_a": 3, "v_a": 0, "m_a": 3, "x_a": 0, "n_l": 0, "v_l": 0, "m_l": 0, "x_l": 0}, "Mariya U.": {"n_i": 1, "v_i": 0, "m_i": 1, "x_i": 0, "n_r": 0, "v_r": 0, "m_r": 0, "x_r": 0, "n_a": 0, "v_a": 0, "m_a": 0, "x_a": 0, "n_l": 0, "v_l": 0, "m_l": 0, "x_l": 0}}, "2026-02": {"Patrícia C.": {"n_i": 111, "v_i": 199200.61, "m_i": 41, "x_i": 0, "n_r": 49, "v_r": 164606.69, "m_r": 5, "x_r": 0, "n_a": 37, "v_a": 163426.42, "m_a": 0, "x_a": 0, "n_l": 53, "v_l": 91478.62, "m_l": 15, "x_l": 0}, "__team": {"n_i": 274, "v_i": 361683.26, "m_i": 134, "x_i": 1, "n_r": 151, "v_r": 330928.78, "m_r": 46, "x_r": 1, "n_a": 110, "v_a": 326848.88, "m_a": 7, "x_a": 1, "n_l": 181, "v_l": 259669.58, "m_l": 74, "x_l": 0}, "Joana C.": {"n_i": 119, "v_i": 135514.09, "m_i": 59, "x_i": 1, "n_r": 79, "v_r": 141894.5, "m_r": 27, "x_r": 1, "n_a": 47, "v_a": 117112.6, "m_a": 0, "x_a": 1, "n_l": 118, "v_l": 155681.49, "m_l": 54, "x_l": 0}, "Sara R.": {"n_i": 5, "v_i": 7068.69, "m_i": 4, "x_i": 0, "n_r": 2, "v_r": 0, "m_r": 2, "x_r": 0, "n_a": 1, "v_a": 0, "m_a": 1, "x_a": 0, "n_l": 0, "v_l": 0, "m_l": 0, "x_l": 0}, "Silvana B.": {"n_i": 1, "v_i": 0, "m_i": 1, "x_i": 0, "n_r": 0, "v_r": 0, "m_r": 0, "x_r": 0, "n_a": 1, "v_a": 0, "m_a": 1, "x_a": 0, "n_l": 0, "v_l": 0, "m_l": 0, "x_l": 0}, "Izabella J.": {"n_i": 31, "v_i": 16876.19, "m_i": 23, "x_i": 0, "n_r": 16, "v_r": 19017.27, "m_r": 9, "x_r": 0, "n_a": 17, "v_a": 40899.54, "m_a": 0, "x_a": 0, "n_l": 10, "v_l": 12509.47, "m_l": 5, "x_l": 0}, "Unassigned": {"n_i": 4, "v_i": 0, "m_i": 4, "x_i": 0, "n_r": 1, "v_r": 0, "m_r": 1, "x_r": 0, "n_a": 1, "v_a": 0, "m_a": 1, "x_a": 0, "n_l": 0, "v_l": 0, "m_l": 0, "x_l": 0}, "Rui M.": {"n_i": 1, "v_i": 0, "m_i": 1, "x_i": 0, "n_r": 2, "v_r": 3349.75, "m_r": 1, "x_r": 0, "n_a": 3, "v_a": 3349.75, "m_a": 2, "x_a": 0, "n_l": 0, "v_l": 0, "m_l": 0, "x_l": 0}, "Natanael K.": {"n_i": 0, "v_i": 0, "m_i": 0, "x_i": 0, "n_r": 1, "v_r": 0, "m_r": 1, "x_r": 0, "n_a": 2, "v_a": 0, "m_a": 2, "x_a": 0, "n_l": 0, "v_l": 0, "m_l": 0, "x_l": 0}, "Mariya U.": {"n_i": 0, "v_i": 0, "m_i": 0, "x_i": 0, "n_r": 1, "v_r": 2060.57, "m_r": 0, "x_r": 0, "n_a": 1, "v_a": 2060.57, "m_a": 0, "x_a": 0, "n_l": 0, "v_l": 0, "m_l": 0, "x_l": 0}, "Catarina B.": {"n_i": 2, "v_i": 3023.68, "m_i": 1, "x_i": 0, "n_r": 0, "v_r": 0, "m_r": 0, "x_r": 0, "n_a": 0, "v_a": 0, "m_a": 0, "x_a": 0, "n_l": 0, "v_l": 0, "m_l": 0, "x_l": 0}}, "2026-03": {"Patrícia C.": {"n_i": 71, "v_i": 166076.79, "m_i": 17, "x_i": 0, "n_r": 53, "v_r": 173651.94, "m_r": 3, "x_r": 1, "n_a": 38, "v_a": 109343.11, "m_a": 0, "x_a": 1, "n_l": 52, "v_l": 102171.84, "m_l": 17, "x_l": 0}, "__team": {"n_i": 240, "v_i": 420760.78, "m_i": 88, "x_i": 1, "n_r": 149, "v_r": 356746.65, "m_r": 37, "x_r": 1, "n_a": 122, "v_a": 270100.52, "m_a": 20, "x_a": 1, "n_l": 125, "v_l": 128068.8, "m_l": 76, "x_l": 0}, "Catarina B.": {"n_i": 60, "v_i": 92308.49, "m_i": 25, "x_i": 1, "n_r": 18, "v_r": 59800.49, "m_r": 4, "x_r": 0, "n_a": 8, "v_a": 11139.93, "m_a": 1, "x_a": 0, "n_l": 2, "v_l": 709.91, "m_l": 1, "x_l": 0}, "Silvana B.": {"n_i": 3, "v_i": 0, "m_i": 3, "x_i": 0, "n_r": 2, "v_r": 0, "m_r": 2, "x_r": 0, "n_a": 3, "v_a": 0, "m_a": 3, "x_a": 0, "n_l": 0, "v_l": 0, "m_l": 0, "x_l": 0}, "Joana C.": {"n_i": 101, "v_i": 162375.5, "m_i": 38, "x_i": 0, "n_r": 67, "v_r": 123294.22, "m_r": 19, "x_r": 0, "n_a": 63, "v_a": 142548.79, "m_a": 7, "x_a": 0, "n_l": 7, "v_l": 4723.75, "m_l": 5, "x_l": 0}, "Sara R.": {"n_i": 4, "v_i": 0, "m_i": 4, "x_i": 0, "n_r": 7, "v_r": 0, "m_r": 7, "x_r": 0, "n_a": 8, "v_a": 7068.69, "m_a": 7, "x_a": 0, "n_l": 0, "v_l": 0, "m_l": 0, "x_l": 0}, "Izabella J.": {"n_i": 0, "v_i": 0, "m_i": 0, "x_i": 0, "n_r": 0, "v_r": 0, "m_r": 0, "x_r": 0, "n_a": 0, "v_a": 0, "m_a": 0, "x_a": 0, "n_l": 64, "v_l": 20463.3, "m_l": 53, "x_l": 0}, "Unassigned": {"n_i": 1, "v_i": 0, "m_i": 1, "x_i": 0, "n_r": 2, "v_r": 0, "m_r": 2, "x_r": 0, "n_a": 2, "v_a": 0, "m_a": 2, "x_a": 0, "n_l": 0, "v_l": 0, "m_l": 0, "x_l": 0}}, "2026-04": {"Joana C.": {"n_i": 72, "v_i": 132436.34, "m_i": 28, "x_i": 0, "n_r": 42, "v_r": 139337.91, "m_r": 6, "x_r": 0, "n_a": 41, "v_a": 92576.23, "m_a": 5, "x_a": 0, "n_l": 43, "v_l": 85629.73, "m_l": 22, "x_l": 0}, "__team": {"n_i": 186, "v_i": 365126.81, "m_i": 68, "x_i": 0, "n_r": 83, "v_r": 277854.21, "m_r": 11, "x_r": 0, "n_a": 91, "v_a": 241913.32, "m_a": 10, "x_a": 0, "n_l": 49, "v_l": 91748.09, "m_l": 24, "x_l": 0}, "Sara R.": {"n_i": 6, "v_i": 0, "m_i": 6, "x_i": 0, "n_r": 1, "v_r": 0, "m_r": 1, "x_r": 0, "n_a": 2, "v_a": 0, "m_a": 2, "x_a": 0, "n_l": 0, "v_l": 0, "m_l": 0, "x_l": 0}, "Patrícia C.": {"n_i": 23, "v_i": 53134.42, "m_i": 11, "x_i": 0, "n_r": 23, "v_r": 71537.37, "m_r": 1, "x_r": 0, "n_a": 35, "v_a": 113702.72, "m_a": 0, "x_a": 0, "n_l": 3, "v_l": 1631.55, "m_l": 2, "x_l": 0}, "Catarina B.": {"n_i": 53, "v_i": 137875.6, "m_i": 10, "x_i": 0, "n_r": 13, "v_r": 61686.07, "m_r": 2, "x_r": 0, "n_a": 10, "v_a": 35634.37, "m_a": 0, "x_a": 0, "n_l": 2, "v_l": 3905.12, "m_l": 0, "x_l": 0}, "Silvana B.": {"n_i": 1, "v_i": 0, "m_i": 1, "x_i": 0, "n_r": 1, "v_r": 1966.11, "m_r": 0, "x_r": 0, "n_a": 2, "v_a": 0, "m_a": 2, "x_a": 0, "n_l": 0, "v_l": 0, "m_l": 0, "x_l": 0}, "Izabella J.": {"n_i": 0, "v_i": 0, "m_i": 0, "x_i": 0, "n_r": 0, "v_r": 0, "m_r": 0, "x_r": 0, "n_a": 0, "v_a": 0, "m_a": 0, "x_a": 0, "n_l": 1, "v_l": 581.69, "m_l": 0, "x_l": 0}, "Unassigned": {"n_i": 4, "v_i": 0, "m_i": 4, "x_i": 0, "n_r": 0, "v_r": 0, "m_r": 0, "x_r": 0, "n_a": 1, "v_a": 0, "m_a": 1, "x_a": 0, "n_l": 0, "v_l": 0, "m_l": 0, "x_l": 0}, "Mafalda M.": {"n_i": 27, "v_i": 41680.45, "m_i": 8, "x_i": 0, "n_r": 3, "v_r": 3326.75, "m_r": 1, "x_r": 0, "n_a": 0, "v_a": 0, "m_a": 0, "x_a": 0, "n_l": 0, "v_l": 0, "m_l": 0, "x_l": 0}}, "2026-05": {"Patrícia C.": {"n_i": 79, "v_i": 214108.28, "m_i": 19, "x_i": 0, "n_r": 35, "v_r": 106030.19, "m_r": 3, "x_r": 0, "n_a": 16, "v_a": 43269.5, "m_a": 1, "x_a": 0, "n_l": 28, "v_l": 89795.94, "m_l": 5, "x_l": 0}, "__team": {"n_i": 233, "v_i": 522225.47, "m_i": 75, "x_i": 0, "n_r": 112, "v_r": 375088.15, "m_r": 11, "x_r": 0, "n_a": 80, "v_a": 320889.81, "m_a": 4, "x_a": 0, "n_l": 86, "v_l": 195520.51, "m_l": 29, "x_l": 0}, "Joana C.": {"n_i": 84, "v_i": 156983.27, "m_i": 25, "x_i": 0, "n_r": 43, "v_r": 150456.75, "m_r": 2, "x_r": 0, "n_a": 42, "v_a": 136262.94, "m_a": 1, "x_a": 0, "n_l": 34, "v_l": 47967.7, "m_l": 14, "x_l": 0}, "Catarina B.": {"n_i": 38, "v_i": 117167.24, "m_i": 12, "x_i": 0, "n_r": 23, "v_r": 109969.76, "m_r": 0, "x_r": 0, "n_a": 17, "v_a": 137394.0, "m_a": 0, "x_a": 0, "n_l": 9, "v_l": 32079.13, "m_l": 1, "x_l": 0}, "Sara R.": {"n_i": 3, "v_i": 0, "m_i": 3, "x_i": 0, "n_r": 4, "v_r": 0, "m_r": 4, "x_r": 0, "n_a": 2, "v_a": 0, "m_a": 2, "x_a": 0, "n_l": 1, "v_l": 0, "m_l": 1, "x_l": 0}, "Izabella J.": {"n_i": 0, "v_i": 0, "m_i": 0, "x_i": 0, "n_r": 0, "v_r": 0, "m_r": 0, "x_r": 0, "n_a": 0, "v_a": 0, "m_a": 0, "x_a": 0, "n_l": 10, "v_l": 25001.51, "m_l": 5, "x_l": 0}, "Natanael K.": {"n_i": 0, "v_i": 0, "m_i": 0, "x_i": 0, "n_r": 0, "v_r": 0, "m_r": 0, "x_r": 0, "n_a": 0, "v_a": 0, "m_a": 0, "x_a": 0, "n_l": 1, "v_l": 0, "m_l": 1, "x_l": 0}, "Filipa R.": {"n_i": 14, "v_i": 22369.44, "m_i": 7, "x_i": 0, "n_r": 2, "v_r": 2689.0, "m_r": 1, "x_r": 0, "n_a": 0, "v_a": 0, "m_a": 0, "x_a": 0, "n_l": 0, "v_l": 0, "m_l": 0, "x_l": 0}, "Unassigned": {"n_i": 7, "v_i": 0, "m_i": 7, "x_i": 0, "n_r": 1, "v_r": 0, "m_r": 1, "x_r": 0, "n_a": 0, "v_a": 0, "m_a": 0, "x_a": 0, "n_l": 0, "v_l": 0, "m_l": 0, "x_l": 0}, "Mafalda M.": {"n_i": 6, "v_i": 10799.17, "m_i": 1, "x_i": 0, "n_r": 3, "v_r": 5102.63, "m_r": 0, "x_r": 0, "n_a": 3, "v_a": 3963.37, "m_a": 0, "x_a": 0, "n_l": 3, "v_l": 676.23, "m_l": 2, "x_l": 0}, "Silvana B.": {"n_i": 2, "v_i": 798.07, "m_i": 1, "x_i": 0, "n_r": 1, "v_r": 839.82, "m_r": 0, "x_r": 0, "n_a": 0, "v_a": 0, "m_a": 0, "x_a": 0, "n_l": 0, "v_l": 0, "m_l": 0, "x_l": 0}}, "2026-06": {"Patrícia C.": {"n_i": 76, "v_i": 156326.85, "m_i": 23, "x_i": 0, "n_r": 39, "v_r": 145039.76, "m_r": 3, "x_r": 0, "n_a": 35, "v_a": 137778.2, "m_a": 0, "x_a": 0, "n_l": 60, "v_l": 129800.62, "m_l": 20, "x_l": 0}, "__team": {"n_i": 265, "v_i": 860409.6, "m_i": 91, "x_i": 0, "n_r": 122, "v_r": 403155.21, "m_r": 18, "x_r": 0, "n_a": 122, "v_a": 344123.88, "m_a": 14, "x_a": 0, "n_l": 116, "v_l": 285150.07, "m_l": 26, "x_l": 0}, "Joana C.": {"n_i": 81, "v_i": 220820.32, "m_i": 25, "x_i": 0, "n_r": 39, "v_r": 119322.82, "m_r": 3, "x_r": 0, "n_a": 39, "v_a": 96181.92, "m_a": 4, "x_a": 0, "n_l": 47, "v_l": 126892.34, "m_l": 5, "x_l": 0}, "Silvana B.": {"n_i": 3, "v_i": 1971.62, "m_i": 2, "x_i": 0, "n_r": 0, "v_r": 0, "m_r": 0, "x_r": 0, "n_a": 1, "v_a": 0, "m_a": 1, "x_a": 0, "n_l": 0, "v_l": 0, "m_l": 0, "x_l": 0}, "Catarina B.": {"n_i": 46, "v_i": 142054.01, "m_i": 11, "x_i": 0, "n_r": 20, "v_r": 66711.6, "m_r": 2, "x_r": 0, "n_a": 28, "v_a": 97398.06, "m_a": 0, "x_a": 0, "n_l": 4, "v_l": 14011.07, "m_l": 0, "x_l": 0}, "Izabella J.": {"n_i": 0, "v_i": 0, "m_i": 0, "x_i": 0, "n_r": 0, "v_r": 0, "m_r": 0, "x_r": 0, "n_a": 0, "v_a": 0, "m_a": 0, "x_a": 0, "n_l": 1, "v_l": 2085.39, "m_l": 0, "x_l": 0}, "Sara R.": {"n_i": 5, "v_i": 40118.19, "m_i": 4, "x_i": 0, "n_r": 6, "v_r": 12311.06, "m_r": 5, "x_r": 0, "n_a": 6, "v_a": 0, "m_a": 6, "x_a": 0, "n_l": 1, "v_l": 0, "m_l": 1, "x_l": 0}, "Filipa R.": {"n_i": 50, "v_i": 299118.61, "m_i": 22, "x_i": 0, "n_r": 14, "v_r": 59769.97, "m_r": 1, "x_r": 0, "n_a": 9, "v_a": 12515.04, "m_a": 0, "x_a": 0, "n_l": 3, "v_l": 12360.65, "m_l": 0, "x_l": 0}, "Mafalda M.": {"n_i": 0, "v_i": 0, "m_i": 0, "x_i": 0, "n_r": 0, "v_r": 0, "m_r": 0, "x_r": 0, "n_a": 1, "v_a": 250.66, "m_a": 0, "x_a": 0, "n_l": 0, "v_l": 0, "m_l": 0, "x_l": 0}, "Unassigned": {"n_i": 4, "v_i": 0, "m_i": 4, "x_i": 0, "n_r": 4, "v_r": 0, "m_r": 4, "x_r": 0, "n_a": 3, "v_a": 0, "m_a": 3, "x_a": 0, "n_l": 0, "v_l": 0, "m_l": 0, "x_l": 0}}, "2026-07": {"Sara R.": {"n_i": 1, "v_i": 0, "m_i": 1, "x_i": 0, "n_r": 1, "v_r": 34830.94, "m_r": 0, "x_r": 0, "n_a": 5, "v_a": 47142.0, "m_a": 3, "x_a": 0, "n_l": 16, "v_l": 0, "m_l": 16, "x_l": 0}, "__team": {"n_i": 264, "v_i": 513304.1, "m_i": 58, "x_i": 0, "n_r": 124, "v_r": 500029.01, "m_r": 2, "x_r": 0, "n_a": 137, "v_a": 553543.41, "m_a": 8, "x_a": 0, "n_l": 452, "v_l": 856853.25, "m_l": 178, "x_l": 1}, "Patrícia C.": {"n_i": 31, "v_i": 67062.34, "m_i": 5, "x_i": 0, "n_r": 23, "v_r": 69581.64, "m_r": 1, "x_r": 0, "n_a": 37, "v_a": 135150.61, "m_a": 0, "x_a": 0, "n_l": 76, "v_l": 158128.97, "m_l": 14, "x_l": 0}, "Joana C.": {"n_i": 107, "v_i": 272553.65, "m_i": 17, "x_i": 0, "n_r": 49, "v_r": 154742.61, "m_r": 0, "x_r": 0, "n_a": 45, "v_a": 149597.36, "m_a": 3, "x_a": 0, "n_l": 155, "v_l": 269181.7, "m_l": 34, "x_l": 1}, "Filipa R.": {"n_i": 78, "v_i": 86625.13, "m_i": 32, "x_i": 0, "n_r": 22, "v_r": 111094.33, "m_r": 0, "x_r": 0, "n_a": 22, "v_a": 99380.55, "m_a": 0, "x_a": 0, "n_l": 56, "v_l": 221599.75, "m_l": 48, "x_l": 0}, "Silvana B.": {"n_i": 0, "v_i": 0, "m_i": 0, "x_i": 0, "n_r": 2, "v_r": 1971.62, "m_r": 1, "x_r": 0, "n_a": 2, "v_a": 1971.62, "m_a": 1, "x_a": 0, "n_l": 1, "v_l": 0, "m_l": 1, "x_l": 0}, "Izabella J.": {"n_i": 0, "v_i": 0, "m_i": 0, "x_i": 0, "n_r": 0, "v_r": 0, "m_r": 0, "x_r": 0, "n_a": 0, "v_a": 0, "m_a": 0, "x_a": 0, "n_l": 14, "v_l": 10452.19, "m_l": 10, "x_l": 0}, "Ivan P.": {"n_i": 0, "v_i": 0, "m_i": 0, "x_i": 0, "n_r": 0, "v_r": 0, "m_r": 0, "x_r": 0, "n_a": 0, "v_a": 0, "m_a": 0, "x_a": 0, "n_l": 3, "v_l": 0, "m_l": 3, "x_l": 0}, "Catarina B.": {"n_i": 44, "v_i": 87062.98, "m_i": 0, "x_i": 0, "n_r": 27, "v_r": 127807.87, "m_r": 0, "x_r": 0, "n_a": 25, "v_a": 120301.27, "m_a": 0, "x_a": 0, "n_l": 103, "v_l": 152416.43, "m_l": 42, "x_l": 0}, "Unassigned": {"n_i": 3, "v_i": 0, "m_i": 3, "x_i": 0, "n_r": 0, "v_r": 0, "m_r": 0, "x_r": 0, "n_a": 1, "v_a": 0, "m_a": 1, "x_a": 0, "n_l": 3, "v_l": 0, "m_l": 3, "x_l": 0}, "Mafalda M.": {"n_i": 0, "v_i": 0, "m_i": 0, "x_i": 0, "n_r": 0, "v_r": 0, "m_r": 0, "x_r": 0, "n_a": 0, "v_a": 0, "m_a": 0, "x_a": 0, "n_l": 25, "v_l": 45074.21, "m_l": 7, "x_l": 0}}, "2026-08": {"Patrícia C.": {"n_i": 0, "v_i": 0, "m_i": 0, "x_i": 0, "n_r": 2, "v_r": 11072.15, "m_r": 0, "x_r": 0, "n_a": 2, "v_a": 7723.58, "m_a": 0, "x_a": 0, "n_l": 3, "v_l": 5628.17, "m_l": 1, "x_l": 0}, "__team": {"n_i": 238, "v_i": 679818.97, "m_i": 22, "x_i": 0, "n_r": 112, "v_r": 391294.98, "m_r": 4, "x_r": 0, "n_a": 92, "v_a": 283775.39, "m_a": 7, "x_a": 0, "n_l": 123, "v_l": 254949.68, "m_l": 14, "x_l": 0}, "Filipa R.": {"n_i": 94, "v_i": 349267.83, "m_i": 4, "x_i": 0, "n_r": 26, "v_r": 106014.64, "m_r": 0, "x_r": 0, "n_a": 25, "v_a": 118019.02, "m_a": 0, "x_a": 0, "n_l": 56, "v_l": 98957.92, "m_l": 8, "x_l": 0}, "Joana C.": {"n_i": 91, "v_i": 200482.28, "m_i": 12, "x_i": 0, "n_r": 66, "v_r": 224729.19, "m_r": 3, "x_r": 0, "n_a": 44, "v_a": 113144.02, "m_a": 5, "x_a": 0, "n_l": 57, "v_l": 135641.15, "m_l": 3, "x_l": 0}, "Silvana B.": {"n_i": 2, "v_i": 5910.62, "m_i": 0, "x_i": 0, "n_r": 1, "v_r": 1338.07, "m_r": 0, "x_r": 0, "n_a": 3, "v_a": 4144.0, "m_a": 0, "x_a": 0, "n_l": 0, "v_l": 0, "m_l": 0, "x_l": 0}, "Sara R.": {"n_i": 2, "v_i": 17789.04, "m_i": 1, "x_i": 0, "n_r": 2, "v_r": 7569.85, "m_r": 0, "x_r": 0, "n_a": 1, "v_a": 5023.65, "m_a": 0, "x_a": 0, "n_l": 0, "v_l": 0, "m_l": 0, "x_l": 0}, "Catarina B.": {"n_i": 47, "v_i": 106369.2, "m_i": 3, "x_i": 0, "n_r": 14, "v_r": 40571.08, "m_r": 0, "x_r": 0, "n_a": 16, "v_a": 35721.12, "m_a": 1, "x_a": 0, "n_l": 5, "v_l": 14722.44, "m_l": 0, "x_l": 0}, "Unassigned": {"n_i": 2, "v_i": 0, "m_i": 2, "x_i": 0, "n_r": 1, "v_r": 0, "m_r": 1, "x_r": 0, "n_a": 1, "v_a": 0, "m_a": 1, "x_a": 0, "n_l": 2, "v_l": 0, "m_l": 2, "x_l": 0}}, "2026-09": {"Mariya U.": {"n_i": 11, "v_i": 0, "m_i": 11, "x_i": 0, "n_r": 5, "v_r": 0, "m_r": 5, "x_r": 0, "n_a": 0, "v_a": 0, "m_a": 0, "x_a": 0, "n_l": 0, "v_l": 0, "m_l": 0, "x_l": 0}, "__team": {"n_i": 370, "v_i": 872315.1, "m_i": 67, "x_i": 0, "n_r": 106, "v_r": 323852.8, "m_r": 8, "x_r": 0, "n_a": 123, "v_a": 354198.51, "m_a": 2, "x_a": 0, "n_l": 177, "v_l": 413826.14, "m_l": 4, "x_l": 0}, "Filipa R.": {"n_i": 150, "v_i": 419692.47, "m_i": 20, "x_i": 0, "n_r": 27, "v_r": 63912.12, "m_r": 1, "x_r": 0, "n_a": 28, "v_a": 47609.92, "m_a": 0, "x_a": 0, "n_l": 79, "v_l": 218373.04, "m_l": 2, "x_l": 0}, "Joana C.": {"n_i": 103, "v_i": 217649.0, "m_i": 16, "x_i": 0, "n_r": 34, "v_r": 123564.45, "m_r": 0, "x_r": 0, "n_a": 53, "v_a": 179422.73, "m_a": 0, "x_a": 0, "n_l": 36, "v_l": 102117.01, "m_l": 1, "x_l": 0}, "Catarina B.": {"n_i": 95, "v_i": 224390.16, "m_i": 12, "x_i": 0, "n_r": 37, "v_r": 128010.56, "m_r": 1, "x_r": 0, "n_a": 34, "v_a": 106781.98, "m_a": 1, "x_a": 0, "n_l": 60, "v_l": 90079.12, "m_l": 0, "x_l": 0}, "Sara R.": {"n_i": 5, "v_i": 10583.47, "m_i": 2, "x_i": 0, "n_r": 2, "v_r": 2869.27, "m_r": 1, "x_r": 0, "n_a": 5, "v_a": 15646.51, "m_a": 0, "x_a": 0, "n_l": 0, "v_l": 0, "m_l": 0, "x_l": 0}, "Silvana B.": {"n_i": 1, "v_i": 0, "m_i": 1, "x_i": 0, "n_r": 1, "v_r": 5496.4, "m_r": 0, "x_r": 0, "n_a": 1, "v_a": 3270.21, "m_a": 0, "x_a": 0, "n_l": 1, "v_l": 0, "m_l": 1, "x_l": 0}, "Unassigned": {"n_i": 4, "v_i": 0, "m_i": 4, "x_i": 0, "n_r": 0, "v_r": 0, "m_r": 0, "x_r": 0, "n_a": 1, "v_a": 0, "m_a": 1, "x_a": 0, "n_l": 0, "v_l": 0, "m_l": 0, "x_l": 0}, "Mafalda M.": {"n_i": 0, "v_i": 0, "m_i": 0, "x_i": 0, "n_r": 0, "v_r": 0, "m_r": 0, "x_r": 0, "n_a": 1, "v_a": 1467.16, "m_a": 0, "x_a": 0, "n_l": 0, "v_l": 0, "m_l": 0, "x_l": 0}, "Patrícia C.": {"n_i": 0, "v_i": 0, "m_i": 0, "x_i": 0, "n_r": 0, "v_r": 0, "m_r": 0, "x_r": 0, "n_a": 0, "v_a": 0, "m_a": 0, "x_a": 0, "n_l": 1, "v_l": 3256.97, "m_l": 0, "x_l": 0}, "Elisabete F.": {"n_i": 1, "v_i": 0, "m_i": 1, "x_i": 0, "n_r": 0, "v_r": 0, "m_r": 0, "x_r": 0, "n_a": 0, "v_a": 0, "m_a": 0, "x_a": 0, "n_l": 0, "v_l": 0, "m_l": 0, "x_l": 0}}, "2026-10": {"Joana C.": {"n_i": 78, "v_i": 142568.31, "m_i": 20, "x_i": 0, "n_r": 44, "v_r": 141197.66, "m_r": 3, "x_r": 0, "n_a": 39, "v_a": 113360.25, "m_a": 1, "x_a": 0, "n_l": 67, "v_l": 122893.34, "m_l": 2, "x_l": 0}, "__team": {"n_i": 205, "v_i": 462128.51, "m_i": 59, "x_i": 0, "n_r": 106, "v_r": 324617.19, "m_r": 19, "x_r": 0, "n_a": 92, "v_a": 260996.84, "m_a": 7, "x_a": 0, "n_l": 143, "v_l": 261948.2, "m_l": 3, "x_l": 0}, "Catarina B.": {"n_i": 41, "v_i": 102914.62, "m_i": 6, "x_i": 0, "n_r": 20, "v_r": 72321.64, "m_r": 4, "x_r": 0, "n_a": 18, "v_a": 77123.22, "m_a": 0, "x_a": 0, "n_l": 23, "v_l": 55029.07, "m_l": 1, "x_l": 0}, "Filipa R.": {"n_i": 57, "v_i": 214631.62, "m_i": 5, "x_i": 0, "n_r": 27, "v_r": 101188.87, "m_r": 2, "x_r": 0, "n_a": 22, "v_a": 46655.95, "m_a": 0, "x_a": 0, "n_l": 53, "v_l": 84025.79, "m_l": 0, "x_l": 0}, "Silvana B.": {"n_i": 0, "v_i": 0, "m_i": 0, "x_i": 0, "n_r": 0, "v_r": 0, "m_r": 0, "x_r": 0, "n_a": 1, "v_a": 5496.4, "m_a": 0, "x_a": 0, "n_l": 0, "v_l": 0, "m_l": 0, "x_l": 0}, "Sara R.": {"n_i": 2, "v_i": 2013.96, "m_i": 1, "x_i": 0, "n_r": 4, "v_r": 9531.39, "m_r": 0, "x_r": 0, "n_a": 4, "v_a": 10028.05, "m_a": 0, "x_a": 0, "n_l": 0, "v_l": 0, "m_l": 0, "x_l": 0}, "Patrícia C.": {"n_i": 0, "v_i": 0, "m_i": 0, "x_i": 0, "n_r": 1, "v_r": 377.63, "m_r": 0, "x_r": 0, "n_a": 2, "v_a": 8332.97, "m_a": 0, "x_a": 0, "n_l": 0, "v_l": 0, "m_l": 0, "x_l": 0}, "Elisabete F.": {"n_i": 12, "v_i": 0, "m_i": 12, "x_i": 0, "n_r": 0, "v_r": 0, "m_r": 0, "x_r": 0, "n_a": 6, "v_a": 0, "m_a": 6, "x_a": 0, "n_l": 0, "v_l": 0, "m_l": 0, "x_l": 0}, "Mariya U.": {"n_i": 13, "v_i": 0, "m_i": 13, "x_i": 0, "n_r": 9, "v_r": 0, "m_r": 9, "x_r": 0, "n_a": 0, "v_a": 0, "m_a": 0, "x_a": 0, "n_l": 0, "v_l": 0, "m_l": 0, "x_l": 0}, "Unassigned": {"n_i": 2, "v_i": 0, "m_i": 2, "x_i": 0, "n_r": 1, "v_r": 0, "m_r": 1, "x_r": 0, "n_a": 0, "v_a": 0, "m_a": 0, "x_a": 0, "n_l": 0, "v_l": 0, "m_l": 0, "x_l": 0}}}, "coh": {"2025-11": {"Unassigned": {"n": 8, "v": 0, "meas": 2, "v_meas": 0, "mw": 2, "v_mw": 0, "won": 3, "v_won": 0, "lost": 0, "open": 5, "nomeas_won": 1}, "__team": {"n": 233, "v": 302661.72, "meas": 121, "v_meas": 218168.71, "mw": 84, "v_mw": 174996.05, "won": 97, "v_won": 176085.66, "lost": 131, "open": 5, "nomeas_won": 13}, "Patrícia C.": {"n": 87, "v": 137146.76, "meas": 50, "v_meas": 107940.9, "mw": 34, "v_mw": 92824.66, "won": 37, "v_won": 92824.66, "lost": 50, "open": 0, "nomeas_won": 3}, "Sara R.": {"n": 18, "v": 0, "meas": 13, "v_meas": 0, "mw": 10, "v_mw": 0, "won": 13, "v_won": 0, "lost": 5, "open": 0, "nomeas_won": 3}, "Joana C.": {"n": 68, "v": 95372.24, "meas": 34, "v_meas": 65442.43, "mw": 22, "v_mw": 58432.46, "won": 24, "v_won": 58432.46, "lost": 44, "open": 0, "nomeas_won": 2}, "Silvana B.": {"n": 4, "v": 0, "meas": 3, "v_meas": 0, "mw": 3, "v_mw": 0, "won": 4, "v_won": 0, "lost": 0, "open": 0, "nomeas_won": 1}, "Izabella J.": {"n": 45, "v": 70142.72, "meas": 16, "v_meas": 44785.38, "mw": 11, "v_mw": 23738.93, "won": 14, "v_won": 24828.54, "lost": 31, "open": 0, "nomeas_won": 3}, "Natanael K.": {"n": 3, "v": 0, "meas": 3, "v_meas": 0, "mw": 2, "v_mw": 0, "won": 2, "v_won": 0, "lost": 1, "open": 0, "nomeas_won": 0}}, "2025-12": {"Patrícia C.": {"n": 49, "v": 112374.28, "meas": 22, "v_meas": 60625.84, "mw": 16, "v_mw": 46000.93, "won": 19, "v_won": 53957.75, "lost": 30, "open": 0, "nomeas_won": 3}, "__team": {"n": 178, "v": 324242.4, "meas": 81, "v_meas": 176848.65, "mw": 59, "v_mw": 159758.94, "won": 69, "v_won": 181000.08, "lost": 108, "open": 1, "nomeas_won": 10}, "Joana C.": {"n": 59, "v": 102730.89, "meas": 28, "v_meas": 59177.65, "mw": 20, "v_mw": 60083.22, "won": 22, "v_won": 61598.37, "lost": 37, "open": 0, "nomeas_won": 2}, "Izabella J.": {"n": 59, "v": 109137.23, "meas": 23, "v_meas": 50164.17, "mw": 16, "v_mw": 46793.8, "won": 19, "v_won": 55199.63, "lost": 40, "open": 0, "nomeas_won": 3}, "Unassigned": {"n": 5, "v": 0, "meas": 4, "v_meas": 0, "mw": 4, "v_mw": 0, "won": 4, "v_won": 0, "lost": 0, "open": 1, "nomeas_won": 0}, "Ivan P.": {"n": 4, "v": 0, "meas": 3, "v_meas": 4584.44, "mw": 2, "v_mw": 4584.44, "won": 3, "v_won": 4584.44, "lost": 1, "open": 0, "nomeas_won": 1}, "Rui M.": {"n": 1, "v": 0, "meas": 1, "v_meas": 2296.55, "mw": 1, "v_mw": 2296.55, "won": 1, "v_won": 2296.55, "lost": 0, "open": 0, "nomeas_won": 0}, "Natanael K.": {"n": 1, "v": 0, "meas": 0, "v_meas": 0, "mw": 0, "v_mw": 0, "won": 1, "v_won": 3363.34, "lost": 0, "open": 0, "nomeas_won": 1}}, "2026-01": {"Patrícia C.": {"n": 76, "v": 142787.91, "meas": 42, "v_meas": 114546.8, "mw": 31, "v_mw": 100640.27, "won": 33, "v_won": 109835.91, "lost": 43, "open": 0, "nomeas_won": 2}, "__team": {"n": 296, "v": 433528.05, "meas": 158, "v_meas": 342756.77, "mw": 119, "v_mw": 327570.96, "won": 130, "v_won": 343405.4, "lost": 165, "open": 1, "nomeas_won": 11}, "Joana C.": {"n": 144, "v": 225741.42, "meas": 76, "v_meas": 167752.46, "mw": 59, "v_mw": 171003.21, "won": 62, "v_won": 175807.69, "lost": 82, "open": 0, "nomeas_won": 3}, "Izabella J.": {"n": 59, "v": 57594.63, "meas": 29, "v_meas": 49739.98, "mw": 19, "v_mw": 45209.95, "won": 21, "v_won": 45445.9, "lost": 38, "open": 0, "nomeas_won": 2}, "Sara R.": {"n": 2, "v": 0, "meas": 2, "v_meas": 0, "mw": 2, "v_mw": 0, "won": 2, "v_won": 0, "lost": 0, "open": 0, "nomeas_won": 0}, "Silvana B.": {"n": 1, "v": 0, "meas": 0, "v_meas": 0, "mw": 0, "v_mw": 0, "won": 1, "v_won": 0, "lost": 0, "open": 0, "nomeas_won": 1}, "Natanael K.": {"n": 3, "v": 0, "meas": 2, "v_meas": 0, "mw": 2, "v_mw": 0, "won": 3, "v_won": 0, "lost": 0, "open": 0, "nomeas_won": 1}, "Rui M.": {"n": 3, "v": 0, "meas": 2, "v_meas": 3349.75, "mw": 2, "v_mw": 3349.75, "won": 3, "v_won": 3349.75, "lost": 0, "open": 0, "nomeas_won": 1}, "Ivan P.": {"n": 4, "v": 7404.09, "meas": 1, "v_meas": 5307.21, "mw": 1, "v_mw": 5307.21, "won": 2, "v_won": 6905.58, "lost": 2, "open": 0, "nomeas_won": 1}, "Mariya U.": {"n": 1, "v": 0, "meas": 1, "v_meas": 2060.57, "mw": 1, "v_mw": 2060.57, "won": 1, "v_won": 2060.57, "lost": 0, "open": 0, "nomeas_won": 0}, "Unassigned": {"n": 3, "v": 0, "meas": 3, "v_meas": 0, "mw": 2, "v_mw": 0, "won": 2, "v_won": 0, "lost": 0, "open": 1, "nomeas_won": 0}}, "2026-02": {"Patrícia C.": {"n": 111, "v": 199200.61, "meas": 60, "v_meas": 225968.59, "mw": 48, "v_mw": 191080.13, "won": 50, "v_won": 194834.55, "lost": 61, "open": 0, "nomeas_won": 2}, "__team": {"n": 274, "v": 361683.26, "meas": 138, "v_meas": 365455.1, "mw": 107, "v_mw": 339588.17, "won": 119, "v_won": 356954.45, "lost": 153, "open": 2, "nomeas_won": 12}, "Joana C.": {"n": 119, "v": 135514.09, "meas": 67, "v_meas": 128715.78, "mw": 51, "v_mw": 130668.62, "won": 56, "v_won": 140564.38, "lost": 63, "open": 0, "nomeas_won": 5}, "Silvana B.": {"n": 1, "v": 0, "meas": 0, "v_meas": 0, "mw": 0, "v_mw": 0, "won": 1, "v_won": 0, "lost": 0, "open": 0, "nomeas_won": 1}, "Izabella J.": {"n": 31, "v": 16876.19, "meas": 3, "v_meas": 4350.74, "mw": 1, "v_mw": 4350.74, "won": 4, "v_won": 8066.84, "lost": 27, "open": 0, "nomeas_won": 3}, "Sara R.": {"n": 5, "v": 7068.69, "meas": 5, "v_meas": 0, "mw": 4, "v_mw": 7068.69, "won": 4, "v_won": 7068.69, "lost": 1, "open": 0, "nomeas_won": 0}, "Unassigned": {"n": 4, "v": 0, "meas": 2, "v_meas": 0, "mw": 2, "v_mw": 0, "won": 2, "v_won": 0, "lost": 0, "open": 2, "nomeas_won": 0}, "Rui M.": {"n": 1, "v": 0, "meas": 0, "v_meas": 0, "mw": 0, "v_mw": 0, "won": 1, "v_won": 0, "lost": 0, "open": 0, "nomeas_won": 1}, "Catarina B.": {"n": 2, "v": 3023.68, "meas": 1, "v_meas": 6419.99, "mw": 1, "v_mw": 6419.99, "won": 1, "v_won": 6419.99, "lost": 1, "open": 0, "nomeas_won": 0}}, "2026-03": {"Patrícia C.": {"n": 71, "v": 166076.79, "meas": 41, "v_meas": 115200.88, "mw": 31, "v_mw": 95737.06, "won": 33, "v_won": 96655.6, "lost": 37, "open": 1, "nomeas_won": 2}, "__team": {"n": 240, "v": 420760.78, "meas": 128, "v_meas": 349252.6, "mw": 100, "v_mw": 306640.52, "won": 111, "v_won": 310856.14, "lost": 128, "open": 1, "nomeas_won": 11}, "Catarina B.": {"n": 60, "v": 92308.49, "meas": 25, "v_meas": 105002.41, "mw": 19, "v_mw": 86939.38, "won": 21, "v_won": 87509.03, "lost": 39, "open": 0, "nomeas_won": 2}, "Silvana B.": {"n": 3, "v": 0, "meas": 3, "v_meas": 1966.11, "mw": 3, "v_mw": 1966.11, "won": 3, "v_won": 1966.11, "lost": 0, "open": 0, "nomeas_won": 0}, "Joana C.": {"n": 101, "v": 162375.5, "meas": 55, "v_meas": 127083.2, "mw": 43, "v_mw": 121997.97, "won": 50, "v_won": 124725.4, "lost": 51, "open": 0, "nomeas_won": 7}, "Sara R.": {"n": 4, "v": 0, "meas": 4, "v_meas": 0, "mw": 4, "v_mw": 0, "won": 4, "v_won": 0, "lost": 0, "open": 0, "nomeas_won": 0}, "Unassigned": {"n": 1, "v": 0, "meas": 0, "v_meas": 0, "mw": 0, "v_mw": 0, "won": 0, "v_won": 0, "lost": 1, "open": 0, "nomeas_won": 0}}, "2026-04": {"Joana C.": {"n": 72, "v": 132436.34, "meas": 39, "v_meas": 124262.18, "mw": 30, "v_mw": 113660.69, "won": 38, "v_won": 119558.75, "lost": 34, "open": 0, "nomeas_won": 8}, "__team": {"n": 186, "v": 365126.81, "meas": 92, "v_meas": 300448.91, "mw": 72, "v_mw": 270380.58, "won": 87, "v_won": 279982.26, "lost": 95, "open": 4, "nomeas_won": 15}, "Sara R.": {"n": 6, "v": 0, "meas": 4, "v_meas": 12311.06, "mw": 3, "v_mw": 12311.06, "won": 5, "v_won": 12311.06, "lost": 1, "open": 0, "nomeas_won": 2}, "Patrícia C.": {"n": 23, "v": 53134.42, "meas": 19, "v_meas": 70207.68, "mw": 17, "v_mw": 65185.08, "won": 20, "v_won": 68638.04, "lost": 3, "open": 0, "nomeas_won": 3}, "Silvana B.": {"n": 1, "v": 0, "meas": 0, "v_meas": 0, "mw": 0, "v_mw": 0, "won": 1, "v_won": 0, "lost": 0, "open": 0, "nomeas_won": 1}, "Catarina B.": {"n": 53, "v": 137875.6, "meas": 24, "v_meas": 85238.61, "mw": 19, "v_mw": 74121.12, "won": 19, "v_won": 74121.12, "lost": 34, "open": 0, "nomeas_won": 0}, "Unassigned": {"n": 4, "v": 0, "meas": 0, "v_meas": 0, "mw": 0, "v_mw": 0, "won": 0, "v_won": 0, "lost": 0, "open": 4, "nomeas_won": 0}, "Mafalda M.": {"n": 27, "v": 41680.45, "meas": 6, "v_meas": 8429.38, "mw": 3, "v_mw": 5102.63, "won": 4, "v_won": 5353.29, "lost": 23, "open": 0, "nomeas_won": 1}}, "2026-05": {"Patrícia C.": {"n": 79, "v": 214108.28, "meas": 42, "v_meas": 124494.11, "mw": 30, "v_mw": 97946.35, "won": 30, "v_won": 97946.35, "lost": 48, "open": 1, "nomeas_won": 0}, "__team": {"n": 233, "v": 522225.47, "meas": 108, "v_meas": 320040.47, "mw": 79, "v_mw": 244379.32, "won": 93, "v_won": 286329.22, "lost": 135, "open": 5, "nomeas_won": 14}, "Joana C.": {"n": 84, "v": 156983.27, "meas": 40, "v_meas": 120180.45, "mw": 25, "v_mw": 71351.94, "won": 33, "v_won": 74661.58, "lost": 51, "open": 0, "nomeas_won": 8}, "Catarina B.": {"n": 38, "v": 117167.24, "meas": 16, "v_meas": 65754.77, "mw": 15, "v_mw": 65469.89, "won": 19, "v_won": 103782.25, "lost": 19, "open": 0, "nomeas_won": 4}, "Filipa R.": {"n": 14, "v": 22369.44, "meas": 4, "v_meas": 8771.32, "mw": 3, "v_mw": 8771.32, "won": 3, "v_won": 8771.32, "lost": 11, "open": 0, "nomeas_won": 0}, "Unassigned": {"n": 7, "v": 0, "meas": 3, "v_meas": 0, "mw": 3, "v_mw": 0, "won": 3, "v_won": 0, "lost": 0, "open": 4, "nomeas_won": 0}, "Sara R.": {"n": 3, "v": 0, "meas": 2, "v_meas": 0, "mw": 2, "v_mw": 0, "won": 3, "v_won": 0, "lost": 0, "open": 0, "nomeas_won": 1}, "Silvana B.": {"n": 2, "v": 798.07, "meas": 1, "v_meas": 839.82, "mw": 1, "v_mw": 839.82, "won": 1, "v_won": 839.82, "lost": 1, "open": 0, "nomeas_won": 0}, "Mafalda M.": {"n": 6, "v": 10799.17, "meas": 0, "v_meas": 0, "mw": 0, "v_mw": 0, "won": 1, "v_won": 327.9, "lost": 5, "open": 0, "nomeas_won": 1}}, "2026-06": {"Patrícia C.": {"n": 76, "v": 156326.85, "meas": 30, "v_meas": 104566.16, "mw": 24, "v_mw": 100643.96, "won": 27, "v_won": 103043.27, "lost": 49, "open": 0, "nomeas_won": 3}, "__team": {"n": 265, "v": 860409.6, "meas": 131, "v_meas": 547930.54, "mw": 103, "v_mw": 447378.15, "won": 120, "v_won": 466494.16, "lost": 141, "open": 4, "nomeas_won": 17}, "Joana C.": {"n": 81, "v": 220820.32, "meas": 46, "v_meas": 166462.34, "mw": 34, "v_mw": 122988.71, "won": 43, "v_won": 131017.55, "lost": 36, "open": 2, "nomeas_won": 9}, "Silvana B.": {"n": 3, "v": 1971.62, "meas": 2, "v_meas": 1971.62, "mw": 2, "v_mw": 1971.62, "won": 3, "v_won": 1971.62, "lost": 0, "open": 0, "nomeas_won": 1}, "Sara R.": {"n": 5, "v": 40118.19, "meas": 5, "v_meas": 34830.94, "mw": 5, "v_mw": 34830.94, "won": 5, "v_won": 34830.94, "lost": 0, "open": 0, "nomeas_won": 0}, "Catarina B.": {"n": 46, "v": 142054.01, "meas": 24, "v_meas": 114240.16, "mw": 19, "v_mw": 96741.48, "won": 21, "v_won": 103153.66, "lost": 25, "open": 0, "nomeas_won": 2}, "Filipa R.": {"n": 50, "v": 299118.61, "meas": 23, "v_meas": 125859.32, "mw": 18, "v_mw": 90201.44, "won": 20, "v_won": 92477.12, "lost": 30, "open": 0, "nomeas_won": 2}, "Unassigned": {"n": 4, "v": 0, "meas": 1, "v_meas": 0, "mw": 1, "v_mw": 0, "won": 1, "v_won": 0, "lost": 1, "open": 2, "nomeas_won": 0}}, "2026-07": {"Joana C.": {"n": 107, "v": 272553.65, "meas": 50, "v_meas": 156179.22, "mw": 35, "v_mw": 112116.53, "won": 42, "v_won": 130982.09, "lost": 61, "open": 4, "nomeas_won": 7}, "__team": {"n": 264, "v": 513304.1, "meas": 102, "v_meas": 328954.71, "mw": 75, "v_mw": 245163.76, "won": 93, "v_won": 278717.02, "lost": 163, "open": 8, "nomeas_won": 18}, "Filipa R.": {"n": 78, "v": 86625.13, "meas": 23, "v_meas": 74554.58, "mw": 19, "v_mw": 65505.95, "won": 22, "v_won": 72428.95, "lost": 55, "open": 1, "nomeas_won": 3}, "Patrícia C.": {"n": 31, "v": 67062.34, "meas": 9, "v_meas": 29601.55, "mw": 7, "v_mw": 20996.35, "won": 10, "v_won": 27020.15, "lost": 19, "open": 2, "nomeas_won": 3}, "Catarina B.": {"n": 44, "v": 87062.98, "meas": 19, "v_meas": 68619.36, "mw": 13, "v_mw": 46544.93, "won": 17, "v_won": 48285.83, "lost": 27, "open": 0, "nomeas_won": 4}, "Unassigned": {"n": 3, "v": 0, "meas": 1, "v_meas": 0, "mw": 1, "v_mw": 0, "won": 1, "v_won": 0, "lost": 1, "open": 1, "nomeas_won": 0}, "Sara R.": {"n": 1, "v": 0, "meas": 0, "v_meas": 0, "mw": 0, "v_mw": 0, "won": 1, "v_won": 0, "lost": 0, "open": 0, "nomeas_won": 1}}, "2026-08": {"Joana C.": {"n": 91, "v": 200482.28, "meas": 46, "v_meas": 158957.85, "mw": 36, "v_mw": 107746.16, "won": 42, "v_won": 108266.75, "lost": 46, "open": 3, "nomeas_won": 6}, "__team": {"n": 238, "v": 679818.97, "meas": 91, "v_meas": 322800.21, "mw": 68, "v_mw": 235565.67, "won": 81, "v_won": 245083.5, "lost": 121, "open": 36, "nomeas_won": 13}, "Silvana B.": {"n": 2, "v": 5910.62, "meas": 2, "v_meas": 6834.47, "mw": 2, "v_mw": 6834.47, "won": 2, "v_won": 6834.47, "lost": 0, "open": 0, "nomeas_won": 0}, "Filipa R.": {"n": 94, "v": 349267.83, "meas": 23, "v_meas": 88862.11, "mw": 17, "v_mw": 71841.52, "won": 21, "v_won": 76785.83, "lost": 60, "open": 13, "nomeas_won": 4}, "Catarina B.": {"n": 47, "v": 106369.2, "meas": 19, "v_meas": 63122.13, "mw": 12, "v_mw": 44119.87, "won": 15, "v_won": 48172.8, "lost": 13, "open": 19, "nomeas_won": 3}, "Unassigned": {"n": 2, "v": 0, "meas": 0, "v_meas": 0, "mw": 0, "v_mw": 0, "won": 0, "v_won": 0, "lost": 2, "open": 0, "nomeas_won": 0}, "Sara R.": {"n": 2, "v": 17789.04, "meas": 1, "v_meas": 5023.65, "mw": 1, "v_mw": 5023.65, "won": 1, "v_won": 5023.65, "lost": 0, "open": 1, "nomeas_won": 0}}, "2026-09": {"Mariya U.": {"n": 11, "v": 0, "meas": 10, "v_meas": 0, "mw": 0, "v_mw": 0, "won": 0, "v_won": 0, "lost": 0, "open": 11, "nomeas_won": 0}, "__team": {"n": 370, "v": 872315.1, "meas": 128, "v_meas": 422175.72, "mw": 79, "v_mw": 253840.4, "won": 105, "v_won": 282042.04, "lost": 183, "open": 82, "nomeas_won": 26}, "Filipa R.": {"n": 150, "v": 419692.47, "meas": 36, "v_meas": 122503.29, "mw": 22, "v_mw": 46043.2, "won": 30, "v_won": 58601.34, "lost": 81, "open": 39, "nomeas_won": 8}, "Joana C.": {"n": 103, "v": 217649.0, "meas": 42, "v_meas": 150992.04, "mw": 27, "v_mw": 86732.15, "won": 35, "v_won": 95215.48, "lost": 57, "open": 11, "nomeas_won": 8}, "Catarina B.": {"n": 95, "v": 224390.16, "meas": 35, "v_meas": 140483.07, "mw": 26, "v_mw": 108801.08, "won": 34, "v_won": 112777.87, "lost": 44, "open": 17, "nomeas_won": 8}, "Sara R.": {"n": 5, "v": 10583.47, "meas": 4, "v_meas": 8197.32, "mw": 4, "v_mw": 12263.97, "won": 5, "v_won": 15447.35, "lost": 0, "open": 0, "nomeas_won": 1}, "Unassigned": {"n": 4, "v": 0, "meas": 1, "v_meas": 0, "mw": 0, "v_mw": 0, "won": 1, "v_won": 0, "lost": 0, "open": 3, "nomeas_won": 1}, "Elisabete F.": {"n": 1, "v": 0, "meas": 0, "v_meas": 0, "mw": 0, "v_mw": 0, "won": 0, "v_won": 0, "lost": 0, "open": 1, "nomeas_won": 0}, "Silvana B.": {"n": 1, "v": 0, "meas": 0, "v_meas": 0, "mw": 0, "v_mw": 0, "won": 0, "v_won": 0, "lost": 1, "open": 0, "nomeas_won": 0}}, "2026-10": {"Filipa R.": {"n": 57, "v": 214631.62, "meas": 7, "v_meas": 16160.16, "mw": 3, "v_mw": 4662.71, "won": 7, "v_won": 5649.91, "lost": 10, "open": 40, "nomeas_won": 4}, "__team": {"n": 205, "v": 462128.51, "meas": 44, "v_meas": 101424.59, "mw": 19, "v_mw": 53579.17, "won": 40, "v_won": 81241.94, "lost": 33, "open": 132, "nomeas_won": 21}, "Joana C.": {"n": 78, "v": 142568.31, "meas": 22, "v_meas": 63062.52, "mw": 12, "v_mw": 35681.1, "won": 20, "v_won": 48622.19, "lost": 17, "open": 41, "nomeas_won": 8}, "Catarina B.": {"n": 41, "v": 102914.62, "meas": 9, "v_meas": 17998.57, "mw": 3, "v_mw": 11081.56, "won": 6, "v_won": 24816.04, "lost": 6, "open": 29, "nomeas_won": 3}, "Elisabete F.": {"n": 12, "v": 0, "meas": 0, "v_meas": 0, "mw": 0, "v_mw": 0, "won": 6, "v_won": 0, "lost": 0, "open": 6, "nomeas_won": 6}, "Mariya U.": {"n": 13, "v": 0, "meas": 4, "v_meas": 0, "mw": 0, "v_mw": 0, "won": 0, "v_won": 0, "lost": 0, "open": 13, "nomeas_won": 0}, "Sara R.": {"n": 2, "v": 2013.96, "meas": 2, "v_meas": 4203.34, "mw": 1, "v_mw": 2153.8, "won": 1, "v_won": 2153.8, "lost": 0, "open": 1, "nomeas_won": 0}, "Unassigned": {"n": 2, "v": 0, "meas": 0, "v_meas": 0, "mw": 0, "v_mw": 0, "won": 0, "v_won": 0, "lost": 0, "open": 2, "nomeas_won": 0}}}}, CUR = ["Joana C.", "Catarina B.", "Filipa R."], COL = {"Filipa R.": "#0891B2", "Joana C.": "#16A34A", "Catarina B.": "#EA580C", "Sara R.": "#7C3AED", "Mariya U.": "#F59E0B", "Elisabete F.": "#DB2777", "Ivan P.": "#0D9488", "Izabella J.": "#64748B", "Mafalda M.": "#9333EA", "Natanael K.": "#B45309", "Patrícia C.": "#0369A1", "Rui M.": "#4D7C0F", "Silvana B.": "#DB2777"};
+const C1 = "#60A5FA", C2 = "#2563EB", C3 = "#1E3A8A", C3b = "#5C6FB8";   // validated, see the module docstring
+const M = D.months, LAST = M[M.length-1], PULL = D.pulled;
+const NM = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const mon = m => NM[+m.slice(5)-1], yr = m => m.slice(0,4);
+const partial = m => m === LAST;                    // the month of the pull is never complete
+const tag = m => partial(m) ? " (to " + (+PULL.slice(8)) + " " + NM[+PULL.slice(5,7)-1] + ")" : "";
+const lab = m => mon(m) + " " + yr(m);              // "Jul 2026", never "Jul 26"
+const plab = ms => {                                // "Jul–Sep 2026", "Nov 2025–Jan 2026", "Oct 2026 (to 23 Oct)"
+  const a = ms[0], b = ms[ms.length-1];
+  const core = a === b ? lab(a) : (yr(a) === yr(b) ? mon(a) + "–" + mon(b) + " " + yr(b) : lab(a) + "–" + lab(b));
+  return core + tag(b);
+};
+const SMALL = 10, OPEN_MAX = 0.05;
+const eur = v => "€" + Math.round(v).toLocaleString("en-US");
+const nf = v => Number(v).toLocaleString("en-US");
+const pc = (a,b) => b ? Math.round(100*a/b) : null;
+const pcs = (a,b) => b ? Math.round(100*a/b) + "%" : "—";
+const $ = s => document.querySelector(s);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const FA = ["n_i","v_i","m_i","x_i","n_r","v_r","m_r","x_r","n_a","v_a","m_a","x_a","n_l","v_l","m_l","x_l"];
+const FC = ["n","v","meas","v_meas","mw","v_mw","won","v_won","lost","open","nomeas_won"];
+const zero = F => Object.fromEntries(F.map(f => [f,0]));
+// A total is the sum of the rows as shown: € are rounded per row before adding (COUNTING_RULES §4).
+const sumShown = (rows, F) => rows.reduce((a,r) => { if (r) F.forEach(f => a[f] += f[0] === "v" ? Math.round(r[f] || 0) : (r[f] || 0)); return a; }, zero(F));
+const team = (blk, m) => (D[blk][m] || {}).__team;
+
+// Settled: no more than 5% of the month's quotes still open. A leading run of such months.
+const openShare = m => { const t = team("coh", m); return t && t.n ? t.open / t.n : 0; };   // no quotes: nothing open
+const SETTLED = []; for (const m of M) { if (!partial(m) && openShare(m) <= OPEN_MAX) SETTLED.push(m); else break; }
+const isOpen = m => !SETTLED.includes(m);
+// Every team figure on the page, in every table, is built from the same rounded salesperson rows, so a
+// total shown in two places is the same number (QA, 24 Oct: the month table read the pipeline's own totals).
+const monthTeam = (blk, m, F) => rowsFor(blk, [m], F).__team;
+const BASE = sumShown(SETTLED.map(m => monthTeam("coh", m, FC)), FC);
+
+const ini = n => n === "Unassigned" ? "?" : n.split(/\s+/).map(x => x[0]).join("").slice(0,2).toUpperCase();
+const who = n => `<div class="rep"><div class="av" style="background:${COL[n]||"#94A3B8"}">${esc(ini(n))}</div>${esc(n)}</div>`;
+const rank = x => CUR.includes(x) ? CUR.indexOf(x) : (x === "Unassigned" ? 999 : 100);
+const order = ns => ns.sort((a,b) => rank(a) - rank(b) || a.localeCompare(b));
+const isOld = n => !CUR.includes(n) && n !== "Unassigned";
+
+// ---- periods -------------------------------------------------------------
+const P = {
+  "3": M.slice(0, M.length-2).map((m,i) => ({ms: M.slice(i,i+3)})),
+  "1": M.map(m => ({ms: [m]})),
+  "s": SETTLED.length ? [{ms: SETTLED, settled: true}] : [],
+};
+Object.values(P).flat().forEach(p => p.label = (p.settled ? "the settled months, " : "") + plab(p.ms));
+const key = p => p.ms[0] + ".." + p.ms[p.ms.length-1];
+let mode = "3", idx = 0;
+function defaults() {                                // the newest three months that are all complete
+  const list = P["3"]; let i = list.length - 1;
+  while (i > 0 && list[i].ms.some(partial)) i--;
+  mode = "3"; idx = i;
+}
+function readHash() {                                // #quotes/<first>..<last> -> period; false if absent or unknown
+  const parts = location.hash.slice(1).split("/");
+  if (parts[0] !== "quotes" || !parts[1]) return false;
+  for (const m of ["3","1","s"]) { const i = P[m].findIndex(p => key(p) === parts[1]); if (i >= 0) { mode = m; idx = i; return true; } }
+  return false;
+}
+const cur = () => P[mode][idx];
+const tabOpen = () => $("#view-quotes").classList.contains("active");
+const writeHash = () => { if (tabOpen()) history.replaceState(null, "", "#quotes/" + key(cur())); };
+
+// ---- tooltip -------------------------------------------------------------
+const tip = document.createElement("div"); tip.className = "tip"; document.body.appendChild(tip);
+function bindTips(root) {
+  root.querySelectorAll("[data-tip]").forEach(el => {
+    const show = e => {
+      tip.innerHTML = el.dataset.tip; tip.style.opacity = 1;
+      const r = el.getBoundingClientRect();
+      const x = e && e.clientX ? e.clientX : r.left + r.width/2, y = e && e.clientY ? e.clientY : r.top;
+      tip.style.left = Math.max(8, Math.min(x + 12, innerWidth - 270)) + "px"; tip.style.top = (y - 46) + "px";
+    };
+    el.addEventListener("pointermove", show); el.addEventListener("focus", () => show());
+    el.addEventListener("pointerleave", () => tip.style.opacity = 0); el.addEventListener("blur", () => tip.style.opacity = 0);
+  });
+}
+
+function rowsFor(block, ms, F) {                     // per salesperson over the months; team = sum of the rows shown
+  const names = new Set(); ms.forEach(m => Object.keys(D[block][m] || {}).forEach(n => names.add(n)));
+  names.delete("__team"); const out = {};
+  names.forEach(n => out[n] = sumShown(ms.map(m => (D[block][m] || {})[n]), F));
+  out.__team = sumShown([...names].map(n => out[n]), F);
+  return out;
+}
+
+// ---- F2 funnel -------------------------------------------------------------
+function funnel(t, open) {
+  const w = v => t.n ? Math.max(0.4, 100 * v / t.n) : 0;
+  const seg = (v, color, tipTxt) => v ? `<div class="fn-bar" tabindex="0" style="width:${w(v)}%;background:${color}" data-tip="${esc(tipTxt)}"></div>` : "";
+  const row = (label, sub, segs) => `<div class="fn-row"><div class="fn-lbl"><b>${label}</b>${sub}</div><div class="fn-track">${segs}</div></div>`;
+  // ↓ marks a step from the bar above into the bar below; the last line is a summary against the 100% bar, so it has none.
+  const conv = (a, b, what, ra, rb, step = true) => `<div class="fn-conv"><div></div><div class="fn-pct">${step ? `<span class="arr">↓</span>` : ""}<span class="big">${pcs(a,b)}</span>
+    <span class="what">${what}</span>${open && SETTLED.length ? `<span class="ref">· settled months ${pcs(ra,rb)}</span>` : ""}</div></div>`;
+  // The base line sits above the first bar in the same style as every share below it, so each
+  // percentage visibly refers back to it (Leonid, 24 Oct).
+  return `<div class="fn-conv"><div></div><div class="fn-pct"><span class="big">100%</span><span class="what">${nf(t.n)} quotes sent</span></div></div>`
+    + row("Quotes sent", `${nf(t.n)} · ${eur(t.v)}`, seg(t.n, C1, `<b>${nf(t.n)}</b> quotes sent<br>${eur(t.v)} quoted<br>Every share below is out of these`))
+    + conv(t.meas, t.n, "of quotes sent were measured", BASE.meas, BASE.n)
+    + row("Measured", `${nf(t.meas)} · ${eur(t.v_meas)}`, seg(t.meas, C2, `<b>${nf(t.meas)}</b> of ${nf(t.n)} quotes measured · ${pcs(t.meas,t.n)}<br>${eur(t.v_meas)} after rectification`))
+    + conv(t.mw, t.meas, "of measured quotes were won", BASE.mw, BASE.meas)
+    // The same rate if wins that never passed Orçamento retificado counted as measured: they join both
+    // numerator and denominator. Never shown as a share to add to the line above (two different bases).
+    // Whether to count them is Dulce's call (DEC-09).
+    + (t.nomeas_won ? `<div class="fn-conv"><div></div><div class="fn-pct sub"><i class="sq" style="background:${C3b}"></i>
+        <span class="mid">${pcs(t.won, t.meas + t.nomeas_won)}</span><span class="what">if the ${nf(t.nomeas_won)} wins with no measurement in the CRM count as measured</span>
+        ${open && SETTLED.length ? `<span class="ref">· settled months ${pcs(BASE.won, BASE.meas + BASE.nomeas_won)}</span>` : ""}</div></div>` : "")
+    + row("Won", `${nf(t.won)} · ${eur(t.v_won)}`,
+          seg(t.mw, C3, `<b>${nf(t.mw)}</b> won after a measurement<br>${pcs(t.mw,t.meas)} of measured quotes · ${eur(t.v_mw)}`)
+          + seg(t.nomeas_won, C3b, `<b>${nf(t.nomeas_won)}</b> won with no measurement in the CRM · ${pcs(t.nomeas_won,t.won)} of wins<br>Adjudicated without passing Orçamento retificado: usually a quote entered only after the sale, or a skipped stage<br>${eur(t.v_won - t.v_mw)}`))
+    + conv(t.won, t.n, "of all quotes sent were won", BASE.won, BASE.n, false);
+}
+
+// ---- F3 rate cell ------------------------------------------------------------
+function rate(a, b, teamA, teamB, color, name, what) {
+  const p = pc(a,b), tp = pc(teamA, teamB), thin = b < SMALL;
+  if (p === null) return `<td class="g0"><span class="pc" style="color:var(--text-3)">—</span></td>`;
+  const t = `<b>${p}%</b> ${esc(what)}<br>${nf(a)} of ${nf(b)} · ${esc(name)}<br>Team: ${tp === null ? "—" : tp + "%"}${thin ? "<br>Fewer than " + SMALL + " quotes: too few to compare" : ""}`;
+  return `<td class="g0${thin ? " thin" : ""}"><div class="r1"><span class="pc">${p}%</span>
+    <span class="bar" tabindex="0" data-tip="${esc(t)}"><i class="fil" style="width:${p}%;background:${color}"></i>
+    ${tp === null ? "" : `<i class="tick" style="left:calc(${tp}% - 1px)"></i>`}</span><span class="ct">${nf(a)}/${nf(b)}</span></div></td>`;
+}
+
+const cellsC = c => `<td class="num g0">${nf(c.n)}</td><td class="num">${eur(c.v)}</td>
+  <td class="num g0">${nf(c.meas)}<span class="p">${pcs(c.meas,c.n)}</span></td><td class="num">${eur(c.v_meas)}</td>
+  <td class="num g0">${nf(c.mw)}<span class="p">${pcs(c.mw,c.meas)}</span></td><td class="num">${eur(c.v_mw)}</td>
+  <td class="num g0">${nf(c.won)}<span class="p">${pcs(c.won,c.n)}</span></td><td class="num">${eur(c.v_won)}</td>
+  <td class="num g0">${nf(c.lost)}</td><td class="num">${nf(c.open)}</td>`;
+const cellsA = c => `<td class="num g0">${nf(c.n_i)}</td><td class="num">${eur(c.v_i)}</td>
+  <td class="num g0">${nf(c.n_r)}</td><td class="num">${eur(c.v_r)}</td>
+  <td class="num g0">${nf(c.n_a)}</td><td class="num">${eur(c.v_a)}</td>
+  <td class="num g0">${nf(c.n_l)}</td><td class="num">${eur(c.v_l)}</td>`;
+
+// ---- render ----------------------------------------------------------------
+function render() {
+  const p = cur(), ms = p.ms, open = ms.some(isOpen);
+  document.querySelectorAll("#q-mode button").forEach(b => b.setAttribute("aria-pressed", b.dataset.m === mode));
+  const sel = $("#q-sel"); sel.innerHTML = "";
+  P[mode].slice().reverse().forEach(x => sel.add(new Option(x.label, key(x))));
+  sel.value = key(p); sel.disabled = mode === "s";
+  $("#q-prev").disabled = mode === "s" || idx === 0;
+  $("#q-next").disabled = mode === "s" || idx === P[mode].length - 1;
+  writeHash();
+
+  const C = rowsFor("coh", ms, FC), A = rowsFor("act", ms, FA), t = C.__team;
+  const st = (full, short, v) => `<div class="stat"><span class="l"><span class="lf">${full}</span><span class="ls">${short}</span></span><span class="v">${v}</span></div>`;
+  $("#q-sum").innerHTML = st("Quotes sent", "Sent", nf(t.n)) + st("Measured", "Measured", pcs(t.meas,t.n))
+    + st("Won after measurement", "Won after meas.", pcs(t.mw,t.meas)) + st("Won overall", "Won overall", pcs(t.won,t.n))
+    + (open ? `<span class="b b-a">Some quotes still open</span>` : "");
+
+  // F2
+  $("#q-fn-h").textContent = "Team conversion: quotes sent in " + p.label;
+  const fn = $("#q-fn"); fn.innerHTML = funnel(t, open); bindTips(fn);
+  const nm = pc(t.nomeas_won, t.won), nmBase = pc(BASE.nomeas_won, BASE.won);
+  $("#q-fn-f").innerHTML = `${nf(t.open)} of these quotes (${pcs(t.open,t.n)}) are still open, neither won nor lost`
+    + (open ? `, so these rates can still change. The settled-months rate is shown beside each.` : ".")
+    + (t.won >= SMALL && nm !== null && nmBase !== null && nm > 2 * nmBase
+        ? ` <strong>${nm}% of the wins have no measurement in the CRM</strong>, against ${nmBase}% in the settled months, so "Measured" reads low.`
+        : ` ${nf(t.nomeas_won)} of the ${nf(t.won)} wins (${pcs(t.nomeas_won,t.won)}) have no measurement in the CRM: adjudicated without passing Orçamento retificado, usually a quote entered only after the sale, or a skipped stage.`);
+
+  // F3
+  $("#q-rt-h").textContent = "Conversion by salesperson, " + p.label;
+  const rc = order(Object.keys(C).filter(n => n !== "__team" && C[n].n));
+  const rt = $("#q-rt");
+  rt.innerHTML = rc.map(n => { const c = C[n]; return `<tr class="${isOld(n) ? "old" : ""}"><td>${who(n)}</td><td class="num">${nf(c.n)}</td>
+      ${rate(c.meas, c.n, t.meas, t.n, C2, n, "measured")}
+      ${rate(c.mw, c.meas, t.mw, t.meas, C3, n, "of measured quotes won")}
+      ${rate(c.won, c.n, t.won, t.n, C3, n, "of quotes sent won")}
+      <td class="num eur">${eur(c.v_won)}</td></tr>`; }).join("")
+    + `<tr class="tot"><td>Team</td><td class="num">${nf(t.n)}</td>
+      ${rate(t.meas, t.n, t.meas, t.n, C2, "Team", "measured")}${rate(t.mw, t.meas, t.mw, t.meas, C3, "Team", "of measured quotes won")}
+      ${rate(t.won, t.n, t.won, t.n, C3, "Team", "of quotes sent won")}<td class="num eur">${eur(t.v_won)}</td></tr>`;
+  bindTips(rt);
+  $("#q-rt-f").innerHTML = `Grey percentages: fewer than ${SMALL} quotes, too few to compare.`
+    + (rc.some(isOld) ? ` <span class="dot-old"></span>Grey names: not in the current B2C team.` : "")
+    + (open ? " Some of these quotes are still open." : "");
+  $("#q-ct").innerHTML = rc.map(n => `<tr class="${isOld(n) ? "old" : ""}"><td>${who(n)}</td>${cellsC(C[n])}</tr>`).join("")
+    + `<tr class="tot"><td>Team</td>${cellsC(t)}</tr>`;
+
+  // F4
+  $("#q-act-h").textContent = "Activity by salesperson, " + p.label;
+  const ra = order(Object.keys(A).filter(n => n !== "__team" && (A[n].n_i + A[n].n_r + A[n].n_a + A[n].n_l)));
+  $("#q-act").innerHTML = ra.map(n => `<tr class="${isOld(n) ? "old" : ""}"><td>${who(n)}</td>${cellsA(A[n])}</tr>`).join("")
+    + `<tr class="tot"><td>Team</td>${cellsA(A.__team)}</tr>`;
+  const at = A.__team, xs = at.x_i + at.x_r + at.x_a + at.x_l;
+  $("#q-act-f").innerHTML = (ms.includes("2026-07") ? "Lost includes the 1–3 July clean-up of about 290 older quotes. " : "")
+    + (ms.some(partial) ? "The current month is not complete. " : "")
+    + `Counted without a value in the CRM: ${nf(at.m_i)} sent · ${nf(at.m_r)} rectified · ${nf(at.m_a)} won · ${nf(at.m_l)} lost.`
+    + (xs ? ` Left out of € as clearly wrong: ${nf(at.x_i)} sent · ${nf(at.x_r)} rectified · ${nf(at.x_a)} won · ${nf(at.x_l)} lost.` : "");
+  teamTable();
+}
+
+// ---- F5 ----------------------------------------------------------------------
+let TV = "coh";
+function teamTable() {
+  $("#q-tv-s").textContent = TV === "coh"
+    ? "Conversion: the quotes sent in each month, and how many of them were measured and won since."
+    : "Activity: everything that happened in each month, quotes sent, rectified, won and lost.";
+  const ms = cur().ms, rows = M.slice().reverse();
+  const cls = m => ["pick", ms.includes(m) ? "hl" : "", TV === "coh" && isOpen(m) ? "young" : ""].join(" ");
+  const ml = m => lab(m) + tag(m);
+  let h;
+  if (TV === "coh") {
+    h = `<thead><tr><th>Sent in</th><th class="num g0">Quotes</th><th class="num">€ quoted</th><th class="num g0">Measured</th><th class="num">€</th>
+      <th class="num g0">Won after measurement</th><th class="num">€</th><th class="num g0">Won overall</th><th class="num">€</th>
+      <th class="num g0">Lost</th><th class="num">Still open</th></tr></thead><tbody>`
+      + rows.map(m => `<tr class="${cls(m)}" data-m="${m}" tabindex="0"><td>${ml(m)}${isOpen(m) ? ' <span class="b b-a" style="margin-left:4px">still open</span>' : ""}</td>${cellsC(monthTeam("coh", m, FC))}</tr>`).join("")
+      + (SETTLED.length ? `<tr class="tot"><td>Settled, ${plab(SETTLED)}</td>${cellsC(BASE)}</tr>` : "") + `</tbody>`;
+  } else {
+    h = `<thead><tr><th rowspan="2" style="vertical-align:bottom">Month</th>
+      <th class="grp g0" colspan="2">Orçamento inicial</th><th class="grp g0" colspan="2">Orçamento retificado</th>
+      <th class="grp g0" colspan="2">Adjudicado</th><th class="grp g0" colspan="2">Não adjudicado</th></tr>
+      <tr><th class="num g0">No.</th><th class="num">€</th><th class="num g0">No.</th><th class="num">€</th>
+      <th class="num g0">No.</th><th class="num">€</th><th class="num g0">No.</th><th class="num">€</th></tr></thead><tbody>`
+      + rows.map(m => `<tr class="${cls(m)}" data-m="${m}" tabindex="0"><td>${ml(m)}</td>${cellsA(monthTeam("act", m, FA))}</tr>`).join("")
+      + `<tr class="tot"><td>${esc(cur().label)}</td>${cellsA(sumShown(ms.map(m => monthTeam("act", m, FA)), FA))}</tr></tbody>`;
+  }
+  const tb = $("#q-team"); tb.innerHTML = h;
+  tb.querySelectorAll("tr[data-m]").forEach(tr => {
+    const go = () => { mode = "1"; idx = M.indexOf(tr.dataset.m); render(); $("#view-quotes").scrollIntoView({behavior:"smooth"}); };
+    tr.onclick = go;
+    tr.onkeydown = e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); go(); } };
+  });
+}
+
+// ---- wiring --------------------------------------------------------------------
+document.querySelectorAll("#q-mode button").forEach(b => b.onclick = () => {
+  const ms = cur().ms, end = ms[ms.length-1]; mode = b.dataset.m;
+  // Keep the period's last month when switching between 3 months and 1 month. A month with no
+  // 3-month window ending on it (the first two) opens the earliest window instead.
+  idx = mode === "s" ? 0 : P[mode].findIndex(p => p.ms[p.ms.length-1] === end);
+  if (idx < 0) idx = 0;
+  render();
+});
+$("#q-prev").onclick = () => { if (idx > 0) { idx--; render(); } };
+$("#q-next").onclick = () => { if (idx < P[mode].length-1) { idx++; render(); } };
+$("#q-sel").onchange = e => { idx = P[mode].findIndex(p => key(p) === e.target.value); render(); };
+document.querySelectorAll("#q-tv button").forEach(b => b.onclick = () => {
+  TV = b.dataset.v; document.querySelectorAll("#q-tv button").forEach(x => x.setAttribute("aria-pressed", x === b)); teamTable();
+});
+// The page's own tab switcher keeps only "#quotes". Whenever the Quotes tab opens, by a click or by
+// an edited address: adopt a period from the address if it names one, otherwise write ours into it.
+const baseSw = window.sw;
+window.sw = function(t) { baseSw(t); if (t === "quotes") { if (readHash()) render(); else writeHash(); } };
+// No settled month yet (a new history): the Settled mode has nothing to show.
+if (!SETTLED.length) $('#q-mode button[data-m="s"]').disabled = true;
+if (!readHash()) defaults();
+render();
+});
+</script></div><div class="view" id="view-leads">
   <div class="h1">New leads</div>
   <div class="sub">Every lead that reached B2C "Novo", by where it came from.</div>
   <div class="note note-a">1 new items landed on the old B2C board in this period. They are not counted here.</div>
   <div style="font-size:12px;font-weight:600;color:var(--text-2);margin-bottom:8px">Last 27 days · 29.09–25.10</div>
   <div class="kpis" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr))">
-    <div class="kpi"><div class="kpi-lbl">Leads</div><div class="kpi-val">328</div>
+    <div class="kpi"><div class="kpi-lbl">Leads</div><div class="kpi-val">327</div>
       <div class="kpi-sub">new leads</div></div>
     <div class="kpi"><div class="kpi-lbl">Per day</div><div class="kpi-val">12,1</div>
       <div class="kpi-sub">on average</div></div>
     <div class="kpi"><div class="kpi-lbl">Straight into the CRM</div>
-      <div class="kpi-val">70%</div><div style="display:flex;height:8px;border-radius:4px;overflow:hidden;gap:2px;margin:6px 0 4px"><div style="width:70.1%;background:#2a78d6"></div><div style="width:29.9%;background:#4a3aa7"></div></div><div style="display:flex;justify-content:space-between;font-size:11px;color:var(--text-2)"><span>Directly 230</span><span>Manual 98</span></div></div>
+      <div class="kpi-val">70%</div><div style="display:flex;height:8px;border-radius:4px;overflow:hidden;gap:2px;margin:6px 0 4px"><div style="width:70.0%;background:#2a78d6"></div><div style="width:30.0%;background:#4a3aa7"></div></div><div style="display:flex;justify-content:space-between;font-size:11px;color:var(--text-2)"><span>Directly 229</span><span>Manual 98</span></div></div>
   </div>
 
   <div class="card">
     <div class="ch">Leads per day</div>
     <div class="cs">29.09–25.10</div>
     <div style="display:flex;flex-wrap:wrap;gap:6px 14px;font-size:11px;color:var(--text-2);margin-bottom:10px"><span style="display:inline-flex;align-items:center;gap:5px"><i style="width:10px;height:10px;border-radius:2px;background:#2a78d6;display:inline-block"></i>Google Site</span><span style="display:inline-flex;align-items:center;gap:5px"><i style="width:10px;height:10px;border-radius:2px;background:#eb6834;display:inline-block"></i>Meta Forms</span><span style="display:inline-flex;align-items:center;gap:5px"><i style="width:10px;height:10px;border-radius:2px;background:#1baf7a;display:inline-block"></i>Chat Bot</span><span style="display:inline-flex;align-items:center;gap:5px"><i style="width:10px;height:10px;border-radius:2px;background:#eda100;display:inline-block"></i>Meta Site</span><span style="display:inline-flex;align-items:center;gap:5px"><i style="width:10px;height:10px;border-radius:2px;background:#e87ba4;display:inline-block"></i>Campanha</span><span style="display:inline-flex;align-items:center;gap:5px"><i style="width:10px;height:10px;border-radius:2px;background:#008300;display:inline-block"></i>Orgânico</span><span style="display:inline-flex;align-items:center;gap:5px"><i style="width:10px;height:10px;border-radius:2px;background:#4a3aa7;display:inline-block"></i>Manual</span></div>
-    <svg viewBox="0 0 960 250" role="img" aria-label="Leads per day by channel" style="display:block;width:100%;height:auto"><line x1="30" x2="952" y1="214.0" y2="214.0" stroke="var(--border)"/><text x="24" y="217.5" text-anchor="end" font-size="10.5" fill="var(--text-3)">0</text><line x1="30" x2="952" y1="149.3" y2="149.3" stroke="var(--border)"/><text x="24" y="152.8" text-anchor="end" font-size="10.5" fill="var(--text-3)">10</text><line x1="30" x2="952" y1="84.7" y2="84.7" stroke="var(--border)"/><text x="24" y="88.2" text-anchor="end" font-size="10.5" fill="var(--text-3)">20</text><line x1="30" x2="952" y1="20.0" y2="20.0" stroke="var(--border)"/><text x="24" y="23.5" text-anchor="end" font-size="10.5" fill="var(--text-3)">30</text><g><title>Tue 29.09: 26 leads
-Google Site: 16
+    <svg viewBox="0 0 960 250" role="img" aria-label="Leads per day by channel" style="display:block;width:100%;height:auto"><line x1="30" x2="952" y1="214.0" y2="214.0" stroke="var(--border)"/><text x="24" y="217.5" text-anchor="end" font-size="10.5" fill="var(--text-3)">0</text><line x1="30" x2="952" y1="149.3" y2="149.3" stroke="var(--border)"/><text x="24" y="152.8" text-anchor="end" font-size="10.5" fill="var(--text-3)">10</text><line x1="30" x2="952" y1="84.7" y2="84.7" stroke="var(--border)"/><text x="24" y="88.2" text-anchor="end" font-size="10.5" fill="var(--text-3)">20</text><line x1="30" x2="952" y1="20.0" y2="20.0" stroke="var(--border)"/><text x="24" y="23.5" text-anchor="end" font-size="10.5" fill="var(--text-3)">30</text><g><title>Tue 29.09: 25 leads
+Google Site: 15
 Meta Forms: 3
 Chat Bot: 1
-Manual: 6</title><rect x="36.8" y="110.5" width="20.5" height="101.5" rx="1.5" fill="#2a78d6"/><rect x="36.8" y="91.1" width="20.5" height="17.4" rx="1.5" fill="#eb6834"/><rect x="36.8" y="84.7" width="20.5" height="4.5" rx="1.5" fill="#1baf7a"/><rect x="36.8" y="45.9" width="20.5" height="36.8" rx="1.5" fill="#4a3aa7"/><rect x="30.0" y="20" width="34.1" height="194" fill="transparent"/></g><text x="47.1" y="40.9" text-anchor="middle" font-size="10.5" font-weight="600" fill="var(--text-2)">26</text><text x="47.1" y="229" text-anchor="middle" font-size="10.5" fill="var(--text-3)">29</text><g><title>Wed 30.09: 12 leads
+Manual: 6</title><rect x="36.8" y="117.0" width="20.5" height="95.0" rx="1.5" fill="#2a78d6"/><rect x="36.8" y="97.6" width="20.5" height="17.4" rx="1.5" fill="#eb6834"/><rect x="36.8" y="91.1" width="20.5" height="4.5" rx="1.5" fill="#1baf7a"/><rect x="36.8" y="52.3" width="20.5" height="36.8" rx="1.5" fill="#4a3aa7"/><rect x="30.0" y="20" width="34.1" height="194" fill="transparent"/></g><text x="47.1" y="47.3" text-anchor="middle" font-size="10.5" font-weight="600" fill="var(--text-2)">25</text><text x="47.1" y="229" text-anchor="middle" font-size="10.5" fill="var(--text-3)">29</text><g><title>Wed 30.09: 12 leads
 Google Site: 5
 Meta Forms: 2
 Chat Bot: 2
@@ -559,31 +1039,31 @@ Google Site: 2</title><rect x="924.7" y="201.1" width="20.5" height="10.9" rx="1
     <div class="kpi">
       <div class="kpi-lbl">Real loss reason captured</div>
       <div class="kpi-val" style="color:var(--red)">9%</div>
-      <div class="kpi-sub">218 of 2420 · baseline 4%</div>
+      <div class="kpi-sub">219 of 2421 · baseline 4%</div>
       <span class="kpi-pill dn">⊗ Meta: 100%</span>
     </div>
     <div class="kpi">
       <div class="kpi-lbl">A/B/C segment assigned</div>
       <div class="kpi-val" style="color:var(--amber)">52%</div>
-      <div class="kpi-sub">214 of 413 · baseline 0%</div>
+      <div class="kpi-sub">216 of 416 · baseline 0%</div>
       <span class="kpi-pill wa">⚠ Meta: 100%</span>
     </div>
     <div class="kpi">
       <div class="kpi-lbl">Sent quotes touched in the last 7 days</div>
-      <div class="kpi-val" style="color:var(--red)">6%</div>
-      <div class="kpi-sub">16 of 245 measurable · 10 of 255 not measurable · baseline 10%</div>
+      <div class="kpi-val" style="color:var(--red)">7%</div>
+      <div class="kpi-sub">17 of 246 measurable · 10 of 256 not measurable · baseline 10%</div>
       <span class="kpi-pill dn">⊗ Meta: 90%</span>
     </div>
     <div class="kpi">
       <div class="kpi-lbl">Records stalled &gt; 30 days (open)</div>
       <div class="kpi-val" style="color:var(--red)">185</div>
-      <div class="kpi-sub">185 of 401 measurable · 12 of 413 not measurable · baseline 305</div>
+      <div class="kpi-sub">185 of 404 measurable · 12 of 416 not measurable · baseline 305</div>
       <span class="kpi-pill dn">⊗ Meta: < 10</span>
     </div></div>
 
   <div class="card">
     <div class="ch">Baseline vs current vs target</div>
-    <div class="cs">Worked pipeline on B2C &quot;Novo&quot; (1388 items) · Orçamento enviado 255 · Aguardando medidas 83 · Orçamento retificado 62 · Adjudicado 250 · Não adjudicado 526</div>
+    <div class="cs">Worked pipeline on B2C &quot;Novo&quot; (1395 items) · Orçamento enviado 256 · Aguardando medidas 85 · Orçamento retificado 62 · Adjudicado 252 · Não adjudicado 527</div>
     <table class="dt">
       <thead><tr>
         <th>Metric</th><th class="num">Baseline</th><th class="num">Current</th>
@@ -614,16 +1094,16 @@ Google Site: 2</title><rect x="924.7" y="201.1" width="20.5" height="10.9" rx="1
           <td class="num">0%</td>
           <td class="num" style="font-weight:700">52%</td>
           <td class="num" style="color:var(--text-3)">100%</td>
-          <td><svg class="spark" width="196" height="76" viewBox="0 0 196 76"><line x1="24" y1="62" x2="188" y2="62" stroke="var(--border)" stroke-width="1"/><text x="20" y="62" text-anchor="end" font-size="8" fill="var(--text-3)">45%</text><text x="20" y="14" text-anchor="end" font-size="8" fill="var(--text-3)">100%</text><line x1="24" y1="8.0" x2="188" y2="8.0" stroke="var(--text-3)" stroke-width="1" stroke-dasharray="3,2"/><polyline points="24.0,25.9 26.9,29.9 29.9,30.4 32.8,30.6 35.7,33.2 38.6,33.5 41.6,33.5 44.5,33.5 47.4,35.8 50.4,32.0 53.3,32.1 56.2,32.1 59.1,31.6 62.1,31.6 65.0,31.6 67.9,32.0 70.9,30.9 73.8,31.5 76.7,31.1 79.6,34.0 82.6,34.0 85.5,34.0 88.4,36.9 91.4,36.9 94.3,37.5 97.2,38.1 103.1,38.9 106.0,38.9 108.9,41.2 111.9,41.9 120.6,43.8 123.6,43.8 126.5,43.8 135.3,45.2 141.1,48.8 144.1,48.8 147.0,49.9 149.9,50.4 152.9,51.3 158.7,51.8 161.6,52.2 164.6,52.2 167.5,52.2 176.3,54.4 179.2,53.9 182.1,54.3 185.1,54.3 188.0,55.0" fill="none" stroke="var(--amber)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="24.0" cy="25.9" r="1.8" fill="var(--amber)"/><circle cx="26.9" cy="29.9" r="1.8" fill="var(--amber)"/><circle cx="29.9" cy="30.4" r="1.8" fill="var(--amber)"/><circle cx="32.8" cy="30.6" r="1.8" fill="var(--amber)"/><circle cx="35.7" cy="33.2" r="1.8" fill="var(--amber)"/><circle cx="38.6" cy="33.5" r="1.8" fill="var(--amber)"/><circle cx="41.6" cy="33.5" r="1.8" fill="var(--amber)"/><circle cx="44.5" cy="33.5" r="1.8" fill="var(--amber)"/><circle cx="47.4" cy="35.8" r="1.8" fill="var(--amber)"/><circle cx="50.4" cy="32.0" r="1.8" fill="var(--amber)"/><circle cx="53.3" cy="32.1" r="1.8" fill="var(--amber)"/><circle cx="56.2" cy="32.1" r="1.8" fill="var(--amber)"/><circle cx="59.1" cy="31.6" r="1.8" fill="var(--amber)"/><circle cx="62.1" cy="31.6" r="1.8" fill="var(--amber)"/><circle cx="65.0" cy="31.6" r="1.8" fill="var(--amber)"/><circle cx="67.9" cy="32.0" r="1.8" fill="var(--amber)"/><circle cx="70.9" cy="30.9" r="1.8" fill="var(--amber)"/><circle cx="73.8" cy="31.5" r="1.8" fill="var(--amber)"/><circle cx="76.7" cy="31.1" r="1.8" fill="var(--amber)"/><circle cx="79.6" cy="34.0" r="1.8" fill="var(--amber)"/><circle cx="82.6" cy="34.0" r="1.8" fill="var(--amber)"/><circle cx="85.5" cy="34.0" r="1.8" fill="var(--amber)"/><circle cx="88.4" cy="36.9" r="1.8" fill="var(--amber)"/><circle cx="91.4" cy="36.9" r="1.8" fill="var(--amber)"/><circle cx="94.3" cy="37.5" r="1.8" fill="var(--amber)"/><circle cx="97.2" cy="38.1" r="1.8" fill="var(--amber)"/><circle cx="103.1" cy="38.9" r="1.8" fill="var(--amber)"/><circle cx="106.0" cy="38.9" r="1.8" fill="var(--amber)"/><circle cx="108.9" cy="41.2" r="1.8" fill="var(--amber)"/><circle cx="111.9" cy="41.9" r="1.8" fill="var(--amber)"/><circle cx="120.6" cy="43.8" r="1.8" fill="var(--amber)"/><circle cx="123.6" cy="43.8" r="1.8" fill="var(--amber)"/><circle cx="126.5" cy="43.8" r="1.8" fill="var(--amber)"/><circle cx="135.3" cy="45.2" r="1.8" fill="var(--amber)"/><circle cx="141.1" cy="48.8" r="1.8" fill="var(--amber)"/><circle cx="144.1" cy="48.8" r="1.8" fill="var(--amber)"/><circle cx="147.0" cy="49.9" r="1.8" fill="var(--amber)"/><circle cx="149.9" cy="50.4" r="1.8" fill="var(--amber)"/><circle cx="152.9" cy="51.3" r="1.8" fill="var(--amber)"/><circle cx="158.7" cy="51.8" r="1.8" fill="var(--amber)"/><circle cx="161.6" cy="52.2" r="1.8" fill="var(--amber)"/><circle cx="164.6" cy="52.2" r="1.8" fill="var(--amber)"/><circle cx="167.5" cy="52.2" r="1.8" fill="var(--amber)"/><circle cx="176.3" cy="54.4" r="1.8" fill="var(--amber)"/><circle cx="179.2" cy="53.9" r="1.8" fill="var(--amber)"/><circle cx="182.1" cy="54.3" r="1.8" fill="var(--amber)"/><circle cx="185.1" cy="54.3" r="1.8" fill="var(--amber)"/><circle cx="188.0" cy="55.0" r="1.8" fill="var(--amber)"/><text x="24" y="73" font-size="8" fill="var(--text-3)">31/8</text><text x="188" y="73" text-anchor="end" font-size="8" fill="var(--text-3)">26/10</text></svg></td>
+          <td><svg class="spark" width="196" height="76" viewBox="0 0 196 76"><line x1="24" y1="62" x2="188" y2="62" stroke="var(--border)" stroke-width="1"/><text x="20" y="62" text-anchor="end" font-size="8" fill="var(--text-3)">45%</text><text x="20" y="14" text-anchor="end" font-size="8" fill="var(--text-3)">100%</text><line x1="24" y1="8.0" x2="188" y2="8.0" stroke="var(--text-3)" stroke-width="1" stroke-dasharray="3,2"/><polyline points="24.0,26.0 26.9,30.0 29.9,30.5 32.8,30.6 35.7,33.3 38.6,33.6 41.6,33.6 44.5,33.6 47.4,35.8 50.4,32.0 53.3,32.1 56.2,32.1 59.1,31.6 62.1,31.6 65.0,31.6 67.9,32.0 70.9,30.9 73.8,31.5 76.7,31.1 79.6,34.1 82.6,34.1 85.5,34.1 88.4,37.0 91.4,37.0 94.3,37.6 97.2,38.2 103.1,38.9 106.0,38.9 108.9,41.3 111.9,42.0 120.6,43.8 123.6,43.8 126.5,43.8 135.3,45.3 141.1,48.9 144.1,48.9 147.0,50.0 149.9,50.5 152.9,51.3 158.7,51.9 161.6,52.3 164.6,52.3 167.5,52.3 176.3,54.5 179.2,54.0 182.1,54.4 185.1,54.4 188.0,55.0" fill="none" stroke="var(--amber)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="24.0" cy="26.0" r="1.8" fill="var(--amber)"/><circle cx="26.9" cy="30.0" r="1.8" fill="var(--amber)"/><circle cx="29.9" cy="30.5" r="1.8" fill="var(--amber)"/><circle cx="32.8" cy="30.6" r="1.8" fill="var(--amber)"/><circle cx="35.7" cy="33.3" r="1.8" fill="var(--amber)"/><circle cx="38.6" cy="33.6" r="1.8" fill="var(--amber)"/><circle cx="41.6" cy="33.6" r="1.8" fill="var(--amber)"/><circle cx="44.5" cy="33.6" r="1.8" fill="var(--amber)"/><circle cx="47.4" cy="35.8" r="1.8" fill="var(--amber)"/><circle cx="50.4" cy="32.0" r="1.8" fill="var(--amber)"/><circle cx="53.3" cy="32.1" r="1.8" fill="var(--amber)"/><circle cx="56.2" cy="32.1" r="1.8" fill="var(--amber)"/><circle cx="59.1" cy="31.6" r="1.8" fill="var(--amber)"/><circle cx="62.1" cy="31.6" r="1.8" fill="var(--amber)"/><circle cx="65.0" cy="31.6" r="1.8" fill="var(--amber)"/><circle cx="67.9" cy="32.0" r="1.8" fill="var(--amber)"/><circle cx="70.9" cy="30.9" r="1.8" fill="var(--amber)"/><circle cx="73.8" cy="31.5" r="1.8" fill="var(--amber)"/><circle cx="76.7" cy="31.1" r="1.8" fill="var(--amber)"/><circle cx="79.6" cy="34.1" r="1.8" fill="var(--amber)"/><circle cx="82.6" cy="34.1" r="1.8" fill="var(--amber)"/><circle cx="85.5" cy="34.1" r="1.8" fill="var(--amber)"/><circle cx="88.4" cy="37.0" r="1.8" fill="var(--amber)"/><circle cx="91.4" cy="37.0" r="1.8" fill="var(--amber)"/><circle cx="94.3" cy="37.6" r="1.8" fill="var(--amber)"/><circle cx="97.2" cy="38.2" r="1.8" fill="var(--amber)"/><circle cx="103.1" cy="38.9" r="1.8" fill="var(--amber)"/><circle cx="106.0" cy="38.9" r="1.8" fill="var(--amber)"/><circle cx="108.9" cy="41.3" r="1.8" fill="var(--amber)"/><circle cx="111.9" cy="42.0" r="1.8" fill="var(--amber)"/><circle cx="120.6" cy="43.8" r="1.8" fill="var(--amber)"/><circle cx="123.6" cy="43.8" r="1.8" fill="var(--amber)"/><circle cx="126.5" cy="43.8" r="1.8" fill="var(--amber)"/><circle cx="135.3" cy="45.3" r="1.8" fill="var(--amber)"/><circle cx="141.1" cy="48.9" r="1.8" fill="var(--amber)"/><circle cx="144.1" cy="48.9" r="1.8" fill="var(--amber)"/><circle cx="147.0" cy="50.0" r="1.8" fill="var(--amber)"/><circle cx="149.9" cy="50.5" r="1.8" fill="var(--amber)"/><circle cx="152.9" cy="51.3" r="1.8" fill="var(--amber)"/><circle cx="158.7" cy="51.9" r="1.8" fill="var(--amber)"/><circle cx="161.6" cy="52.3" r="1.8" fill="var(--amber)"/><circle cx="164.6" cy="52.3" r="1.8" fill="var(--amber)"/><circle cx="167.5" cy="52.3" r="1.8" fill="var(--amber)"/><circle cx="176.3" cy="54.5" r="1.8" fill="var(--amber)"/><circle cx="179.2" cy="54.0" r="1.8" fill="var(--amber)"/><circle cx="182.1" cy="54.4" r="1.8" fill="var(--amber)"/><circle cx="185.1" cy="54.4" r="1.8" fill="var(--amber)"/><circle cx="188.0" cy="55.0" r="1.8" fill="var(--amber)"/><text x="24" y="73" font-size="8" fill="var(--text-3)">31/8</text><text x="188" y="73" text-anchor="end" font-size="8" fill="var(--text-3)">26/10</text></svg></td>
           <td><span class="b b-a">⚠ Approaching</span></td>
         </tr>
         <tr>
           <td><div class="mname">Sent quotes touched in the last 7 days</div>
               <div class="csub">Source: Último contacto on quotes in &quot;Orçamento enviado&quot; (Novo)</div><div class="csub">Counts a real client contact, not any edit to the record. Quotes with no contact date are left out, not counted as untouched. The line breaks where either of those changed — don&#x27;t compare across a break.</div></td>
           <td class="num">10%</td>
-          <td class="num" style="font-weight:700">6%</td>
+          <td class="num" style="font-weight:700">7%</td>
           <td class="num" style="color:var(--text-3)">90%</td>
-          <td><svg class="spark" width="196" height="76" viewBox="0 0 196 76"><line x1="24" y1="62" x2="188" y2="62" stroke="var(--border)" stroke-width="1"/><text x="20" y="62" text-anchor="end" font-size="8" fill="var(--text-3)">0%</text><text x="20" y="14" text-anchor="end" font-size="8" fill="var(--text-3)">100%</text><line x1="24" y1="13.4" x2="188" y2="13.4" stroke="var(--text-3)" stroke-width="1" stroke-dasharray="3,2"/><text x="188" y="11.4" text-anchor="end" font-size="8" fill="var(--text-3)">90%</text><polyline points="24.0,29.6 26.9,22.4 29.9,34.7 32.8,38.5 35.7,35.6 38.6,35.0 41.6,37.5 44.5,38.7 47.4,38.8 50.4,26.9 53.3,31.1 56.2,35.8 59.1,36.3 62.1,36.9 65.0,39.5 67.9,38.2 70.9,43.0 73.8,42.0 76.7,33.3 79.6,33.0 82.6,35.0 85.5,37.0 88.4,36.5 91.4,41.8 94.3,44.7 97.2,48.2 103.1,49.6 106.0,52.5 108.9,50.6 111.9,50.0 120.6,50.2 123.6,52.2 126.5,52.9 135.3,52.1 141.1,51.8 144.1,52.1 147.0,52.4 149.9,51.2 152.9,50.8 158.7,53.5 161.6,54.9 164.6,56.2 167.5,57.5 176.3,58.4 179.2,58.4 182.1,57.7 185.1,57.9 188.0,58.5" fill="none" stroke="var(--red)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="24.0" cy="29.6" r="1.8" fill="var(--red)"/><circle cx="26.9" cy="22.4" r="1.8" fill="var(--red)"/><circle cx="29.9" cy="34.7" r="1.8" fill="var(--red)"/><circle cx="32.8" cy="38.5" r="1.8" fill="var(--red)"/><circle cx="35.7" cy="35.6" r="1.8" fill="var(--red)"/><circle cx="38.6" cy="35.0" r="1.8" fill="var(--red)"/><circle cx="41.6" cy="37.5" r="1.8" fill="var(--red)"/><circle cx="44.5" cy="38.7" r="1.8" fill="var(--red)"/><circle cx="47.4" cy="38.8" r="1.8" fill="var(--red)"/><circle cx="50.4" cy="26.9" r="1.8" fill="var(--red)"/><circle cx="53.3" cy="31.1" r="1.8" fill="var(--red)"/><circle cx="56.2" cy="35.8" r="1.8" fill="var(--red)"/><circle cx="59.1" cy="36.3" r="1.8" fill="var(--red)"/><circle cx="62.1" cy="36.9" r="1.8" fill="var(--red)"/><circle cx="65.0" cy="39.5" r="1.8" fill="var(--red)"/><circle cx="67.9" cy="38.2" r="1.8" fill="var(--red)"/><circle cx="70.9" cy="43.0" r="1.8" fill="var(--red)"/><circle cx="73.8" cy="42.0" r="1.8" fill="var(--red)"/><circle cx="76.7" cy="33.3" r="1.8" fill="var(--red)"/><circle cx="79.6" cy="33.0" r="1.8" fill="var(--red)"/><circle cx="82.6" cy="35.0" r="1.8" fill="var(--red)"/><circle cx="85.5" cy="37.0" r="1.8" fill="var(--red)"/><circle cx="88.4" cy="36.5" r="1.8" fill="var(--red)"/><circle cx="91.4" cy="41.8" r="1.8" fill="var(--red)"/><circle cx="94.3" cy="44.7" r="1.8" fill="var(--red)"/><circle cx="97.2" cy="48.2" r="1.8" fill="var(--red)"/><circle cx="103.1" cy="49.6" r="1.8" fill="var(--red)"/><circle cx="106.0" cy="52.5" r="1.8" fill="var(--red)"/><circle cx="108.9" cy="50.6" r="1.8" fill="var(--red)"/><circle cx="111.9" cy="50.0" r="1.8" fill="var(--red)"/><circle cx="120.6" cy="50.2" r="1.8" fill="var(--red)"/><circle cx="123.6" cy="52.2" r="1.8" fill="var(--red)"/><circle cx="126.5" cy="52.9" r="1.8" fill="var(--red)"/><circle cx="135.3" cy="52.1" r="1.8" fill="var(--red)"/><circle cx="141.1" cy="51.8" r="1.8" fill="var(--red)"/><circle cx="144.1" cy="52.1" r="1.8" fill="var(--red)"/><circle cx="147.0" cy="52.4" r="1.8" fill="var(--red)"/><circle cx="149.9" cy="51.2" r="1.8" fill="var(--red)"/><circle cx="152.9" cy="50.8" r="1.8" fill="var(--red)"/><circle cx="158.7" cy="53.5" r="1.8" fill="var(--red)"/><circle cx="161.6" cy="54.9" r="1.8" fill="var(--red)"/><circle cx="164.6" cy="56.2" r="1.8" fill="var(--red)"/><circle cx="167.5" cy="57.5" r="1.8" fill="var(--red)"/><circle cx="176.3" cy="58.4" r="1.8" fill="var(--red)"/><circle cx="179.2" cy="58.4" r="1.8" fill="var(--red)"/><circle cx="182.1" cy="57.7" r="1.8" fill="var(--red)"/><circle cx="185.1" cy="57.9" r="1.8" fill="var(--red)"/><circle cx="188.0" cy="58.5" r="1.8" fill="var(--red)"/><text x="24" y="73" font-size="8" fill="var(--text-3)">31/8</text><text x="188" y="73" text-anchor="end" font-size="8" fill="var(--text-3)">26/10</text></svg></td>
+          <td><svg class="spark" width="196" height="76" viewBox="0 0 196 76"><line x1="24" y1="62" x2="188" y2="62" stroke="var(--border)" stroke-width="1"/><text x="20" y="62" text-anchor="end" font-size="8" fill="var(--text-3)">0%</text><text x="20" y="14" text-anchor="end" font-size="8" fill="var(--text-3)">100%</text><line x1="24" y1="13.4" x2="188" y2="13.4" stroke="var(--text-3)" stroke-width="1" stroke-dasharray="3,2"/><text x="188" y="11.4" text-anchor="end" font-size="8" fill="var(--text-3)">90%</text><polyline points="24.0,29.6 26.9,22.4 29.9,34.7 32.8,38.5 35.7,35.6 38.6,35.0 41.6,37.5 44.5,38.7 47.4,38.8 50.4,26.9 53.3,31.1 56.2,35.8 59.1,36.3 62.1,36.9 65.0,39.5 67.9,38.2 70.9,43.0 73.8,42.0 76.7,33.3 79.6,33.0 82.6,35.0 85.5,37.0 88.4,36.5 91.4,41.8 94.3,44.7 97.2,48.2 103.1,49.6 106.0,52.5 108.9,50.6 111.9,50.0 120.6,50.2 123.6,52.2 126.5,52.9 135.3,52.1 141.1,51.8 144.1,52.1 147.0,52.4 149.9,51.2 152.9,50.8 158.7,53.5 161.6,54.9 164.6,56.2 167.5,57.5 176.3,58.4 179.2,58.4 182.1,57.7 185.1,57.9 188.0,58.3" fill="none" stroke="var(--red)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="24.0" cy="29.6" r="1.8" fill="var(--red)"/><circle cx="26.9" cy="22.4" r="1.8" fill="var(--red)"/><circle cx="29.9" cy="34.7" r="1.8" fill="var(--red)"/><circle cx="32.8" cy="38.5" r="1.8" fill="var(--red)"/><circle cx="35.7" cy="35.6" r="1.8" fill="var(--red)"/><circle cx="38.6" cy="35.0" r="1.8" fill="var(--red)"/><circle cx="41.6" cy="37.5" r="1.8" fill="var(--red)"/><circle cx="44.5" cy="38.7" r="1.8" fill="var(--red)"/><circle cx="47.4" cy="38.8" r="1.8" fill="var(--red)"/><circle cx="50.4" cy="26.9" r="1.8" fill="var(--red)"/><circle cx="53.3" cy="31.1" r="1.8" fill="var(--red)"/><circle cx="56.2" cy="35.8" r="1.8" fill="var(--red)"/><circle cx="59.1" cy="36.3" r="1.8" fill="var(--red)"/><circle cx="62.1" cy="36.9" r="1.8" fill="var(--red)"/><circle cx="65.0" cy="39.5" r="1.8" fill="var(--red)"/><circle cx="67.9" cy="38.2" r="1.8" fill="var(--red)"/><circle cx="70.9" cy="43.0" r="1.8" fill="var(--red)"/><circle cx="73.8" cy="42.0" r="1.8" fill="var(--red)"/><circle cx="76.7" cy="33.3" r="1.8" fill="var(--red)"/><circle cx="79.6" cy="33.0" r="1.8" fill="var(--red)"/><circle cx="82.6" cy="35.0" r="1.8" fill="var(--red)"/><circle cx="85.5" cy="37.0" r="1.8" fill="var(--red)"/><circle cx="88.4" cy="36.5" r="1.8" fill="var(--red)"/><circle cx="91.4" cy="41.8" r="1.8" fill="var(--red)"/><circle cx="94.3" cy="44.7" r="1.8" fill="var(--red)"/><circle cx="97.2" cy="48.2" r="1.8" fill="var(--red)"/><circle cx="103.1" cy="49.6" r="1.8" fill="var(--red)"/><circle cx="106.0" cy="52.5" r="1.8" fill="var(--red)"/><circle cx="108.9" cy="50.6" r="1.8" fill="var(--red)"/><circle cx="111.9" cy="50.0" r="1.8" fill="var(--red)"/><circle cx="120.6" cy="50.2" r="1.8" fill="var(--red)"/><circle cx="123.6" cy="52.2" r="1.8" fill="var(--red)"/><circle cx="126.5" cy="52.9" r="1.8" fill="var(--red)"/><circle cx="135.3" cy="52.1" r="1.8" fill="var(--red)"/><circle cx="141.1" cy="51.8" r="1.8" fill="var(--red)"/><circle cx="144.1" cy="52.1" r="1.8" fill="var(--red)"/><circle cx="147.0" cy="52.4" r="1.8" fill="var(--red)"/><circle cx="149.9" cy="51.2" r="1.8" fill="var(--red)"/><circle cx="152.9" cy="50.8" r="1.8" fill="var(--red)"/><circle cx="158.7" cy="53.5" r="1.8" fill="var(--red)"/><circle cx="161.6" cy="54.9" r="1.8" fill="var(--red)"/><circle cx="164.6" cy="56.2" r="1.8" fill="var(--red)"/><circle cx="167.5" cy="57.5" r="1.8" fill="var(--red)"/><circle cx="176.3" cy="58.4" r="1.8" fill="var(--red)"/><circle cx="179.2" cy="58.4" r="1.8" fill="var(--red)"/><circle cx="182.1" cy="57.7" r="1.8" fill="var(--red)"/><circle cx="185.1" cy="57.9" r="1.8" fill="var(--red)"/><circle cx="188.0" cy="58.3" r="1.8" fill="var(--red)"/><text x="24" y="73" font-size="8" fill="var(--text-3)">31/8</text><text x="188" y="73" text-anchor="end" font-size="8" fill="var(--text-3)">26/10</text></svg></td>
           <td><span class="b b-r">⊗ Off target</span></td>
         </tr>
         <tr>
@@ -637,7 +1117,7 @@ Google Site: 2</title><rect x="924.7" y="201.1" width="20.5" height="10.9" rx="1
         </tr></tbody>
     </table>
     
-    <div class="foot">Read-only: Novo 1388 items, old board 3558.
+    <div class="foot">Read-only: Novo 1395 items, old board 3558.
     Aggregates only, no customer data.</div>
     <details class="notes"><summary>Data notes</summary>
     <div class="foot">
@@ -652,13 +1132,13 @@ Google Site: 2</title><rect x="924.7" y="201.1" width="20.5" height="10.9" rx="1
     &quot;Sent quotes touched&quot; changed again on 26 Aug: quotes with no contact date are now
     left out instead of counted as untouched, because most new leads arrive without one. Both
     sides of every break are kept.
-    <br><br><strong>Counting.</strong> Loss reasons span both boards over 2420 lost deals, with the old board&#39;s duplicates removed.
+    <br><br><strong>Counting.</strong> Loss reasons span both boards over 2421 lost deals, with the old board&#39;s duplicates removed.
     Blank or &quot;Escolha&quot; counts as unfilled; &quot;N/A&quot; counts as unassigned. The
     02 Jun &quot;stalled&quot; figure covers a much wider population than today, so it is a
     baseline only and stays off the line.
     </div></details>
   </div>
 </div>
-<script>const IDS=["executive", "operational", "leads", "change"];function sw(t){IDS.forEach((id,i)=>{document.querySelectorAll('.tab')[i].classList.toggle('active',id===t);document.getElementById('view-'+id).classList.toggle('active',id===t);});if(location.hash.slice(1).split('/')[0]!==t)history.replaceState(null,'','#'+t);}function fromHash(){const h=location.hash.slice(1).split('/')[0];if(IDS.includes(h))sw(h);}fromHash();window.addEventListener('hashchange',fromHash);</script>
+<script>const IDS=["executive", "operational", "quotes", "leads", "change"];function sw(t){IDS.forEach((id,i)=>{const b=document.querySelectorAll('.tab')[i];b.classList.toggle('active',id===t);if(id===t)b.style.display='';document.getElementById('view-'+id).classList.toggle('active',id===t);});if(location.hash.slice(1).split('/')[0]!==t)history.replaceState(null,'','#'+t);}function fromHash(){const h=location.hash.slice(1).split('/')[0];if(IDS.includes(h))sw(h);}fromHash();window.addEventListener('hashchange',fromHash);</script>
 </body>
 </html>

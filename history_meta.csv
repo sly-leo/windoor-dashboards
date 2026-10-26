@@ -6,8 +6,8 @@ calendar_days,147,days spanned end to end
 missing_days,50,rows present in history.csv with status='no snapshot'
 coverage_pct,66.0,
 unbroken_since,2026-10-22,SAFE TO CHART from here — no gaps between this date and the latest
-metrics_current,54,metrics in the most recent snapshot
-metrics_all_time,55,distinct metrics ever recorded; see history_columns.csv
+metrics_current,156,metrics in the most recent snapshot
+metrics_all_time,157,distinct metrics ever recorded; see history_columns.csv
 blank_means,not measured,a blank cell is NOT a zero — check first_measured in history_columns.csv
 source_of_truth,dashboard_history.jsonl,these CSVs are generated; edits here are overwritten each morning
 flagged_cells,367,"known-bad or not-comparable (date, metric) pairs — see history_flags.csv BEFORE charting"
