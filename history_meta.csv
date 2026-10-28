@@ -1,13 +1,13 @@
 field,value,note
-generated_at,2026-10-27,date of the most recent snapshot
+generated_at,2026-10-28,date of the most recent snapshot
 first_snapshot,2026-06-02,
-snapshots,98,days actually measured
-calendar_days,148,days spanned end to end
+snapshots,99,days actually measured
+calendar_days,149,days spanned end to end
 missing_days,50,rows present in history.csv with status='no snapshot'
-coverage_pct,66.2,
+coverage_pct,66.4,
 unbroken_since,2026-10-22,SAFE TO CHART from here — no gaps between this date and the latest
-metrics_current,156,metrics in the most recent snapshot
-metrics_all_time,157,distinct metrics ever recorded; see history_columns.csv
+metrics_current,157,metrics in the most recent snapshot
+metrics_all_time,158,distinct metrics ever recorded; see history_columns.csv
 blank_means,not measured,a blank cell is NOT a zero — check first_measured in history_columns.csv
 source_of_truth,dashboard_history.jsonl,these CSVs are generated; edits here are overwritten each morning
 flagged_cells,367,"known-bad or not-comparable (date, metric) pairs — see history_flags.csv BEFORE charting"
