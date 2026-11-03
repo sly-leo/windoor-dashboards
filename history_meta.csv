@@ -1,10 +1,10 @@
 field,value,note
-generated_at,2026-11-02,date of the most recent snapshot
+generated_at,2026-11-03,date of the most recent snapshot
 first_snapshot,2026-06-02,
-snapshots,103,days actually measured
-calendar_days,154,days spanned end to end
+snapshots,104,days actually measured
+calendar_days,155,days spanned end to end
 missing_days,51,rows present in history.csv with status='no snapshot'
-coverage_pct,66.9,
+coverage_pct,67.1,
 unbroken_since,2026-10-31,SAFE TO CHART from here — no gaps between this date and the latest
 metrics_current,157,metrics in the most recent snapshot
 metrics_all_time,158,distinct metrics ever recorded; see history_columns.csv
